@@ -1,0 +1,545 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.army.headquarters
+    type: office
+    name: Army Headquarters
+    abbreviation: Army HQ
+    parent_id: org.army
+    service: army
+    functions: [headquarters, service_management]
+    capability_tags: [army_staff]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 111, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.staff
+    type: office
+    name: Army Staff
+    abbreviation: Army Staff
+    parent_id: org.army.headquarters
+    service: army
+    functions: [staff, service_management]
+    capability_tags: [army_staff]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 112, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.hrc
+    type: command
+    name: Army Human Resources Command
+    abbreviation: HRC
+    parent_id: org.army
+    service: army
+    functions: [personnel]
+    capability_tags: [human_resources]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 115, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.secretariat
+    type: office
+    name: Office of the Secretary of the Army
+    abbreviation: Army Secretariat
+    parent_id: org.army
+    service: army
+    functions: [service_secretariat]
+    capability_tags: [executive_leadership]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 116, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.rccto
+    type: office
+    name: Army Rapid Capabilities and Critical Technologies Office
+    abbreviation: RCCTO
+    parent_id: org.army
+    service: army
+    functions: [rapid_acquisition, critical_technologies]
+    capability_tags: [rapid_fielding, directed_energy, space]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 116, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cio
+    type: office
+    name: Army Office of the Chief Information Officer
+    abbreviation: Army CIO
+    parent_id: org.army
+    service: army
+    functions: [information_technology, cybersecurity, data]
+    capability_tags: [it, cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 117, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.smdc
+    type: command
+    name: Army Space and Missile Defense Command
+    abbreviation: USASMDC
+    parent_id: org.army
+    service: army
+    functions: [space, missile_defense]
+    capability_tags: [space, missile_defense]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 118, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.national-guard
+    type: command
+    name: Army National Guard
+    abbreviation: ARNG
+    parent_id: org.army
+    service: army
+    functions: [reserve_component]
+    capability_tags: [domestic_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 120, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.usace
+    type: command
+    name: Army Corps of Engineers
+    abbreviation: USACE
+    parent_id: org.army
+    service: army
+    functions: [civil_works, engineering]
+    capability_tags: [infrastructure, engineering]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 120, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.arcyber
+    type: command
+    name: Army Cyber Command
+    abbreviation: ARCYBER
+    parent_id: org.army
+    service: army
+    functions: [cyber_operations]
+    capability_tags: [cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 121, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.asa-alt.usaasc
+    type: office
+    name: Army Acquisition Support Center
+    abbreviation: USAASC
+    parent_id: org.army.asa-alt
+    service: army
+    functions: [acquisition_support]
+    capability_tags: [acquisition_workforce]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 124, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.acquisition
+    type: acquisition_executive
+    name: Army Acquisition
+    abbreviation: Army Acquisition
+    parent_id: org.army.asa-alt
+    service: army
+    functions: [acquisition, program_management]
+    capability_tags: [army_modernization]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 125, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.maneuver-ground
+    type: portfolio
+    name: Portfolio Acquisition Executive Maneuver - Ground
+    abbreviation: PAE Maneuver Ground
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, ground_maneuver]
+    capability_tags: [ground_combat]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 128, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.maneuver-ground
+    type: capability_program
+    name: Capability Program Executive Maneuver - Ground
+    abbreviation: CPE Maneuver Ground
+    parent_id: org.army.pae.maneuver-ground
+    service: army
+    functions: [program_management, ground_maneuver]
+    capability_tags: [soldier_systems, ground_combat]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 129, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.maneuver-air
+    type: portfolio
+    name: Portfolio Acquisition Executive Maneuver - Air
+    abbreviation: PAE Maneuver Air
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, aviation]
+    capability_tags: [aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 133, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.aviation
+    type: capability_program
+    name: Capability Program Executive Aviation
+    abbreviation: CPE Aviation
+    parent_id: org.army.pae.maneuver-air
+    service: army
+    functions: [program_management, aviation]
+    capability_tags: [aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 134, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.autonomy
+    type: capability_program
+    name: Capability Program Executive Autonomy
+    abbreviation: CPE Autonomy
+    parent_id: org.army.pae.maneuver-air
+    service: army
+    functions: [program_management, autonomy]
+    capability_tags: [autonomy, robotics, uas]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 135, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.fires
+    type: portfolio
+    name: Portfolio Acquisition Executive Fires
+    abbreviation: PAE Fires
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, fires]
+    capability_tags: [fires, missiles]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 137, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.offense
+    type: capability_program
+    name: Capability Program Executive Offense
+    abbreviation: CPE Offense
+    parent_id: org.army.pae.fires
+    service: army
+    functions: [program_management, fires]
+    capability_tags: [offensive_fires]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 138, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.defensive-fires
+    type: capability_program
+    name: Capability Program Executive Defensive Fires
+    abbreviation: CPE Defensive
+    parent_id: org.army.pae.fires
+    service: army
+    functions: [program_management, air_defense]
+    capability_tags: [air_defense, counter_uas]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 139, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.integrated-fires
+    type: capability_program
+    name: Capability Program Executive Integrated Fires
+    abbreviation: CPE Integrated Fires
+    parent_id: org.army.pae.fires
+    service: army
+    functions: [program_management, integrated_fires]
+    capability_tags: [guam_defense, integrated_fires]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 140, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.c2-cc2
+    type: portfolio
+    name: Portfolio Acquisition Executive C2/CC2
+    abbreviation: PAE C2/CC2
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, command_and_control]
+    capability_tags: [c2, networks]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 141, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.c2in
+    type: capability_program
+    name: Capability Program Executive Command, Control, Communications and Network
+    abbreviation: CPE C2IN
+    parent_id: org.army.pae.c2-cc2
+    service: army
+    functions: [program_management, command_and_control, networks]
+    capability_tags: [c2, networks]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 142, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.st3
+    type: capability_program
+    name: Capability Program Executive Simulation, Training, Test and Threat
+    abbreviation: CPE ST3
+    parent_id: org.army.pae.c2-cc2
+    service: army
+    functions: [simulation, training, test_and_evaluation]
+    capability_tags: [training, simulation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 147, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.isw
+    type: capability_program
+    name: Capability Program Executive Intelligence and Spectrum Warfare
+    abbreviation: CPE ISW
+    parent_id: org.army.pae.c2-cc2
+    service: army
+    functions: [intelligence, electronic_warfare, cyber]
+    capability_tags: [spectrum_warfare, cyber, intelligence]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 151, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.sustainment-ammo
+    type: portfolio
+    name: Portfolio Acquisition Executive Agile Sustainment and Ammunition
+    abbreviation: PAE Sustainment Ammo
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, sustainment, ammunition]
+    capability_tags: [logistics, ammunition]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 157, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.combat-logistics
+    type: capability_program
+    name: Capability Program Executive Combat Logistics
+    abbreviation: CPE Combat Logistics
+    parent_id: org.army.pae.sustainment-ammo
+    service: army
+    functions: [program_management, logistics]
+    capability_tags: [combat_logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 158, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.ammo-energetics
+    type: capability_program
+    name: Capability Program Executive Ammunition and Energetics
+    abbreviation: CPE A&E
+    parent_id: org.army.pae.sustainment-ammo
+    service: army
+    functions: [program_management, ammunition, energetics]
+    capability_tags: [ammunition, energetics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 161, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pae.layered-protection-cbrn
+    type: portfolio
+    name: Portfolio Acquisition Executive Layered Protection and CBRN
+    abbreviation: PAE Layered Protection CBRN
+    parent_id: org.army.acquisition
+    service: army
+    functions: [acquisition, protection, cbrn]
+    capability_tags: [cbrn, layered_protection]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 164, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.cbrnd
+    type: capability_program
+    name: Capability Program Executive Joint CBRN Defense
+    abbreviation: CPE CBRND
+    parent_id: org.army.pae.layered-protection-cbrn
+    service: army
+    functions: [program_management, cbrn]
+    capability_tags: [cbrn]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 165, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cpe.es2
+    type: capability_program
+    name: Capability Program Executive Enterprise Software and Service
+    abbreviation: CPE ES2
+    parent_id: org.army.pae.layered-protection-cbrn
+    service: army
+    functions: [program_management, enterprise_software]
+    capability_tags: [software, enterprise_it]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 168, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.pit
+    type: office
+    name: Army Pathway for Innovation and Technology
+    abbreviation: PIT
+    parent_id: org.army
+    service: army
+    functions: [innovation, technology_transition]
+    capability_tags: [front_door, innovation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 171, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.fuze
+    type: office
+    name: FUZE Program
+    abbreviation: FUZE
+    parent_id: org.army.pit
+    service: army
+    functions: [innovation, commercial_technology]
+    capability_tags: [front_door]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 171, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.aal
+    type: lab
+    name: Army Application Lab
+    abbreviation: AAL
+    parent_id: org.army.pit
+    service: army
+    functions: [innovation, software]
+    capability_tags: [commercial_solutions]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 172, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.t2com
+    type: command
+    name: Army Transformation and Training Command
+    abbreviation: T2COM
+    parent_id: org.army
+    service: army
+    functions: [training, transformation]
+    capability_tags: [training, doctrine]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 174, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cac
+    type: command
+    name: Combined Arms Command
+    abbreviation: CAC
+    parent_id: org.army.t2com
+    service: army
+    functions: [training, doctrine]
+    capability_tags: [combined_arms]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 175, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.futures-concepts
+    type: command
+    name: Futures and Concepts Command
+    abbreviation: FCC
+    parent_id: org.army.t2com
+    service: army
+    functions: [concepts, requirements]
+    capability_tags: [future_concepts]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 179, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.devcom
+    type: lab
+    name: Army Combat Capabilities Development Command
+    abbreviation: DEVCOM
+    parent_id: org.army
+    service: army
+    functions: [research, development]
+    capability_tags: [science_and_technology]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 181, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.software-factory
+    type: lab
+    name: Army Software Factory
+    abbreviation: Army Software Factory
+    parent_id: org.army
+    service: army
+    functions: [software, training]
+    capability_tags: [software]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 185, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.trac
+    type: lab
+    name: The Research and Analysis Center
+    abbreviation: TRAC
+    parent_id: org.army
+    service: army
+    functions: [analysis, research]
+    capability_tags: [analysis]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 186, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.amc
+    type: command
+    name: Army Materiel Command
+    abbreviation: AMC
+    parent_id: org.army
+    service: army
+    functions: [materiel, sustainment]
+    capability_tags: [sustainment, logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 187, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.acc
+    type: command
+    name: Army Contracting Command
+    abbreviation: ACC
+    parent_id: org.army.amc
+    service: army
+    functions: [contracting]
+    capability_tags: [contracting]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 187, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.amcom
+    type: command
+    name: Army Aviation and Missile Command
+    abbreviation: AMCOM
+    parent_id: org.army.amc
+    service: army
+    functions: [aviation, missiles, sustainment]
+    capability_tags: [aviation, missiles]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 188, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.cecom
+    type: command
+    name: Army Communications-Electronics Command
+    abbreviation: CECOM
+    parent_id: org.army.amc
+    service: army
+    functions: [communications, electronics, sustainment]
+    capability_tags: [communications, c4i]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 188, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.jmc
+    type: command
+    name: U.S. Army Joint Munitions Command
+    abbreviation: JMC
+    parent_id: org.army.amc
+    service: army
+    functions: [munitions, sustainment]
+    capability_tags: [ammunition, munitions]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 189, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.asc
+    type: command
+    name: Army Sustainment Command
+    abbreviation: ASC
+    parent_id: org.army.amc
+    service: army
+    functions: [sustainment, logistics]
+    capability_tags: [logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 189, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.atec
+    type: test_center
+    name: Army Test and Evaluation Command
+    abbreviation: ATEC
+    parent_id: org.army
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_ranges]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 190, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.tacom
+    type: command
+    name: Tank, Automotive and Armaments Command
+    abbreviation: TACOM
+    parent_id: org.army.amc
+    service: army
+    functions: [ground_systems, sustainment]
+    capability_tags: [ground_vehicles]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 190, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.army.western-hemisphere
+    type: command
+    name: Army Western Hemisphere Command
+    abbreviation: AWHC
+    parent_id: org.army
+    service: army
+    functions: [regional_operations]
+    capability_tags: [western_hemisphere]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 191, usage: seed_reference_only }]

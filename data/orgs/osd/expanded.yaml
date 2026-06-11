@@ -1,0 +1,336 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.osd.oig
+    type: office
+    name: Office of Inspector General
+    abbreviation: OIG
+    parent_id: org.osd
+    service: osd
+    functions: [oversight, audit, investigations]
+    capability_tags: [accountability]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 66, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.direct-reporting
+    type: portfolio
+    name: Direct Reporting Programs
+    abbreviation: DRP
+    parent_id: org.osd
+    service: osd
+    functions: [direct_reporting, acquisition]
+    capability_tags: [rapid_fielding]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 68, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.jiatf-401
+    type: portfolio
+    name: Joint Interagency Task Force 401 Direct Reporting Portfolio
+    abbreviation: JIATF-401
+    parent_id: org.osd.direct-reporting
+    service: osd
+    functions: [counter_uas, direct_reporting]
+    capability_tags: [counter_uas, drones]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 68, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.golden-dome
+    type: portfolio
+    name: Golden Dome Direct Reporting Portfolio
+    abbreviation: Golden Dome
+    parent_id: org.osd.direct-reporting
+    service: osd
+    functions: [missile_defense, direct_reporting]
+    capability_tags: [missile_defense]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 69, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.submarine-drpm
+    type: portfolio
+    name: Submarine Direct Reporting Portfolio Manager
+    abbreviation: DRPM Submarines
+    parent_id: org.osd.direct-reporting
+    service: osd
+    functions: [submarine_programs, direct_reporting]
+    capability_tags: [undersea, submarines]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 70, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.critical-major-weapons-drpm
+    type: portfolio
+    name: Critical Major Weapon Systems Programs Direct Reporting Portfolio Manager
+    abbreviation: DRPM Critical Weapons
+    parent_id: org.osd.direct-reporting
+    service: osd
+    functions: [major_weapon_systems, direct_reporting]
+    capability_tags: [weapon_systems]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 71, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.sapco
+    type: office
+    name: Special Access Programs Central Office
+    abbreviation: SAPCO
+    parent_id: org.osd
+    service: osd
+    functions: [special_access_programs]
+    capability_tags: [security]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 72, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.comptroller
+    type: office
+    name: Under Secretary of War Comptroller
+    abbreviation: Comptroller
+    parent_id: org.osd
+    service: osd
+    functions: [financial_management, budget]
+    capability_tags: [budget]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 72, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.cape
+    type: office
+    name: Office of Cost Assessment and Program Evaluation
+    abbreviation: CAPE
+    parent_id: org.osd
+    service: osd
+    functions: [cost_assessment, program_evaluation]
+    capability_tags: [analysis]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 72, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.cio
+    type: office
+    name: DoW Chief Information Officer
+    abbreviation: CIO
+    parent_id: org.osd
+    service: osd
+    functions: [information_technology, cybersecurity]
+    capability_tags: [it, cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 72, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.sco
+    type: office
+    name: Strategic Capabilities Office
+    abbreviation: SCO
+    parent_id: org.osd
+    service: osd
+    functions: [strategic_capabilities, prototyping]
+    capability_tags: [prototypes, fielded_capability]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 73, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.as.asd-a
+    type: office
+    name: Assistant Secretary of War for Acquisition
+    abbreviation: ASD(A)
+    parent_id: org.osd.as
+    service: osd
+    functions: [acquisition, portfolio_management]
+    capability_tags: [acquisition_policy]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 76, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.as.asd-s
+    type: office
+    name: Assistant Secretary of War for Sustainment
+    abbreviation: ASD(S)
+    parent_id: org.osd.as
+    service: osd
+    functions: [sustainment, logistics]
+    capability_tags: [logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 79, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.as.asd-eie
+    type: office
+    name: Assistant Secretary of War for Energy, Installations, and Environment
+    abbreviation: ASD(EI&E)
+    parent_id: org.osd.as
+    service: osd
+    functions: [installations, energy, environment]
+    capability_tags: [infrastructure]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 80, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.as.asd-nd-cbd
+    type: office
+    name: Assistant Secretary for Nuclear Deterrence, Chemical, and Biological Defense Policy and Programs
+    abbreviation: ASD(ND-CBD)
+    parent_id: org.osd.as
+    service: osd
+    functions: [nuclear_deterrence, chemical_biological_defense]
+    capability_tags: [nuclear, cbrn]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 81, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.as.asd-ibp
+    type: office
+    name: Assistant Secretary of War for Industrial Base Policy
+    abbreviation: ASD(IBP)
+    parent_id: org.osd.as
+    service: osd
+    functions: [industrial_base, economic_security]
+    capability_tags: [industrial_base, supply_chain]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 82, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.pr
+    type: office
+    name: Under Secretary of Defense for Personnel and Readiness
+    abbreviation: OUSD(P&R)
+    parent_id: org.osd
+    service: osd
+    functions: [personnel, readiness]
+    capability_tags: [readiness]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 84, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.re.cdao
+    type: office
+    name: Chief Digital and Artificial Intelligence Office
+    abbreviation: CDAO
+    parent_id: org.osd.re
+    service: osd
+    functions: [data, artificial_intelligence, digital]
+    capability_tags: [ai, data_platforms, command_and_control]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 88, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.re.science-technology
+    type: office
+    name: Science and Technology Office
+    abbreviation: S&T
+    parent_id: org.osd.re
+    service: osd
+    functions: [science_and_technology, research]
+    capability_tags: [technology_transition]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 89, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.re.critical-technologies
+    type: office
+    name: Critical Technologies Assistant Secretary
+    abbreviation: ASD(CT)
+    parent_id: org.osd.re
+    service: osd
+    functions: [critical_technologies]
+    capability_tags: [directed_energy, advanced_technology]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 91, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.re.mission-capabilities
+    type: office
+    name: Mission Capabilities Assistant Secretary
+    abbreviation: ASD(MC)
+    parent_id: org.osd.re
+    service: osd
+    functions: [mission_engineering, prototypes, test_and_evaluation]
+    capability_tags: [mission_engineering, prototypes]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 91, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.re.mda
+    type: external_agency
+    name: Missile Defense Agency
+    abbreviation: MDA
+    parent_id: org.osd.re
+    service: osd
+    functions: [missile_defense, acquisition]
+    capability_tags: [missile_defense, command_and_control]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 96, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.dote
+    type: office
+    name: Director, Operational Test and Evaluation
+    abbreviation: DOT&E
+    parent_id: org.osd
+    service: osd
+    functions: [operational_test_and_evaluation]
+    capability_tags: [test_and_evaluation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 102, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.policy
+    type: office
+    name: Under Secretary of War for Policy
+    abbreviation: OUSD(P)
+    parent_id: org.osd
+    service: osd
+    functions: [policy, strategy]
+    capability_tags: [strategy]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 102, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.is
+    type: office
+    name: Under Secretary of War for Intelligence and Security
+    abbreviation: OUSD(I&S)
+    parent_id: org.osd
+    service: osd
+    functions: [intelligence, security]
+    capability_tags: [intelligence, security]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 105, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.is.disa
+    type: external_agency
+    name: Defense Information Systems Agency
+    abbreviation: DISA
+    parent_id: org.osd.is
+    service: osd
+    functions: [information_systems, networks, cyber]
+    capability_tags: [c4i, cyber, networks]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 106, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.is.dia
+    type: external_agency
+    name: Defense Intelligence Agency
+    abbreviation: DIA
+    parent_id: org.osd.is
+    service: osd
+    functions: [intelligence]
+    capability_tags: [intelligence]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 108, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.is.dcsa
+    type: external_agency
+    name: Defense Counterintelligence and Security Agency
+    abbreviation: DCSA
+    parent_id: org.osd.is
+    service: osd
+    functions: [counterintelligence, security]
+    capability_tags: [security, vetting]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 108, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.dam
+    type: office
+    name: Director of Administration and Management
+    abbreviation: DA&M
+    parent_id: org.osd
+    service: osd
+    functions: [administration, management]
+    capability_tags: [headquarters_services]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 110, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.osd.whs
+    type: office
+    name: Washington Headquarters Services
+    abbreviation: WHS
+    parent_id: org.osd.dam
+    service: osd
+    functions: [headquarters_services]
+    capability_tags: [support_services]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 110, usage: seed_reference_only }]

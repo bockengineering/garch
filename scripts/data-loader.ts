@@ -103,7 +103,7 @@ async function loadRecords<T>(
 
   for (const file of files) {
     const content = await fs.readFile(file, "utf8");
-    const documents = parseAllDocuments(content);
+    const documents = parseAllDocuments(content, { merge: true });
 
     documents.forEach((document, documentIndex) => {
       if (document.errors.length > 0) {

@@ -1,0 +1,193 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.test-centers.navy
+    type: test_center
+    name: Navy Test Ranges
+    abbreviation: Navy Test Ranges
+    parent_id: org.test-centers
+    service: navy
+    functions: [test_and_evaluation]
+    capability_tags: [test_ranges, maritime, aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 439, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.navy.narragansett-bay
+    type: test_center
+    name: Narragansett Bay Test Facility
+    abbreviation: NBTF
+    parent_id: org.test-centers.navy
+    service: navy
+    functions: [test_and_evaluation]
+    capability_tags: [test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 439, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.navy.point-mugu
+    type: test_center
+    name: Point Mugu Sea Range
+    abbreviation: Point Mugu
+    parent_id: org.test-centers.navy
+    service: navy
+    functions: [test_and_evaluation]
+    capability_tags: [sea_range, aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 439, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.navy.china-lake
+    type: test_center
+    name: Naval Air Weapons Station China Lake
+    abbreviation: China Lake
+    parent_id: org.test-centers.navy
+    service: navy
+    functions: [test_and_evaluation, weapons]
+    capability_tags: [weapons_test]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 439, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army
+    type: test_center
+    name: Army Test Ranges
+    abbreviation: Army Test Ranges
+    parent_id: org.test-centers
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_ranges]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 439, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.aberdeen
+    type: test_center
+    name: Aberdeen Test Center
+    abbreviation: ATC
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 440, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.dugway
+    type: test_center
+    name: Dugway Proving Ground
+    abbreviation: DPG
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 440, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.electronic-proving-ground
+    type: test_center
+    name: Electronic Proving Ground
+    abbreviation: EPG
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation, electronic_warfare]
+    capability_tags: [electronic_warfare, test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 440, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.redstone
+    type: test_center
+    name: Redstone Test Center
+    abbreviation: RTC
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 440, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.white-sands
+    type: test_center
+    name: White Sands Missile Range
+    abbreviation: WSMR
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation, missile_testing]
+    capability_tags: [missile_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 440, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.army.yuma
+    type: test_center
+    name: Yuma Proving Ground
+    abbreviation: YPG
+    parent_id: org.test-centers.army
+    service: army
+    functions: [test_and_evaluation]
+    capability_tags: [test_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 441, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.air-force
+    type: test_center
+    name: Air Force Test Ranges
+    abbreviation: Air Force Test Ranges
+    parent_id: org.test-centers
+    service: air_force
+    functions: [test_and_evaluation]
+    capability_tags: [test_ranges, aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 441, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.air-force.eglin
+    type: test_center
+    name: Eglin Gulf Test and Training Range
+    abbreviation: Eglin Range
+    parent_id: org.test-centers.air-force
+    service: air_force
+    functions: [test_and_evaluation, training]
+    capability_tags: [air_range]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 441, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.air-force.arnold
+    type: test_center
+    name: Arnold Engineering Development Complex
+    abbreviation: AEDC
+    parent_id: org.test-centers.air-force
+    service: air_force
+    functions: [test_and_evaluation, engineering]
+    capability_tags: [engineering_test]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 441, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.mda.xlab
+    type: test_center
+    name: C2BMC Experimentations Lab
+    abbreviation: X-Lab
+    parent_id: org.test-centers
+    service: osd
+    functions: [test_and_evaluation, command_and_control, missile_defense]
+    capability_tags: [missile_defense, c2]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 441, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.ffrdc
+    type: test_center
+    name: State and FFRDC Test Ranges
+    abbreviation: State and FFRDC Test Ranges
+    parent_id: org.test-centers
+    service: other
+    functions: [test_and_evaluation]
+    capability_tags: [test_ranges, ffrdc]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 442, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.test-centers.ffrdc.mitre-bluetech
+    type: test_center
+    name: MITRE BlueTech Lab
+    abbreviation: MITRE BlueTech
+    parent_id: org.test-centers.ffrdc
+    service: other
+    functions: [test_and_evaluation, maritime]
+    capability_tags: [ffrdc, maritime]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 442, usage: seed_reference_only }]

@@ -1,0 +1,204 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.socom.headquarters-staff
+    type: office
+    name: SOCOM Headquarters Staff
+    abbreviation: SOCOM Staff
+    parent_id: org.socom
+    service: socom
+    functions: [headquarters, joint_command]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 330, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.jsou
+    type: office
+    name: Joint Special Operations University
+    abbreviation: JSOU
+    parent_id: org.socom
+    service: socom
+    functions: [education, training]
+    capability_tags: [special_operations, training]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 332, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.st-directorate
+    type: directorate
+    name: SOCOM Science and Technology Directorate
+    abbreviation: SOCOM S&T
+    parent_id: org.socom
+    service: socom
+    functions: [science_and_technology, research]
+    capability_tags: [special_operations, science_and_technology]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 333, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.sofwerx
+    type: lab
+    name: SOFWERX
+    abbreviation: SOFWERX
+    parent_id: org.socom.st-directorate
+    service: socom
+    functions: [innovation, commercial_technology]
+    capability_tags: [front_door, special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 334, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.dir-eis
+    type: directorate
+    name: Directorate of Enterprise Information Systems
+    abbreviation: SOF DIR-EIS
+    parent_id: org.socom
+    service: socom
+    functions: [enterprise_it, information_systems]
+    capability_tags: [enterprise_it]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 334, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-fixed-wing
+    type: program_executive_office
+    name: SOF PEO Fixed Wing
+    abbreviation: PEO-FW
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, fixed_wing_aircraft]
+    capability_tags: [special_operations, aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 335, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-maritime
+    type: program_executive_office
+    name: SOF PEO Maritime
+    abbreviation: PEO-M
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, maritime]
+    capability_tags: [special_operations, maritime]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 336, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-rotary-wing
+    type: program_executive_office
+    name: SOF PEO Rotary Wing
+    abbreviation: PEO-RW
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, rotary_wing_aircraft]
+    capability_tags: [special_operations, aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 336, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-digital-applications
+    type: program_executive_office
+    name: SOF PEO Digital Applications
+    abbreviation: PEO-SDA
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, digital_applications]
+    capability_tags: [software, special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 336, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-services
+    type: program_executive_office
+    name: SOF PEO Services
+    abbreviation: PEO Services
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, services]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 337, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-sofsa
+    type: program_executive_office
+    name: SOF PEO Special Operations Forces Support Activity
+    abbreviation: PEO-SOFSA
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, support_activity]
+    capability_tags: [special_operations, support]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 337, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-warrior
+    type: program_executive_office
+    name: SOF PEO Special Operations Forces Warrior
+    abbreviation: PEO-SW
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, operator_equipment]
+    capability_tags: [special_operations, lethality]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 337, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.peo-tis
+    type: program_executive_office
+    name: SOF PEO Tactical Information Systems
+    abbreviation: PEO-TIS
+    parent_id: org.socom.sof-atl
+    service: socom
+    functions: [program_management, tactical_information_systems]
+    capability_tags: [c4i, special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 338, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.jsoc
+    type: command
+    name: Joint Special Operations Command
+    abbreviation: JSOC
+    parent_id: org.socom
+    service: socom
+    functions: [special_operations]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 338, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.nsw
+    type: command
+    name: Naval Special Warfare Command
+    abbreviation: NSW
+    parent_id: org.socom
+    service: socom
+    functions: [special_operations, maritime]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 338, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.usasoc
+    type: command
+    name: Army Special Operations Command
+    abbreviation: USASOC
+    parent_id: org.socom
+    service: socom
+    functions: [special_operations, land]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 339, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.afsoc
+    type: command
+    name: Air Force Special Operations Command
+    abbreviation: AFSOC
+    parent_id: org.socom
+    service: socom
+    functions: [special_operations, aviation]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 339, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.socom.marsoc
+    type: command
+    name: Marine Corps Special Operations Command
+    abbreviation: MARSOC
+    parent_id: org.socom
+    service: socom
+    functions: [special_operations, expeditionary]
+    capability_tags: [special_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 339, usage: seed_reference_only }]

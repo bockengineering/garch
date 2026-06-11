@@ -1,0 +1,545 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.navy.secretary
+    type: office
+    name: Secretary of the Navy
+    abbreviation: SECNAV
+    parent_id: org.navy
+    service: navy
+    functions: [service_secretariat]
+    capability_tags: [executive_leadership]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 194, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.osbp
+    type: office
+    name: Navy Office of Small Business Programs
+    abbreviation: OSBP
+    parent_id: org.navy
+    service: navy
+    functions: [small_business, industrial_base]
+    capability_tags: [small_business]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 194, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navrco
+    type: office
+    name: Navy Rapid Capabilities Office
+    abbreviation: NAVRCO
+    parent_id: org.navy
+    service: navy
+    functions: [rapid_acquisition, innovation]
+    capability_tags: [front_door, rapid_fielding]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 195, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.don-cio
+    type: office
+    name: Department of the Navy Chief Information Office
+    abbreviation: DON CIO
+    parent_id: org.navy
+    service: navy
+    functions: [information_technology, cybersecurity]
+    capability_tags: [it, cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 197, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.cno
+    type: office
+    name: Office of the Chief of Naval Operations
+    abbreviation: OPNAV
+    parent_id: org.navy
+    service: navy
+    functions: [naval_operations, requirements]
+    capability_tags: [naval_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 197, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.fleet-forces
+    type: command
+    name: U.S. Navy Fleet Forces Command
+    abbreviation: USFF
+    parent_id: org.navy
+    service: navy
+    functions: [fleet_operations]
+    capability_tags: [fleet_readiness]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 203, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pacific-fleet
+    type: command
+    name: U.S. Pacific Fleet
+    abbreviation: USPACFLT
+    parent_id: org.navy
+    service: navy
+    functions: [fleet_operations, pacific]
+    capability_tags: [fleet_readiness]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 206, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navifor
+    type: command
+    name: U.S. Navy Information Forces
+    abbreviation: NAVIFOR
+    parent_id: org.navy
+    service: navy
+    functions: [information_warfare]
+    capability_tags: [information_warfare]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 208, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.cnaf
+    type: command
+    name: Naval Air Forces
+    abbreviation: CNAF
+    parent_id: org.navy
+    service: navy
+    functions: [naval_aviation]
+    capability_tags: [aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 209, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.onr
+    type: lab
+    name: Office of Naval Research
+    abbreviation: ONR
+    parent_id: org.navy.asn-rda
+    service: navy
+    functions: [research, science_and_technology]
+    capability_tags: [science_and_technology]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 211, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.nrl
+    type: lab
+    name: Naval Research Laboratory
+    abbreviation: NRL
+    parent_id: org.navy.onr
+    service: navy
+    functions: [research]
+    capability_tags: [science_and_technology]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 213, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.rdt-e
+    type: office
+    name: Research, Development, Test and Engineering
+    abbreviation: RDT&E
+    parent_id: org.navy.asn-rda
+    service: navy
+    functions: [research, development, test_and_evaluation, engineering]
+    capability_tags: [rdte]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 216, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pae
+    type: acquisition_executive
+    name: Navy Portfolio Acquisition Executives
+    abbreviation: Navy PAEs
+    parent_id: org.navy.asn-rda
+    service: navy
+    functions: [acquisition, portfolio_management]
+    capability_tags: [naval_acquisition]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 217, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pae.ras
+    type: portfolio
+    name: Portfolio Acquisition Executive Robotics and Autonomous Systems
+    abbreviation: PAE RAS
+    parent_id: org.navy.pae
+    service: navy
+    functions: [acquisition, robotics, autonomy]
+    capability_tags: [autonomy, robotics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 219, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pae.maritime
+    type: portfolio
+    name: Portfolio Acquisition Executive Maritime
+    abbreviation: PAE Maritime
+    parent_id: org.navy.pae
+    service: navy
+    functions: [acquisition, maritime_systems]
+    capability_tags: [ships, maritime]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 219, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.peo.aircraft-carriers
+    type: program_executive_office
+    name: Program Executive Officer Aircraft Carriers
+    abbreviation: PEO Aircraft Carriers
+    parent_id: org.navy.pae.maritime
+    service: navy
+    functions: [program_management, aircraft_carriers]
+    capability_tags: [ships]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 221, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pae.munitions
+    type: portfolio
+    name: Portfolio Acquisition Executive Munitions
+    abbreviation: PAE Munitions
+    parent_id: org.navy.pae
+    service: navy
+    functions: [acquisition, munitions]
+    capability_tags: [weapons, munitions]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 222, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.peo.iws
+    type: program_executive_office
+    name: PEO Integrated Warfare Systems
+    abbreviation: PEO IWS
+    parent_id: org.navy.pae.munitions
+    service: navy
+    functions: [program_management, warfare_systems]
+    capability_tags: [combat_systems, sensors, weapons]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 223, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.pae.mission-systems
+    type: portfolio
+    name: Portfolio Acquisition Executive Mission Systems
+    abbreviation: PAE Mission Systems
+    parent_id: org.navy.pae
+    service: navy
+    functions: [acquisition, mission_systems]
+    capability_tags: [mission_systems]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 226, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.industrial-operations
+    type: directorate
+    name: Industrial Operations
+    abbreviation: NAVSEA 04
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [industrial_operations]
+    capability_tags: [shipyards]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 227, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.sea21
+    type: directorate
+    name: Surface Ship Maintenance, Modernization and Sustainment
+    abbreviation: SEA 21
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [surface_ship_maintenance, sustainment]
+    capability_tags: [surface_ships]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 228, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.sea05
+    type: directorate
+    name: Engineering Directorate
+    abbreviation: SEA 05
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [engineering]
+    capability_tags: [engineering]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 228, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.sea07
+    type: directorate
+    name: Undersea Warfare
+    abbreviation: SEA 07
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [undersea_warfare]
+    capability_tags: [undersea]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 228, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.warfare-centers
+    type: test_center
+    name: NAVSEA Warfare Centers
+    abbreviation: NAVSEA WCs
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [engineering, test_and_evaluation]
+    capability_tags: [warfare_centers]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 228, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.peo-ssn
+    type: program_executive_office
+    name: PEO Attack Submarines
+    abbreviation: PEO SSN
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [program_management, submarines]
+    capability_tags: [submarines, undersea]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 232, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navsea.peo-usc
+    type: program_executive_office
+    name: PEO Unmanned and Small Combatants
+    abbreviation: PEO USC
+    parent_id: org.navy.navsea
+    service: navy
+    functions: [program_management, unmanned_systems, small_combatants]
+    capability_tags: [unmanned, small_combatants]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 233, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.nawcad
+    type: test_center
+    name: Naval Air Warfare Center Aircraft Division
+    abbreviation: NAWCAD
+    parent_id: org.navy.navair
+    service: navy
+    functions: [aviation, test_and_evaluation, engineering]
+    capability_tags: [aviation, test_ranges]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 236, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.nawcwd
+    type: test_center
+    name: Naval Air Warfare Center Weapons Division
+    abbreviation: NAWCWD
+    parent_id: org.navy.navair
+    service: navy
+    functions: [weapons, test_and_evaluation, engineering]
+    capability_tags: [weapons, test_ranges]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 237, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.peo-a
+    type: program_executive_office
+    name: PEO Air Anti-Submarine Warfare, Assault and Special Mission
+    abbreviation: PEO(A)
+    parent_id: org.navy.navair
+    service: navy
+    functions: [program_management, naval_aviation]
+    capability_tags: [aviation, anti_submarine_warfare]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 238, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.peo-t
+    type: program_executive_office
+    name: PEO Tactical Aircraft Programs
+    abbreviation: PEO(T)
+    parent_id: org.navy.navair
+    service: navy
+    functions: [program_management, tactical_aircraft]
+    capability_tags: [aviation, tactical_aircraft]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 240, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.peo-uw
+    type: program_executive_office
+    name: PEO Unmanned Aviation and Strike Weapons
+    abbreviation: PEO(U&W)
+    parent_id: org.navy.navair
+    service: navy
+    functions: [program_management, unmanned_aviation, strike_weapons]
+    capability_tags: [uas, weapons]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 241, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navair.peo-f35
+    type: program_executive_office
+    name: PEO F-35 Lightning II Joint Program Office
+    abbreviation: PEO F-35
+    parent_id: org.navy.navair
+    service: navy
+    functions: [program_management, joint_strike_fighter]
+    capability_tags: [fighter_aircraft]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 242, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.niwc-atlantic
+    type: lab
+    name: NIWC Atlantic
+    abbreviation: NIWC Atlantic
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [information_warfare, engineering]
+    capability_tags: [c4i, cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 243, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.niwc-pacific
+    type: lab
+    name: NIWC Pacific
+    abbreviation: NIWC Pacific
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [information_warfare, engineering]
+    capability_tags: [c4i, cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 243, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.cyber
+    type: directorate
+    name: NAVWAR Cyber Directorate
+    abbreviation: NAVWAR Cyber
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [cyber]
+    capability_tags: [cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 244, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.peo-c4i
+    type: program_executive_office
+    name: PEO Command, Control, Communications, Computers and Intelligence
+    abbreviation: PEO C4I
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [program_management, c4i]
+    capability_tags: [c4i, command_and_control]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 244, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.peo-digital
+    type: program_executive_office
+    name: PEO Digital and Enterprise Services
+    abbreviation: PEO Digital
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [program_management, enterprise_it, digital_services]
+    capability_tags: [software, enterprise_it]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 249, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.peo-mlb
+    type: program_executive_office
+    name: PEO Manpower, Logistics and Business Solutions
+    abbreviation: PEO MLB
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [program_management, logistics_it, business_systems]
+    capability_tags: [enterprise_it, logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 253, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navwar.space-field-activity
+    type: office
+    name: NAVWAR Space Field Activity
+    abbreviation: NAVWAR SFA
+    parent_id: org.navy.navwar
+    service: navy
+    functions: [space, information_warfare]
+    capability_tags: [space, c4i]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 254, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.navfac
+    type: command
+    name: Naval Facilities Engineering Systems Command
+    abbreviation: NAVFAC
+    parent_id: org.navy
+    service: navy
+    functions: [facilities, engineering]
+    capability_tags: [infrastructure]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 255, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.navy.strategic-systems
+    type: command
+    name: Strategic Systems Programs
+    abbreviation: SSP
+    parent_id: org.navy
+    service: navy
+    functions: [strategic_systems, nuclear_deterrence]
+    capability_tags: [strategic_systems]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 256, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps
+    type: service
+    name: Marine Corps
+    abbreviation: USMC
+    parent_id: org.navy
+    service: marine_corps
+    functions: [service_management, expeditionary_operations]
+    capability_tags: [expeditionary]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 258, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.aviation
+    type: office
+    name: Marine Corps Aviation
+    abbreviation: USMC Aviation
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [aviation]
+    capability_tags: [aviation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 259, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.training-command
+    type: command
+    name: Marine Corps Training Command
+    abbreviation: Training Command
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [training]
+    capability_tags: [training]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 260, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.mcwl
+    type: lab
+    name: Marine Corps Warfighting Laboratory
+    abbreviation: MCWL
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [experimentation, future_concepts]
+    capability_tags: [warfighting_lab]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 261, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.marcorsyscom
+    type: command
+    name: Marine Corps Systems Command
+    abbreviation: MARCORSYSCOM
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [acquisition, systems_command]
+    capability_tags: [marine_corps_acquisition]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 261, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.pae
+    type: portfolio
+    name: Portfolio Acquisition Executive for the Marine Corps
+    abbreviation: PAE USMC
+    parent_id: org.marine-corps.marcorsyscom
+    service: marine_corps
+    functions: [acquisition, portfolio_management]
+    capability_tags: [marine_corps_acquisition]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 261, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.forces-reserve
+    type: command
+    name: Marine Forces Reserve
+    abbreviation: MARFORRES
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [reserve_component]
+    capability_tags: [reserve]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 264, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.marine-corps.edcom
+    type: command
+    name: Marine Corps Training and Education Command
+    abbreviation: EDCOM
+    parent_id: org.marine-corps
+    service: marine_corps
+    functions: [training, education]
+    capability_tags: [training]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 264, usage: seed_reference_only }]

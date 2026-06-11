@@ -1,0 +1,127 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.space-force.headquarters-staff
+    type: office
+    name: Space Force Headquarters Staff
+    abbreviation: USSF Staff
+    parent_id: org.space-force
+    service: space_force
+    functions: [headquarters, service_management]
+    capability_tags: [space_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 299, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.space-rco
+    type: program_executive_office
+    name: Space Rapid Capabilities Office
+    abbreviation: Space RCO
+    parent_id: org.space-force
+    service: space_force
+    functions: [rapid_acquisition, space_systems]
+    capability_tags: [rapid_fielding, space]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 301, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.spoc
+    type: command
+    name: Space Force Combat Forces Command
+    abbreviation: SpOC
+    parent_id: org.space-force
+    service: space_force
+    functions: [space_operations]
+    capability_tags: [space_operations]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 302, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.integration-office
+    type: office
+    name: Space Systems Integration Office
+    abbreviation: SSIO
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [systems_integration, space_systems]
+    capability_tags: [space_systems]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 307, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.starcom
+    type: command
+    name: Space Training and Readiness Command
+    abbreviation: STARCOM
+    parent_id: org.space-force
+    service: space_force
+    functions: [training, readiness, test_and_evaluation]
+    capability_tags: [training, test_and_evaluation]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 311, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.pae.space-sensing-targeting
+    type: portfolio
+    name: Portfolio Acquisition Executive for Space-Based Sensing and Targeting
+    abbreviation: PAE SBST
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [acquisition, space_sensing, targeting]
+    capability_tags: [space_sensing, targeting]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 312, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.pae-aats
+    type: portfolio
+    name: PAE Assured Access to Space
+    abbreviation: PAE AATS
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [acquisition, launch, space_access]
+    capability_tags: [launch, space_access]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 312, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.pae-combat-power
+    type: portfolio
+    name: PAE Space Combat Power
+    abbreviation: PAE CP
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [acquisition, space_combat_power]
+    capability_tags: [orbital_warfare, space_control]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 313, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.pae-bmc3i
+    type: portfolio
+    name: PAE Battle Management Command, Control and Communications
+    abbreviation: PAE BMC3I
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [acquisition, battle_management, command_and_control]
+    capability_tags: [c2, battle_management]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 314, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.peo-mcpnt
+    type: program_executive_office
+    name: PEO Military Communications and Positioning, Navigation and Timing
+    abbreviation: PEO MCPNT
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [program_management, satellite_communications, pnt]
+    capability_tags: [satcom, pnt]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 315, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.space-force.ssc.peo-otti
+    type: program_executive_office
+    name: PEO Operational Test and Training Infrastructure
+    abbreviation: PEO OTTI
+    parent_id: org.space-force.ssc
+    service: space_force
+    functions: [program_management, test_and_evaluation, training]
+    capability_tags: [test_and_evaluation, training]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 316, usage: seed_reference_only }]

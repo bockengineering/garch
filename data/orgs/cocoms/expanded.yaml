@@ -1,0 +1,127 @@
+defaults: &defaults
+  location_ids: []
+  status: needs_review
+  confidence: low
+  last_verified: 2026-06-11
+
+records:
+  - <<: *defaults
+    id: org.cocoms
+    type: command
+    name: Combatant Commands
+    abbreviation: COCOMs
+    parent_id: org.dow
+    service: cocom
+    functions: [joint_command]
+    capability_tags: [combatant_commands]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 329, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.indopacom
+    type: command
+    name: Indo-Pacific Command
+    abbreviation: INDOPACOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, indo_pacific]
+    capability_tags: [indo_pacific]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 340, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.centcom
+    type: command
+    name: U.S. Central Command
+    abbreviation: CENTCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, central_region]
+    capability_tags: [middle_east, central_asia]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 350, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.eucom
+    type: command
+    name: European Command
+    abbreviation: EUCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, europe]
+    capability_tags: [europe]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 353, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.southcom
+    type: command
+    name: Southern Command
+    abbreviation: SOUTHCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, latin_america]
+    capability_tags: [latin_america]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 357, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.northcom
+    type: command
+    name: Northern Command
+    abbreviation: NORTHCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, homeland_defense]
+    capability_tags: [homeland_defense]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 359, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.africom
+    type: command
+    name: Africa Command
+    abbreviation: AFRICOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [geographic_combatant_command, africa]
+    capability_tags: [africa]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 361, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.stratcom
+    type: command
+    name: Strategic Command
+    abbreviation: STRATCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [functional_combatant_command, strategic_deterrence]
+    capability_tags: [strategic_deterrence, nuclear]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 365, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.spacecom
+    type: command
+    name: U.S. Space Command
+    abbreviation: SPACECOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [functional_combatant_command, space_operations]
+    capability_tags: [space]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 367, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.transcom
+    type: command
+    name: Transportation Command
+    abbreviation: TRANSCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [functional_combatant_command, transportation]
+    capability_tags: [mobility, logistics]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 368, usage: seed_reference_only }]
+
+  - <<: *defaults
+    id: org.cocoms.cybercom
+    type: command
+    name: Cyber Command
+    abbreviation: CYBERCOM
+    parent_id: org.cocoms
+    service: cocom
+    functions: [functional_combatant_command, cyber_operations]
+    capability_tags: [cyber]
+    sources: [{ source_id: source.dow-directory-2026-r6, page: 369, usage: seed_reference_only }]

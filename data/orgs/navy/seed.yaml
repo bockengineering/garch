@@ -42,7 +42,7 @@ id: org.navy.navsea
 type: command
 name: Naval Sea Systems Command
 abbreviation: NAVSEA
-parent_id: org.navy.asn-rda
+parent_id: org.navy
 service: navy
 functions:
   - acquisition
@@ -57,13 +57,14 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 227
     usage: seed_reference_only
 ---
 id: org.navy.navair
 type: command
 name: Naval Air Systems Command
 abbreviation: NAVAIR
-parent_id: org.navy.asn-rda
+parent_id: org.navy
 service: navy
 functions:
   - acquisition
@@ -78,13 +79,14 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 236
     usage: seed_reference_only
 ---
 id: org.navy.navwar
 type: command
 name: Naval Information Warfare Systems Command
 abbreviation: NAVWAR
-parent_id: org.navy.asn-rda
+parent_id: org.navy
 service: navy
 functions:
   - acquisition
@@ -100,4 +102,5 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 243
     usage: seed_reference_only

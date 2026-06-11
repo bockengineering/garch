@@ -18,8 +18,8 @@ sources:
 ---
 id: org.osd
 type: office
-name: Office of the Secretary of Defense
-abbreviation: OSD
+name: Office of the Secretary of War
+abbreviation: OSW
 parent_id: org.dow
 service: osd
 functions:
@@ -33,6 +33,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 66
     usage: seed_reference_only
 ---
 id: org.osd.re
@@ -54,6 +55,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 87
     usage: seed_reference_only
 ---
 id: org.osd.as
@@ -74,6 +76,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 73
     usage: seed_reference_only
 ---
 id: org.osd.diu
@@ -94,6 +97,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 100
     usage: seed_reference_only
 ---
 id: org.osd.darpa
@@ -114,6 +118,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 93
     usage: seed_reference_only
 ---
 id: org.osd.osc
@@ -134,4 +139,5 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 97
     usage: seed_reference_only
