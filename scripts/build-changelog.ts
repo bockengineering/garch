@@ -1,22 +1,10 @@
-import { execFileSync } from "node:child_process";
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import packageJson from "@/package.json";
 import type { ChangelogArtifact } from "@/types";
+import { getBuildEventId, getGeneratedAt, getGitMetadata } from "./build-metadata";
 import { loadData, type LoadedData } from "./data-loader";
 import { validateData } from "./validation";
-
-function maybeGit(args: string[]) {
-  try {
-    return execFileSync("git", args, {
-      cwd: process.cwd(),
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "ignore"]
-    }).trim();
-  } catch {
-    return null;
-  }
-}
 
 export function buildChangelogArtifact(data: LoadedData): ChangelogArtifact {
   const issues = validateData(data);
@@ -24,7 +12,7 @@ export function buildChangelogArtifact(data: LoadedData): ChangelogArtifact {
     throw new Error(`Cannot build changelog with validation issues:\n${issues.map((i) => i.message).join("\n")}`);
   }
 
-  const modifiedFiles = maybeGit(["diff", "--name-only", "HEAD"]);
+  const generatedAt = getGeneratedAt();
   const candidateEvents = data.candidateChanges.map((change) => ({
     id: change.id,
     type: change.change_type,
@@ -37,19 +25,16 @@ export function buildChangelogArtifact(data: LoadedData): ChangelogArtifact {
 
   return {
     metadata: {
-      generated_at: new Date().toISOString(),
+      generated_at: generatedAt,
       version: packageJson.version,
-      git: {
-        commit_sha: maybeGit(["rev-parse", "--short", "HEAD"]),
-        modified_files: modifiedFiles ? modifiedFiles.split("\n").filter(Boolean) : []
-      }
+      git: getGitMetadata()
     },
     events: [
       {
-        id: `build.${Date.now()}`,
+        id: getBuildEventId(generatedAt),
         type: "artifact_build",
         title: "Generated public JSON artifacts from canonical YAML records.",
-        created_at: new Date().toISOString(),
+        created_at: generatedAt,
         affected_entity_ids: [],
         confidence: "high"
       },

@@ -33,7 +33,9 @@ jobs:
         run: npm run validate
 
       - name: Build artifacts
-        run: npm run build:all
+        run: |
+          export GARCH_GENERATED_AT="$(node -e "console.log(require('./dist/manifest.json').generated_at)")"
+          npm run build:all
 
       - name: Fail if dist artifacts are stale
         run: git diff --exit-code dist

@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import packageJson from "@/package.json";
 import type { ManifestArtifact } from "@/types";
+import { getGeneratedAt } from "./build-metadata";
 import { loadData, recordCounts, type LoadedData } from "./data-loader";
 import { validateData } from "./validation";
 
@@ -12,7 +13,7 @@ export function buildManifestArtifact(data: LoadedData): ManifestArtifact {
   }
 
   return {
-    generated_at: new Date().toISOString(),
+    generated_at: getGeneratedAt(),
     package_version: packageJson.version,
     schema_version: "0.1.0",
     record_counts: recordCounts(data),

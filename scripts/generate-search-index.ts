@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import path from "node:path";
 import packageJson from "@/package.json";
 import type { SearchIndexArtifact, SearchIndexEntry } from "@/types";
+import { getGeneratedAt } from "./build-metadata";
 import { loadData, recordCounts, type LoadedData } from "./data-loader";
 import { validateData } from "./validation";
 
@@ -76,7 +77,7 @@ export function buildSearchIndexArtifact(data: LoadedData): SearchIndexArtifact 
 
   return {
     metadata: {
-      generated_at: new Date().toISOString(),
+      generated_at: getGeneratedAt(),
       version: packageJson.version,
       record_counts: recordCounts(data)
     },

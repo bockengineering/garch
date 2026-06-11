@@ -6,6 +6,8 @@ import { loadData } from "./data-loader";
 import { validateData } from "./validation";
 
 async function main() {
+  process.env.GARCH_GENERATED_AT ??= new Date().toISOString();
+
   const data = await loadData();
   const issues = validateData(data);
 

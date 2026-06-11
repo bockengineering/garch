@@ -8,6 +8,7 @@ import type {
   GraphNode,
   SourceRecord
 } from "@/types";
+import { getGeneratedAt } from "./build-metadata";
 import { loadData, recordCounts, type LoadedData } from "./data-loader";
 import { validateData } from "./validation";
 
@@ -239,7 +240,7 @@ export function buildGraphArtifact(data: LoadedData): GraphArtifact {
 
   return {
     metadata: {
-      generated_at: new Date().toISOString(),
+      generated_at: getGeneratedAt(),
       version: packageJson.version,
       record_counts: recordCounts(data)
     },
