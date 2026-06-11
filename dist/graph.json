@@ -1,0 +1,1435 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-11T23:31:48.000Z",
+    "version": "0.1.0",
+    "record_counts": {
+      "orgs": 23,
+      "people": 0,
+      "assignments": 0,
+      "programs": 0,
+      "budget_lines": 0,
+      "funding": 0,
+      "sources": 1
+    }
+  },
+  "nodes": [
+    {
+      "id": "org.air-force",
+      "type": "org",
+      "label": "Department of the Air Force",
+      "abbreviation": "DAF",
+      "service": "air_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.air-force",
+        "type": "service",
+        "name": "Department of the Air Force",
+        "abbreviation": "DAF",
+        "parent_id": "org.dow",
+        "service": "air_force",
+        "functions": [
+          "service_management",
+          "air_and_space_operations"
+        ],
+        "capability_tags": [
+          "air_power"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "service"
+      }
+    },
+    {
+      "id": "org.air-force.saf-aq",
+      "type": "org",
+      "label": "Assistant Secretary of the Air Force for Acquisition, Technology and Logistics",
+      "abbreviation": "SAF/AQ",
+      "service": "air_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.air-force.saf-aq",
+        "type": "acquisition_executive",
+        "name": "Assistant Secretary of the Air Force for Acquisition, Technology and Logistics",
+        "abbreviation": "SAF/AQ",
+        "parent_id": "org.air-force",
+        "service": "air_force",
+        "functions": [
+          "acquisition",
+          "technology",
+          "logistics"
+        ],
+        "capability_tags": [
+          "air_force_acquisition",
+          "program_management"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "acquisition_executive"
+      }
+    },
+    {
+      "id": "org.air-force.afrl",
+      "type": "org",
+      "label": "Air Force Research Laboratory",
+      "abbreviation": "AFRL",
+      "service": "air_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.air-force.afrl",
+        "type": "lab",
+        "name": "Air Force Research Laboratory",
+        "abbreviation": "AFRL",
+        "parent_id": "org.air-force",
+        "service": "air_force",
+        "functions": [
+          "research",
+          "development"
+        ],
+        "capability_tags": [
+          "science_and_technology",
+          "air_power"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "lab"
+      }
+    },
+    {
+      "id": "org.air-force.aflcmc",
+      "type": "org",
+      "label": "Air Force Life Cycle Management Center",
+      "abbreviation": "AFLCMC",
+      "service": "air_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.air-force.aflcmc",
+        "type": "command",
+        "name": "Air Force Life Cycle Management Center",
+        "abbreviation": "AFLCMC",
+        "parent_id": "org.air-force.saf-aq",
+        "service": "air_force",
+        "functions": [
+          "acquisition",
+          "lifecycle_management",
+          "sustainment"
+        ],
+        "capability_tags": [
+          "aircraft",
+          "systems_management"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.army",
+      "type": "org",
+      "label": "Department of the Army",
+      "abbreviation": "Army",
+      "service": "army",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.army",
+        "type": "service",
+        "name": "Department of the Army",
+        "abbreviation": "Army",
+        "parent_id": "org.dow",
+        "service": "army",
+        "functions": [
+          "service_management",
+          "force_modernization"
+        ],
+        "capability_tags": [
+          "land_warfare"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "service"
+      }
+    },
+    {
+      "id": "org.army.asa-alt",
+      "type": "org",
+      "label": "Assistant Secretary of the Army for Acquisition, Logistics and Technology",
+      "abbreviation": "ASA(ALT)",
+      "service": "army",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.army.asa-alt",
+        "type": "acquisition_executive",
+        "name": "Assistant Secretary of the Army for Acquisition, Logistics and Technology",
+        "abbreviation": "ASA(ALT)",
+        "parent_id": "org.army",
+        "service": "army",
+        "functions": [
+          "acquisition",
+          "logistics",
+          "technology"
+        ],
+        "capability_tags": [
+          "army_modernization",
+          "program_management"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "acquisition_executive"
+      }
+    },
+    {
+      "id": "org.navy",
+      "type": "org",
+      "label": "Department of the Navy",
+      "abbreviation": "Navy",
+      "service": "navy",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.navy",
+        "type": "service",
+        "name": "Department of the Navy",
+        "abbreviation": "Navy",
+        "parent_id": "org.dow",
+        "service": "navy",
+        "functions": [
+          "service_management",
+          "naval_operations"
+        ],
+        "capability_tags": [
+          "maritime_warfare"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "service"
+      }
+    },
+    {
+      "id": "org.navy.asn-rda",
+      "type": "org",
+      "label": "Assistant Secretary of the Navy for Research, Development and Acquisition",
+      "abbreviation": "ASN RDA",
+      "service": "navy",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.navy.asn-rda",
+        "type": "acquisition_executive",
+        "name": "Assistant Secretary of the Navy for Research, Development and Acquisition",
+        "abbreviation": "ASN RDA",
+        "parent_id": "org.navy",
+        "service": "navy",
+        "functions": [
+          "acquisition",
+          "research",
+          "development"
+        ],
+        "capability_tags": [
+          "naval_acquisition",
+          "program_management"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "acquisition_executive"
+      }
+    },
+    {
+      "id": "org.navy.navsea",
+      "type": "org",
+      "label": "Naval Sea Systems Command",
+      "abbreviation": "NAVSEA",
+      "service": "navy",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.navy.navsea",
+        "type": "command",
+        "name": "Naval Sea Systems Command",
+        "abbreviation": "NAVSEA",
+        "parent_id": "org.navy.asn-rda",
+        "service": "navy",
+        "functions": [
+          "acquisition",
+          "engineering",
+          "sustainment"
+        ],
+        "capability_tags": [
+          "ships",
+          "undersea"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.navy.navair",
+      "type": "org",
+      "label": "Naval Air Systems Command",
+      "abbreviation": "NAVAIR",
+      "service": "navy",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.navy.navair",
+        "type": "command",
+        "name": "Naval Air Systems Command",
+        "abbreviation": "NAVAIR",
+        "parent_id": "org.navy.asn-rda",
+        "service": "navy",
+        "functions": [
+          "acquisition",
+          "aviation",
+          "sustainment"
+        ],
+        "capability_tags": [
+          "naval_aviation",
+          "weapons"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.navy.navwar",
+      "type": "org",
+      "label": "Naval Information Warfare Systems Command",
+      "abbreviation": "NAVWAR",
+      "service": "navy",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.navy.navwar",
+        "type": "command",
+        "name": "Naval Information Warfare Systems Command",
+        "abbreviation": "NAVWAR",
+        "parent_id": "org.navy.asn-rda",
+        "service": "navy",
+        "functions": [
+          "acquisition",
+          "information_warfare",
+          "c4i"
+        ],
+        "capability_tags": [
+          "command_and_control",
+          "communications",
+          "cyber"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.dow",
+      "type": "org",
+      "label": "Department of War",
+      "abbreviation": "DoW",
+      "service": "dow",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.dow",
+        "type": "department",
+        "name": "Department of War",
+        "abbreviation": "DoW",
+        "service": "dow",
+        "functions": [
+          "defense_policy",
+          "force_structure"
+        ],
+        "capability_tags": [
+          "national_defense"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "department"
+      }
+    },
+    {
+      "id": "org.osd",
+      "type": "org",
+      "label": "Office of the Secretary of Defense",
+      "abbreviation": "OSD",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd",
+        "type": "office",
+        "name": "Office of the Secretary of Defense",
+        "abbreviation": "OSD",
+        "parent_id": "org.dow",
+        "service": "osd",
+        "functions": [
+          "defense_policy",
+          "oversight"
+        ],
+        "capability_tags": [
+          "executive_leadership"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "office"
+      }
+    },
+    {
+      "id": "org.osd.re",
+      "type": "org",
+      "label": "Research and Engineering",
+      "abbreviation": "R&E",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd.re",
+        "type": "directorate",
+        "name": "Research and Engineering",
+        "abbreviation": "R&E",
+        "parent_id": "org.osd",
+        "service": "osd",
+        "functions": [
+          "research",
+          "engineering",
+          "technology_transition"
+        ],
+        "capability_tags": [
+          "science_and_technology",
+          "prototypes"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "directorate"
+      }
+    },
+    {
+      "id": "org.osd.as",
+      "type": "org",
+      "label": "Acquisition and Sustainment",
+      "abbreviation": "A&S",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd.as",
+        "type": "acquisition_executive",
+        "name": "Acquisition and Sustainment",
+        "abbreviation": "A&S",
+        "parent_id": "org.osd",
+        "service": "osd",
+        "functions": [
+          "acquisition",
+          "sustainment"
+        ],
+        "capability_tags": [
+          "industrial_base",
+          "logistics"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "acquisition_executive"
+      }
+    },
+    {
+      "id": "org.osd.diu",
+      "type": "org",
+      "label": "Defense Innovation Unit",
+      "abbreviation": "DIU",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd.diu",
+        "type": "office",
+        "name": "Defense Innovation Unit",
+        "abbreviation": "DIU",
+        "parent_id": "org.osd",
+        "service": "osd",
+        "functions": [
+          "commercial_technology",
+          "rapid_transition"
+        ],
+        "capability_tags": [
+          "commercial_solutions",
+          "prototypes"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "office"
+      }
+    },
+    {
+      "id": "org.osd.darpa",
+      "type": "org",
+      "label": "Defense Advanced Research Projects Agency",
+      "abbreviation": "DARPA",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd.darpa",
+        "type": "external_agency",
+        "name": "Defense Advanced Research Projects Agency",
+        "abbreviation": "DARPA",
+        "parent_id": "org.osd",
+        "service": "osd",
+        "functions": [
+          "research",
+          "advanced_development"
+        ],
+        "capability_tags": [
+          "breakthrough_technology",
+          "prototypes"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "external_agency"
+      }
+    },
+    {
+      "id": "org.osd.osc",
+      "type": "org",
+      "label": "Office of Strategic Capital",
+      "abbreviation": "OSC",
+      "service": "osd",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.osd.osc",
+        "type": "office",
+        "name": "Office of Strategic Capital",
+        "abbreviation": "OSC",
+        "parent_id": "org.osd",
+        "service": "osd",
+        "functions": [
+          "capital_access",
+          "industrial_base"
+        ],
+        "capability_tags": [
+          "strategic_capital",
+          "financing"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "office"
+      }
+    },
+    {
+      "id": "org.socom",
+      "type": "org",
+      "label": "United States Special Operations Command",
+      "abbreviation": "USSOCOM",
+      "service": "socom",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.socom",
+        "type": "command",
+        "name": "United States Special Operations Command",
+        "abbreviation": "USSOCOM",
+        "parent_id": "org.dow",
+        "service": "socom",
+        "functions": [
+          "special_operations",
+          "joint_command"
+        ],
+        "capability_tags": [
+          "special_operations"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.socom.sof-atl",
+      "type": "org",
+      "label": "Special Operations Forces Acquisition, Technology and Logistics",
+      "abbreviation": "SOF AT&L",
+      "service": "socom",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.socom.sof-atl",
+        "type": "acquisition_executive",
+        "name": "Special Operations Forces Acquisition, Technology and Logistics",
+        "abbreviation": "SOF AT&L",
+        "parent_id": "org.socom",
+        "service": "socom",
+        "functions": [
+          "acquisition",
+          "technology",
+          "logistics"
+        ],
+        "capability_tags": [
+          "special_operations",
+          "rapid_acquisition"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "acquisition_executive"
+      }
+    },
+    {
+      "id": "org.space-force",
+      "type": "org",
+      "label": "United States Space Force",
+      "abbreviation": "USSF",
+      "service": "space_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.space-force",
+        "type": "service",
+        "name": "United States Space Force",
+        "abbreviation": "USSF",
+        "parent_id": "org.dow",
+        "service": "space_force",
+        "functions": [
+          "service_management",
+          "space_operations"
+        ],
+        "capability_tags": [
+          "space_systems"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "service"
+      }
+    },
+    {
+      "id": "org.space-force.ssc",
+      "type": "org",
+      "label": "Space Systems Command",
+      "abbreviation": "SSC",
+      "service": "space_force",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.space-force.ssc",
+        "type": "command",
+        "name": "Space Systems Command",
+        "abbreviation": "SSC",
+        "parent_id": "org.space-force",
+        "service": "space_force",
+        "functions": [
+          "acquisition",
+          "space_systems"
+        ],
+        "capability_tags": [
+          "space_acquisition",
+          "satellites"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "command"
+      }
+    },
+    {
+      "id": "org.test-centers",
+      "type": "org",
+      "label": "Test Centers",
+      "abbreviation": "Test Centers",
+      "service": "other",
+      "status": "needs_review",
+      "confidence": "low",
+      "last_verified": "2026-06-11",
+      "source_count": 1,
+      "metadata": {
+        "id": "org.test-centers",
+        "type": "test_center",
+        "name": "Test Centers",
+        "abbreviation": "Test Centers",
+        "parent_id": "org.dow",
+        "service": "other",
+        "functions": [
+          "test_and_evaluation"
+        ],
+        "capability_tags": [
+          "range_testing",
+          "evaluation"
+        ],
+        "location_ids": [],
+        "status": "needs_review",
+        "confidence": "low",
+        "last_verified": "2026-06-11",
+        "sources": [
+          {
+            "source_id": "source.dow-directory-2026-r6",
+            "usage": "seed_reference_only"
+          }
+        ],
+        "org_type": "test_center"
+      }
+    },
+    {
+      "id": "source.dow-directory-2026-r6",
+      "type": "source",
+      "label": "2026 DoW Directory, Revision 6",
+      "abbreviation": null,
+      "service": null,
+      "status": "unknown",
+      "confidence": "unknown",
+      "last_verified": null,
+      "source_count": 0,
+      "metadata": {
+        "id": "source.dow-directory-2026-r6",
+        "type": "directory_seed",
+        "title": "2026 DoW Directory, Revision 6",
+        "publisher": "Steve Blank / America's Frontier Fund / BMNT / Stanford Gordian Knot Center",
+        "url": null,
+        "retrieved_at": null,
+        "content_hash": null,
+        "license_status": "seed_only_no_republication",
+        "notes": "Use as a seed map only. Do not republish directory text. Verify public claims against official or public sources before treating them as verified."
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "parent_child:org.dow->org.air-force",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.air-force",
+      "confidence": "low",
+      "metadata": {
+        "service": "air_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.air-force->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.air-force",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.air-force->org.air-force.saf-aq",
+      "type": "parent_child",
+      "source": "org.air-force",
+      "target": "org.air-force.saf-aq",
+      "confidence": "low",
+      "metadata": {
+        "service": "air_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.air-force.saf-aq->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.air-force.saf-aq",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.air-force->org.air-force.afrl",
+      "type": "parent_child",
+      "source": "org.air-force",
+      "target": "org.air-force.afrl",
+      "confidence": "low",
+      "metadata": {
+        "service": "air_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.air-force.afrl->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.air-force.afrl",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.air-force.saf-aq->org.air-force.aflcmc",
+      "type": "parent_child",
+      "source": "org.air-force.saf-aq",
+      "target": "org.air-force.aflcmc",
+      "confidence": "low",
+      "metadata": {
+        "service": "air_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.air-force.aflcmc->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.air-force.aflcmc",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.army",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.army",
+      "confidence": "low",
+      "metadata": {
+        "service": "army"
+      }
+    },
+    {
+      "id": "sourced_by:org.army->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.army",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.army->org.army.asa-alt",
+      "type": "parent_child",
+      "source": "org.army",
+      "target": "org.army.asa-alt",
+      "confidence": "low",
+      "metadata": {
+        "service": "army"
+      }
+    },
+    {
+      "id": "sourced_by:org.army.asa-alt->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.army.asa-alt",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.navy",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.navy",
+      "confidence": "low",
+      "metadata": {
+        "service": "navy"
+      }
+    },
+    {
+      "id": "sourced_by:org.navy->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.navy",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.navy->org.navy.asn-rda",
+      "type": "parent_child",
+      "source": "org.navy",
+      "target": "org.navy.asn-rda",
+      "confidence": "low",
+      "metadata": {
+        "service": "navy"
+      }
+    },
+    {
+      "id": "sourced_by:org.navy.asn-rda->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.navy.asn-rda",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.navy.asn-rda->org.navy.navsea",
+      "type": "parent_child",
+      "source": "org.navy.asn-rda",
+      "target": "org.navy.navsea",
+      "confidence": "low",
+      "metadata": {
+        "service": "navy"
+      }
+    },
+    {
+      "id": "sourced_by:org.navy.navsea->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.navy.navsea",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.navy.asn-rda->org.navy.navair",
+      "type": "parent_child",
+      "source": "org.navy.asn-rda",
+      "target": "org.navy.navair",
+      "confidence": "low",
+      "metadata": {
+        "service": "navy"
+      }
+    },
+    {
+      "id": "sourced_by:org.navy.navair->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.navy.navair",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.navy.asn-rda->org.navy.navwar",
+      "type": "parent_child",
+      "source": "org.navy.asn-rda",
+      "target": "org.navy.navwar",
+      "confidence": "low",
+      "metadata": {
+        "service": "navy"
+      }
+    },
+    {
+      "id": "sourced_by:org.navy.navwar->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.navy.navwar",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "sourced_by:org.dow->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.dow",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.osd",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.osd",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.osd->org.osd.re",
+      "type": "parent_child",
+      "source": "org.osd",
+      "target": "org.osd.re",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd.re->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd.re",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.osd->org.osd.as",
+      "type": "parent_child",
+      "source": "org.osd",
+      "target": "org.osd.as",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd.as->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd.as",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.osd->org.osd.diu",
+      "type": "parent_child",
+      "source": "org.osd",
+      "target": "org.osd.diu",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd.diu->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd.diu",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.osd->org.osd.darpa",
+      "type": "parent_child",
+      "source": "org.osd",
+      "target": "org.osd.darpa",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd.darpa->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd.darpa",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.osd->org.osd.osc",
+      "type": "parent_child",
+      "source": "org.osd",
+      "target": "org.osd.osc",
+      "confidence": "low",
+      "metadata": {
+        "service": "osd"
+      }
+    },
+    {
+      "id": "sourced_by:org.osd.osc->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.osd.osc",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.socom",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.socom",
+      "confidence": "low",
+      "metadata": {
+        "service": "socom"
+      }
+    },
+    {
+      "id": "sourced_by:org.socom->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.socom",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.socom->org.socom.sof-atl",
+      "type": "parent_child",
+      "source": "org.socom",
+      "target": "org.socom.sof-atl",
+      "confidence": "low",
+      "metadata": {
+        "service": "socom"
+      }
+    },
+    {
+      "id": "sourced_by:org.socom.sof-atl->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.socom.sof-atl",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.space-force",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.space-force",
+      "confidence": "low",
+      "metadata": {
+        "service": "space_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.space-force->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.space-force",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.space-force->org.space-force.ssc",
+      "type": "parent_child",
+      "source": "org.space-force",
+      "target": "org.space-force.ssc",
+      "confidence": "low",
+      "metadata": {
+        "service": "space_force"
+      }
+    },
+    {
+      "id": "sourced_by:org.space-force.ssc->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.space-force.ssc",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    },
+    {
+      "id": "parent_child:org.dow->org.test-centers",
+      "type": "parent_child",
+      "source": "org.dow",
+      "target": "org.test-centers",
+      "confidence": "low",
+      "metadata": {
+        "service": "other"
+      }
+    },
+    {
+      "id": "sourced_by:org.test-centers->source.dow-directory-2026-r6",
+      "type": "sourced_by",
+      "source": "org.test-centers",
+      "target": "source.dow-directory-2026-r6",
+      "confidence": "low",
+      "metadata": {
+        "source_reference": {
+          "source_id": "source.dow-directory-2026-r6",
+          "usage": "seed_reference_only"
+        }
+      }
+    }
+  ]
+}

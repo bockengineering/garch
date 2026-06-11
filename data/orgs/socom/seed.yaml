@@ -1,0 +1,39 @@
+id: org.socom
+type: command
+name: United States Special Operations Command
+abbreviation: USSOCOM
+parent_id: org.dow
+service: socom
+functions:
+  - special_operations
+  - joint_command
+capability_tags:
+  - special_operations
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.socom.sof-atl
+type: acquisition_executive
+name: Special Operations Forces Acquisition, Technology and Logistics
+abbreviation: SOF AT&L
+parent_id: org.socom
+service: socom
+functions:
+  - acquisition
+  - technology
+  - logistics
+capability_tags:
+  - special_operations
+  - rapid_acquisition
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

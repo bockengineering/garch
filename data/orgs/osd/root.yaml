@@ -1,0 +1,137 @@
+id: org.dow
+type: department
+name: Department of War
+abbreviation: DoW
+service: dow
+functions:
+  - defense_policy
+  - force_structure
+capability_tags:
+  - national_defense
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd
+type: office
+name: Office of the Secretary of Defense
+abbreviation: OSD
+parent_id: org.dow
+service: osd
+functions:
+  - defense_policy
+  - oversight
+capability_tags:
+  - executive_leadership
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd.re
+type: directorate
+name: Research and Engineering
+abbreviation: R&E
+parent_id: org.osd
+service: osd
+functions:
+  - research
+  - engineering
+  - technology_transition
+capability_tags:
+  - science_and_technology
+  - prototypes
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd.as
+type: acquisition_executive
+name: Acquisition and Sustainment
+abbreviation: A&S
+parent_id: org.osd
+service: osd
+functions:
+  - acquisition
+  - sustainment
+capability_tags:
+  - industrial_base
+  - logistics
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd.diu
+type: office
+name: Defense Innovation Unit
+abbreviation: DIU
+parent_id: org.osd
+service: osd
+functions:
+  - commercial_technology
+  - rapid_transition
+capability_tags:
+  - commercial_solutions
+  - prototypes
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd.darpa
+type: external_agency
+name: Defense Advanced Research Projects Agency
+abbreviation: DARPA
+parent_id: org.osd
+service: osd
+functions:
+  - research
+  - advanced_development
+capability_tags:
+  - breakthrough_technology
+  - prototypes
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.osd.osc
+type: office
+name: Office of Strategic Capital
+abbreviation: OSC
+parent_id: org.osd
+service: osd
+functions:
+  - capital_access
+  - industrial_base
+capability_tags:
+  - strategic_capital
+  - financing
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

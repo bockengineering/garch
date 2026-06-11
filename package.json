@@ -1,0 +1,35 @@
+{
+  "name": "garch",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Repo-backed public data package and demo site for mapping government offices, programs, people, funding relationships, sources, and change history.",
+  "scripts": {
+    "validate": "tsx scripts/validate-data.ts",
+    "build:graph": "tsx scripts/build-graph.ts",
+    "build:search": "tsx scripts/generate-search-index.ts",
+    "build:changelog": "tsx scripts/build-changelog.ts",
+    "build:manifest": "tsx scripts/build-manifest.ts",
+    "build:all": "tsx scripts/build-all.ts",
+    "dev": "next dev",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "4.3.0",
+    "next": "16.2.9",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "yaml": "2.9.0",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "25.9.3",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "4.3.0",
+    "tsx": "4.22.4",
+    "typescript": "6.0.3"
+  }
+}

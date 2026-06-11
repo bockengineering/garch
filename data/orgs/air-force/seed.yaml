@@ -1,0 +1,80 @@
+id: org.air-force
+type: service
+name: Department of the Air Force
+abbreviation: DAF
+parent_id: org.dow
+service: air_force
+functions:
+  - service_management
+  - air_and_space_operations
+capability_tags:
+  - air_power
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.air-force.saf-aq
+type: acquisition_executive
+name: Assistant Secretary of the Air Force for Acquisition, Technology and Logistics
+abbreviation: SAF/AQ
+parent_id: org.air-force
+service: air_force
+functions:
+  - acquisition
+  - technology
+  - logistics
+capability_tags:
+  - air_force_acquisition
+  - program_management
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.air-force.afrl
+type: lab
+name: Air Force Research Laboratory
+abbreviation: AFRL
+parent_id: org.air-force
+service: air_force
+functions:
+  - research
+  - development
+capability_tags:
+  - science_and_technology
+  - air_power
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.air-force.aflcmc
+type: command
+name: Air Force Life Cycle Management Center
+abbreviation: AFLCMC
+parent_id: org.air-force.saf-aq
+service: air_force
+functions:
+  - acquisition
+  - lifecycle_management
+  - sustainment
+capability_tags:
+  - aircraft
+  - systems_management
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

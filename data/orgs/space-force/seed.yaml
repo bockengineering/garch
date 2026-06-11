@@ -1,0 +1,38 @@
+id: org.space-force
+type: service
+name: United States Space Force
+abbreviation: USSF
+parent_id: org.dow
+service: space_force
+functions:
+  - service_management
+  - space_operations
+capability_tags:
+  - space_systems
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.space-force.ssc
+type: command
+name: Space Systems Command
+abbreviation: SSC
+parent_id: org.space-force
+service: space_force
+functions:
+  - acquisition
+  - space_systems
+capability_tags:
+  - space_acquisition
+  - satellites
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

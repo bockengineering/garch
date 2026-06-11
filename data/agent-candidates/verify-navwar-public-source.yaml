@@ -1,0 +1,15 @@
+id: candidate.verify-navwar-public-source
+change_type: update_org
+affected_entity_ids:
+  - org.navy.navwar
+proposed_action: Verify NAVWAR office metadata against official public sources and update confidence only after human review.
+proposed_record_patch:
+  confidence: medium
+  status: active
+source_ids:
+  - source.dow-directory-2026-r6
+evidence_quotes: []
+confidence: low
+agent_name: seed-structure
+created_at: 2026-06-11T00:00:00Z
+review_status: pending

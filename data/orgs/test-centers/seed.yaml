@@ -1,0 +1,18 @@
+id: org.test-centers
+type: test_center
+name: Test Centers
+abbreviation: Test Centers
+parent_id: org.dow
+service: other
+functions:
+  - test_and_evaluation
+capability_tags:
+  - range_testing
+  - evaluation
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

@@ -1,0 +1,39 @@
+id: org.army
+type: service
+name: Department of the Army
+abbreviation: Army
+parent_id: org.dow
+service: army
+functions:
+  - service_management
+  - force_modernization
+capability_tags:
+  - land_warfare
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.army.asa-alt
+type: acquisition_executive
+name: Assistant Secretary of the Army for Acquisition, Logistics and Technology
+abbreviation: ASA(ALT)
+parent_id: org.army
+service: army
+functions:
+  - acquisition
+  - logistics
+  - technology
+capability_tags:
+  - army_modernization
+  - program_management
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only

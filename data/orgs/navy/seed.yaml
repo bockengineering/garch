@@ -1,0 +1,103 @@
+id: org.navy
+type: service
+name: Department of the Navy
+abbreviation: Navy
+parent_id: org.dow
+service: navy
+functions:
+  - service_management
+  - naval_operations
+capability_tags:
+  - maritime_warfare
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.navy.asn-rda
+type: acquisition_executive
+name: Assistant Secretary of the Navy for Research, Development and Acquisition
+abbreviation: ASN RDA
+parent_id: org.navy
+service: navy
+functions:
+  - acquisition
+  - research
+  - development
+capability_tags:
+  - naval_acquisition
+  - program_management
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.navy.navsea
+type: command
+name: Naval Sea Systems Command
+abbreviation: NAVSEA
+parent_id: org.navy.asn-rda
+service: navy
+functions:
+  - acquisition
+  - engineering
+  - sustainment
+capability_tags:
+  - ships
+  - undersea
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.navy.navair
+type: command
+name: Naval Air Systems Command
+abbreviation: NAVAIR
+parent_id: org.navy.asn-rda
+service: navy
+functions:
+  - acquisition
+  - aviation
+  - sustainment
+capability_tags:
+  - naval_aviation
+  - weapons
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
+---
+id: org.navy.navwar
+type: command
+name: Naval Information Warfare Systems Command
+abbreviation: NAVWAR
+parent_id: org.navy.asn-rda
+service: navy
+functions:
+  - acquisition
+  - information_warfare
+  - c4i
+capability_tags:
+  - command_and_control
+  - communications
+  - cyber
+location_ids: []
+status: needs_review
+confidence: low
+last_verified: 2026-06-11
+sources:
+  - source_id: source.dow-directory-2026-r6
+    usage: seed_reference_only
