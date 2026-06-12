@@ -15,6 +15,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 111
     usage: seed_reference_only
 ---
 id: org.army.asa-alt
@@ -36,4 +37,5 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 123
     usage: seed_reference_only

@@ -35,8 +35,39 @@ export function buildOfficeTree(graph: GraphArtifact): OfficeTreeNode[] {
     }
   });
 
+  const sourcePage = (node: OfficeTreeNode) => {
+    const sources = node.metadata.sources;
+
+    if (!Array.isArray(sources)) {
+      return Number.POSITIVE_INFINITY;
+    }
+
+    const pages = sources
+      .map((source) => {
+        if (typeof source !== "object" || source === null || !("page" in source)) {
+          return null;
+        }
+
+        const page = (source as { page?: unknown }).page;
+
+        if (typeof page === "number") {
+          return page;
+        }
+
+        if (typeof page === "string") {
+          const parsed = Number.parseInt(page, 10);
+          return Number.isFinite(parsed) ? parsed : null;
+        }
+
+        return null;
+      })
+      .filter((page): page is number => page !== null);
+
+    return pages.length > 0 ? Math.min(...pages) : Number.POSITIVE_INFINITY;
+  };
+
   const sortTree = (nodes: OfficeTreeNode[]) => {
-    nodes.sort((a, b) => a.label.localeCompare(b.label));
+    nodes.sort((a, b) => sourcePage(a) - sourcePage(b) || a.label.localeCompare(b.label));
     nodes.forEach((node) => sortTree(node.children));
   };
 

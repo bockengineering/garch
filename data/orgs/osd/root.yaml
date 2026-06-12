@@ -14,6 +14,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 66
     usage: seed_reference_only
 ---
 id: org.osd

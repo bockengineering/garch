@@ -15,6 +15,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 297
     usage: seed_reference_only
 ---
 id: org.space-force.ssc
@@ -35,4 +36,5 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 305
     usage: seed_reference_only

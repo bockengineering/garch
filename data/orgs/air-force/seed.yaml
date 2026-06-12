@@ -15,6 +15,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 265
     usage: seed_reference_only
 ---
 id: org.air-force.saf-aq
@@ -36,6 +37,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 273
     usage: seed_reference_only
 ---
 id: org.air-force.afrl
@@ -56,6 +58,7 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 293
     usage: seed_reference_only
 ---
 id: org.air-force.aflcmc
@@ -77,4 +80,5 @@ confidence: low
 last_verified: 2026-06-11
 sources:
   - source_id: source.dow-directory-2026-r6
+    page: 276
     usage: seed_reference_only
