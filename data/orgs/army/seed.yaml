@@ -17,6 +17,15 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 111
     usage: seed_reference_only
+  - source_id: source.public-url.army-mil.f7140ede7f
+    page: 111
+    usage: directory_listed_public_link
+  - source_id: source.public-url.asafm-army-mil.a1ac20acd0
+    page: 111
+    usage: directory_listed_public_link
+  - source_id: source.public-url.defense-gov.850ab507d0
+    page: 111
+    usage: directory_listed_public_link
 ---
 id: org.army.asa-alt
 type: acquisition_executive

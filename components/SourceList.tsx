@@ -27,6 +27,7 @@ export default function SourceList({
           title?: string;
           type?: string;
           publisher?: string | null;
+          url?: string | null;
           license_status?: string;
           notes?: string | null;
         };
@@ -44,6 +45,16 @@ export default function SourceList({
               {ref.page ? <span> | page {ref.page}</span> : null}
               {ref.usage ? <span> | {ref.usage}</span> : null}
             </div>
+            {metadata.url ? (
+              <a
+                href={metadata.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1 block break-all text-xs text-stone-900 underline underline-offset-2"
+              >
+                {metadata.url}
+              </a>
+            ) : null}
             {metadata.notes ? <p className="mt-1 text-xs leading-5 text-stone-600">{metadata.notes}</p> : null}
           </li>
         );

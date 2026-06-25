@@ -1,13 +1,14 @@
 import GovMapShell from "@/components/GovMapShell";
-import { loadGovMapArtifacts } from "@/lib/load-dist-data";
+import { loadGovMapChangelog, loadGovMapManifest } from "@/lib/load-dist-data";
 
 export default async function HomePage() {
-  const { graph, searchIndex, changelog, manifest } = await loadGovMapArtifacts();
+  const [changelog, manifest] = await Promise.all([
+    loadGovMapChangelog(),
+    loadGovMapManifest()
+  ]);
 
   return (
     <GovMapShell
-      graph={graph}
-      searchIndex={searchIndex}
       changelog={changelog}
       manifest={manifest}
     />

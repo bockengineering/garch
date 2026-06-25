@@ -17,6 +17,21 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 194
     usage: seed_reference_only
+  - source_id: source.public-url.defense-gov.769f2e6593
+    page: 194
+    usage: directory_listed_public_link
+  - source_id: source.public-url.defense-gov.acf84db1ca
+    page: 194
+    usage: directory_listed_public_link
+  - source_id: source.public-url.jag-navy-mil.1de1e139e5
+    page: 194
+    usage: directory_listed_public_link
+  - source_id: source.public-url.jag-navy-mil.3c8704cd6a
+    page: 194
+    usage: directory_listed_public_link
+  - source_id: source.public-url.jag-navy-mil.c2e468a79e
+    page: 194
+    usage: directory_listed_public_link
 ---
 id: org.navy.asn-rda
 type: acquisition_executive
@@ -39,6 +54,9 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 210
     usage: seed_reference_only
+  - source_id: source.public-url.secnav-navy-mil.f499662ddc
+    page: 210
+    usage: directory_listed_public_link
 ---
 id: org.navy.navsea
 type: command
@@ -61,6 +79,15 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 227
     usage: seed_reference_only
+  - source_id: source.public-url.navsea-navy-mil.06f3f56a16
+    page: 227
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navsea-navy-mil.4cf5cf1524
+    page: 227
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navsea-navy-mil.a6280b7a29
+    page: 227
+    usage: directory_listed_public_link
 ---
 id: org.navy.navair
 type: command
@@ -83,6 +110,21 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 236
     usage: seed_reference_only
+  - source_id: source.public-url.navair-navy-mil.040f193b85
+    page: 236
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navair-navy-mil.12cd7c8955
+    page: 236
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navair-navy-mil.21c2bcb91b
+    page: 236
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navair-navy-mil.b4d0b128b3
+    page: 236
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navair-navy-mil.f4455cebf3
+    page: 236
+    usage: directory_listed_public_link
 ---
 id: org.navy.navwar
 type: command
@@ -106,3 +148,9 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 243
     usage: seed_reference_only
+  - source_id: source.public-url.navwar-navy-mil.218ed53988
+    page: 243
+    usage: directory_listed_public_link
+  - source_id: source.public-url.navwar-navy-mil.b8921b6c08
+    page: 243
+    usage: directory_listed_public_link

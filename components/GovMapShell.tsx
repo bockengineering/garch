@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ChangeFeed from "@/components/ChangeFeed";
 import GovMapOfficeDetail from "@/components/GovMapOfficeDetail";
 import GovMapSearch from "@/components/GovMapSearch";
@@ -35,24 +35,60 @@ function filterTree(nodes: OfficeTreeNode[], filters: { query: string; service: 
 }
 
 export default function GovMapShell({
-  graph,
-  searchIndex,
   changelog,
   manifest
 }: {
-  graph: GraphArtifact;
-  searchIndex: SearchIndexArtifact;
   changelog: ChangelogArtifact;
   manifest: ManifestArtifact;
 }) {
+  const [graph, setGraph] = useState<GraphArtifact | null>(null);
+  const [searchIndex, setSearchIndex] = useState<SearchIndexArtifact | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState("org.dow");
   const [query, setQuery] = useState("");
   const [service, setService] = useState("all");
   const [confidence, setConfidence] = useState("all");
 
-  const orgNodes = useMemo(() => getOrgNodes(graph), [graph]);
-  const sourceMap = useMemo(() => getSourceMap(graph), [graph]);
-  const tree = useMemo(() => buildOfficeTree(graph), [graph]);
+  useEffect(() => {
+    let active = true;
+
+    async function loadArtifacts() {
+      try {
+        const [graphResponse, searchResponse] = await Promise.all([
+          fetch("/dist/graph.json", { cache: "no-store" }),
+          fetch("/dist/search-index.json", { cache: "no-store" })
+        ]);
+
+        if (!graphResponse.ok || !searchResponse.ok) {
+          throw new Error("Failed to load generated JSON artifacts");
+        }
+
+        const [loadedGraph, loadedSearchIndex] = await Promise.all([
+          graphResponse.json() as Promise<GraphArtifact>,
+          searchResponse.json() as Promise<SearchIndexArtifact>
+        ]);
+
+        if (active) {
+          setGraph(loadedGraph);
+          setSearchIndex(loadedSearchIndex);
+        }
+      } catch (error) {
+        if (active) {
+          setLoadError(error instanceof Error ? error.message : "Failed to load generated JSON artifacts");
+        }
+      }
+    }
+
+    loadArtifacts();
+
+    return () => {
+      active = false;
+    };
+  }, []);
+
+  const orgNodes = useMemo(() => (graph ? getOrgNodes(graph) : []), [graph]);
+  const sourceMap = useMemo(() => (graph ? getSourceMap(graph) : new Map<string, GraphNode>()), [graph]);
+  const tree = useMemo(() => (graph ? buildOfficeTree(graph) : []), [graph]);
   const visibleTree = useMemo(
     () => filterTree(tree, { query, service, confidence }),
     [tree, query, service, confidence]
@@ -61,7 +97,10 @@ export default function GovMapShell({
     () => [...new Set(orgNodes.map((node) => node.service).filter((value): value is string => Boolean(value)))].sort(),
     [orgNodes]
   );
-  const searchResults = useMemo(() => runSearch(searchIndex, query), [searchIndex, query]);
+  const searchResults = useMemo(
+    () => (searchIndex ? runSearch(searchIndex, query) : []),
+    [searchIndex, query]
+  );
   const selectedOffice =
     orgNodes.find((node) => node.id === selectedId) ??
     orgNodes.find((node) => node.id === "org.dow") ??
@@ -103,45 +142,60 @@ export default function GovMapShell({
         </div>
       </header>
 
-      <GovMapSearch
-        query={query}
-        service={service}
-        confidence={confidence}
-        services={services}
-        results={searchResults}
-        onQueryChange={setQuery}
-        onServiceChange={setService}
-        onConfidenceChange={setConfidence}
-        onSelectResult={(entry) => {
-          if (entry.type === "org") {
-            setSelectedId(entry.id);
-          }
-        }}
-      />
+      {graph && searchIndex ? (
+        <GovMapSearch
+          query={query}
+          service={service}
+          confidence={confidence}
+          services={services}
+          results={searchResults}
+          onQueryChange={setQuery}
+          onServiceChange={setService}
+          onConfidenceChange={setConfidence}
+          onSelectResult={(entry) => {
+            if (entry.type === "org") {
+              setSelectedId(entry.id);
+            }
+          }}
+        />
+      ) : null}
 
       <div className="grid min-h-[calc(100vh-150px)] grid-cols-1 border-t border-stone-200 lg:grid-cols-[330px_minmax(0,1fr)_330px]">
-        <aside className="border-b border-stone-300 bg-white lg:border-b-0 lg:border-r">
-          <div className="border-b border-stone-200 px-4 py-3">
-            <h2 className="text-sm font-semibold text-stone-950">Office hierarchy</h2>
-            <p className="mt-1 text-xs text-stone-500">{visibleTree.length} root node shown</p>
-          </div>
-          <div className="max-h-[70vh] overflow-auto">
-            <GovMapTree tree={visibleTree} selectedId={selectedOffice.id} onSelect={selectOffice} />
-          </div>
-        </aside>
+        {!graph || !searchIndex ? (
+          <section className="border-b border-stone-300 bg-white px-4 py-6 lg:col-span-2 lg:border-b-0 lg:border-r">
+            <h2 className="text-sm font-semibold text-stone-950">
+              {loadError ? "Artifact load failed" : "Loading generated JSON artifacts"}
+            </h2>
+            <p className="mt-2 text-sm text-stone-600">
+              {loadError ?? "Reading dist/graph.json and dist/search-index.json from the generated artifact route."}
+            </p>
+          </section>
+        ) : (
+          <>
+            <aside className="border-b border-stone-300 bg-white lg:border-b-0 lg:border-r">
+              <div className="border-b border-stone-200 px-4 py-3">
+                <h2 className="text-sm font-semibold text-stone-950">Office hierarchy</h2>
+                <p className="mt-1 text-xs text-stone-500">{visibleTree.length} root node shown</p>
+              </div>
+              <div className="max-h-[70vh] overflow-auto">
+                <GovMapTree tree={visibleTree} selectedId={selectedOffice.id} onSelect={selectOffice} />
+              </div>
+            </aside>
 
-        <section className="min-w-0 bg-stone-50">
-          {selectedOffice ? (
-            <GovMapOfficeDetail
-              graph={graph}
-              office={selectedOffice as GraphNode}
-              sourceMap={sourceMap}
-              onSelectOffice={selectOffice}
-            />
-          ) : (
-            <div className="p-4 text-sm text-stone-600">No office selected.</div>
-          )}
-        </section>
+            <section className="min-w-0 bg-stone-50">
+              {selectedOffice ? (
+                <GovMapOfficeDetail
+                  graph={graph}
+                  office={selectedOffice as GraphNode}
+                  sourceMap={sourceMap}
+                  onSelectOffice={selectOffice}
+                />
+              ) : (
+                <div className="p-4 text-sm text-stone-600">No office selected.</div>
+              )}
+            </section>
+          </>
+        )}
 
         <aside className="border-t border-stone-300 bg-stone-100 lg:border-l lg:border-t-0">
           <div className="border-b border-stone-300 px-4 py-3">

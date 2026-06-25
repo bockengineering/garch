@@ -19,6 +19,7 @@ export default async function SourcesPage() {
                 <th className="border-b border-stone-300 px-3 py-2">Title</th>
                 <th className="border-b border-stone-300 px-3 py-2">Type</th>
                 <th className="border-b border-stone-300 px-3 py-2">Publisher</th>
+                <th className="border-b border-stone-300 px-3 py-2">URL</th>
                 <th className="border-b border-stone-300 px-3 py-2">License status</th>
                 <th className="border-b border-stone-300 px-3 py-2">Retrieved at</th>
                 <th className="border-b border-stone-300 px-3 py-2">Notes</th>
@@ -30,6 +31,7 @@ export default async function SourcesPage() {
                   title?: string;
                   type?: string;
                   publisher?: string | null;
+                  url?: string | null;
                   license_status?: string;
                   retrieved_at?: string | null;
                   notes?: string | null;
@@ -39,6 +41,20 @@ export default async function SourcesPage() {
                     <td className="px-3 py-2 font-medium">{metadata.title ?? source.label}</td>
                     <td className="px-3 py-2">{metadata.type}</td>
                     <td className="px-3 py-2">{metadata.publisher ?? "Unknown"}</td>
+                    <td className="max-w-xs px-3 py-2">
+                      {metadata.url ? (
+                        <a
+                          href={metadata.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="break-all underline underline-offset-2"
+                        >
+                          {metadata.url}
+                        </a>
+                      ) : (
+                        "None"
+                      )}
+                    </td>
                     <td className="px-3 py-2">{metadata.license_status}</td>
                     <td className="px-3 py-2">{metadata.retrieved_at ?? "Not retrieved"}</td>
                     <td className="max-w-xl px-3 py-2 text-stone-600">{metadata.notes}</td>

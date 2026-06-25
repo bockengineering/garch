@@ -36,6 +36,9 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 66
     usage: seed_reference_only
+  - source_id: source.public-url.comptroller-war-gov.e9acc2dbe8
+    page: 66
+    usage: directory_listed_public_link
 ---
 id: org.osd.re
 type: directorate
@@ -100,6 +103,9 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 100
     usage: seed_reference_only
+  - source_id: source.public-url.diu-mil.74fd9b818c
+    page: 100
+    usage: directory_listed_public_link
 ---
 id: org.osd.darpa
 type: external_agency
@@ -121,6 +127,21 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 93
     usage: seed_reference_only
+  - source_id: source.public-url.comptroller-war-gov.e1bc20165c
+    page: 93
+    usage: directory_listed_public_link
+  - source_id: source.public-url.darpa-mil.0070aec07d
+    page: 93
+    usage: directory_listed_public_link
+  - source_id: source.public-url.darpa-mil.978b49f505
+    page: 93
+    usage: directory_listed_public_link
+  - source_id: source.public-url.darpa-mil.a37074b3e1
+    page: 93
+    usage: directory_listed_public_link
+  - source_id: source.public-url.darpa-mil.e0e4facaf9
+    page: 93
+    usage: directory_listed_public_link
 ---
 id: org.osd.osc
 type: office
@@ -142,3 +163,6 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 97
     usage: seed_reference_only
+  - source_id: source.public-url.cto-mil.82700741a5
+    page: 97
+    usage: directory_listed_public_link

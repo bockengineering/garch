@@ -39,6 +39,15 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 273
     usage: seed_reference_only
+  - source_id: source.public-url.ww3-safaq-hq-af-mil.bcf2d02efa
+    page: 273
+    usage: directory_listed_public_link
+  - source_id: source.public-url.ww3-safaq-hq-af-mil.c14c26a5c6
+    page: 273
+    usage: directory_listed_public_link
+  - source_id: source.public-url.ww3-safaq-hq-af-mil.e5db360dbf
+    page: 273
+    usage: directory_listed_public_link
 ---
 id: org.air-force.afrl
 type: lab
@@ -60,6 +69,18 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 293
     usage: seed_reference_only
+  - source_id: source.public-url.afrl-af-mil.74db64836b
+    page: 293
+    usage: directory_listed_public_link
+  - source_id: source.public-url.afrl-af-mil.80c8b3f95b
+    page: 293
+    usage: directory_listed_public_link
+  - source_id: source.public-url.afrl-af-mil.aa35dd6d33
+    page: 293
+    usage: directory_listed_public_link
+  - source_id: source.public-url.afrl-af-mil.bc14eb9df9
+    page: 293
+    usage: directory_listed_public_link
 ---
 id: org.air-force.aflcmc
 type: command
@@ -82,3 +103,18 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 276
     usage: seed_reference_only
+  - source_id: source.public-url.aflcmc-af-mil.111417c5d5
+    page: 276
+    usage: directory_listed_public_link
+  - source_id: source.public-url.aflcmc-af-mil.36335d486b
+    page: 276
+    usage: directory_listed_public_link
+  - source_id: source.public-url.aflcmc-af-mil.66a9941ab8
+    page: 276
+    usage: directory_listed_public_link
+  - source_id: source.public-url.aflcmc-af-mil.782ce55f63
+    page: 276
+    usage: directory_listed_public_link
+  - source_id: source.public-url.aflcmc-af-mil.b0a60f4982
+    page: 276
+    usage: directory_listed_public_link

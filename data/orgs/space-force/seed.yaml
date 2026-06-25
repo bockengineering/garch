@@ -38,3 +38,12 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 305
     usage: seed_reference_only
+  - source_id: source.public-url.ssc-spaceforce-mil.7ce01f38d1
+    page: 305
+    usage: directory_listed_public_link
+  - source_id: source.public-url.ssc-spaceforce-mil.88905a39dd
+    page: 305
+    usage: directory_listed_public_link
+  - source_id: source.public-url.ssc-spaceforce-mil.acb3fe2235
+    page: 305
+    usage: directory_listed_public_link

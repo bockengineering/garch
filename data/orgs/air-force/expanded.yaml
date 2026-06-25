@@ -1,391 +1,762 @@
-defaults: &defaults
-  location_ids: []
-  status: needs_review
-  confidence: low
-  last_verified: 2026-06-11
-
 records:
-  - <<: *defaults
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.headquarters-staff
     type: office
     name: Air Force Headquarters Staff
     abbreviation: HAF
     parent_id: org.air-force
     service: air_force
-    functions: [headquarters, service_management]
-    capability_tags: [air_force_staff]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 266, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - headquarters
+      - service_management
+    capability_tags:
+      - air_force_staff
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 266
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.academy
     type: office
     name: Air Force Academy
     abbreviation: USAFA
     parent_id: org.air-force
     service: air_force
-    functions: [education, training]
-    capability_tags: [education]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 268, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - education
+      - training
+    capability_tags:
+      - education
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 268
+        usage: seed_reference_only
+      - source_id: source.public-url.usafa-af-mil.766885df52
+        page: 268
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aetc
     type: command
     name: Air Education and Training Command
     abbreviation: AETC
     parent_id: org.air-force
     service: air_force
-    functions: [training, education]
-    capability_tags: [training]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 269, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - training
+      - education
+    capability_tags:
+      - training
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 269
+        usage: seed_reference_only
+      - source_id: source.public-url.aetc-af-mil.2a9f6e980e
+        page: 269
+        usage: directory_listed_public_link
+      - source_id: source.public-url.aetc-af-mil.4c9a9313ed
+        page: 269
+        usage: directory_listed_public_link
+      - source_id: source.public-url.aetc-af-mil.5f8c88f1af
+        page: 269
+        usage: directory_listed_public_link
+      - source_id: source.public-url.aetc-af-mil.7ba4fd6f93
+        page: 269
+        usage: directory_listed_public_link
+      - source_id: source.public-url.aetc-af-mil.efc9dc7bb0
+        page: 269
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.saf-cn
     type: office
     name: Air Force Chief Information Office
     abbreviation: SAF/CN
     parent_id: org.air-force
     service: air_force
-    functions: [information_technology, cybersecurity, data]
-    capability_tags: [it, cyber]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 271, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - information_technology
+      - cybersecurity
+      - data
+    capability_tags:
+      - it
+      - cyber
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 271
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.saf-sb
     type: office
     name: Air Force Small Business
     abbreviation: SAF/SB
     parent_id: org.air-force
     service: air_force
-    functions: [small_business]
-    capability_tags: [small_business]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 272, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - small_business
+    capability_tags:
+      - small_business
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 272
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.saf-sq
     type: acquisition_executive
     name: Assistant Secretary of the Air Force for Space Acquisition and Integration
     abbreviation: SAF/SQ
     parent_id: org.air-force
     service: air_force
-    functions: [space_acquisition, integration]
-    capability_tags: [space_acquisition]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 272, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - space_acquisition
+      - integration
+    capability_tags:
+      - space_acquisition
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 272
+        usage: seed_reference_only
+      - source_id: source.public-url.safsq-hq-af-mil.5641bd0020
+        page: 272
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.sda
     type: external_agency
     name: Space Development Agency
     abbreviation: SDA
     parent_id: org.air-force.saf-sq
     service: space_force
-    functions: [space_acquisition]
-    capability_tags: [space, satellites]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 272, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - space_acquisition
+    capability_tags:
+      - space
+      - satellites
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 272
+        usage: seed_reference_only
+      - source_id: source.public-url.sda-mil.0ef5fb774d
+        page: 272
+        usage: directory_listed_public_link
+      - source_id: source.public-url.sda-mil.ad8f0a21ab
+        page: 272
+        usage: directory_listed_public_link
+      - source_id: source.public-url.sda-mil.f1d644df31
+        page: 272
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.pae
     type: acquisition_executive
     name: Air Force Program Acquisition Executives
     abbreviation: Air Force PAEs
     parent_id: org.air-force.saf-aq
     service: air_force
-    functions: [acquisition, portfolio_management]
-    capability_tags: [air_force_acquisition]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 274, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - acquisition
+      - portfolio_management
+    capability_tags:
+      - air_force_acquisition
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 274
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrco
     type: program_executive_office
     name: Air Force Rapid Capabilities Office
     abbreviation: AFRCO
     parent_id: org.air-force.pae
     service: air_force
-    functions: [rapid_acquisition]
-    capability_tags: [rapid_fielding]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 275, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - rapid_acquisition
+    capability_tags:
+      - rapid_fielding
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 275
+        usage: seed_reference_only
+      - source_id: source.public-url.af-mil.f097f2e32e
+        page: 275
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afmc
     type: command
     name: Air Force Materiel Command
     abbreviation: AFMC
     parent_id: org.air-force
     service: air_force
-    functions: [materiel, acquisition, sustainment]
-    capability_tags: [sustainment, acquisition]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 275, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - materiel
+      - acquisition
+      - sustainment
+    capability_tags:
+      - sustainment
+      - acquisition
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 275
+        usage: seed_reference_only
+      - source_id: source.public-url.afmc-af-mil.38a3b41f0c
+        page: 275
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.peo-combat-mission-support
     type: program_executive_office
     name: PEO Combat and Mission Support
     abbreviation: PEO CM
     parent_id: org.air-force.pae
     service: air_force
-    functions: [program_management, mission_support]
-    capability_tags: [mission_support]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 275, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - mission_support
+    capability_tags:
+      - mission_support
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 275
+        usage: seed_reference_only
+      - source_id: source.public-url.ww3-safaq-hq-af-mil.9c93c5e7ed
+        page: 275
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.c3bm
     type: program_executive_office
     name: PEO Command, Control, Communications and Battle Management
     abbreviation: PEO C3BM
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, command_and_control, battle_management]
-    capability_tags: [c3bm, command_and_control]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 279, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - command_and_control
+      - battle_management
+    capability_tags:
+      - c3bm
+      - command_and_control
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 279
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.armament
     type: program_executive_office
     name: PEO Armament Directorate
     abbreviation: AFLCMC/EB
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, armaments]
-    capability_tags: [weapons, munitions]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 281, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - armaments
+    capability_tags:
+      - weapons
+      - munitions
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 281
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.bes
     type: program_executive_office
     name: PEO Business and Enterprise Systems Directorate
     abbreviation: BES
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, enterprise_systems]
-    capability_tags: [enterprise_it]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 282, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - enterprise_systems
+    capability_tags:
+      - enterprise_it
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 282
+        usage: seed_reference_only
+      - source_id: source.public-url.aflcmc-af-mil.91cf0d4fd0
+        page: 282
+        usage: directory_listed_public_link
+      - source_id: source.public-url.airforcebes-af-mil.13c6ea52c8
+        page: 282
+        usage: directory_listed_public_link
+      - source_id: source.public-url.airforcebes-af-mil.c0c79a247b
+        page: 282
+        usage: directory_listed_public_link
+      - source_id: source.public-url.airforcebes-af-mil.cd836739ba
+        page: 282
+        usage: directory_listed_public_link
+      - source_id: source.public-url.airforcebes-af-mil.ea95f0198e
+        page: 282
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.electronic-systems
     type: program_executive_office
     name: PEO Electronic Systems Directorate
     abbreviation: AFLCMC/HB
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, electronic_systems]
-    capability_tags: [electronic_warfare, avionics]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 283, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - electronic_systems
+    capability_tags:
+      - electronic_warfare
+      - avionics
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 283
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.cyber-networks
     type: program_executive_office
     name: PEO Cyber and Networks Directorate
     abbreviation: AFLCMC/HN
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, cyber, networks]
-    capability_tags: [cyber, networks]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 283, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - cyber
+      - networks
+    capability_tags:
+      - cyber
+      - networks
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 283
+        usage: seed_reference_only
+      - source_id: source.public-url.aflcmc-af-mil.215701bb8c
+        page: 283
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.propulsion
     type: program_executive_office
     name: PEO Propulsion Directorate
     abbreviation: AFLCMC/PB
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, propulsion]
-    capability_tags: [propulsion]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 284, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - propulsion
+    capability_tags:
+      - propulsion
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 284
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.fighters
     type: program_executive_office
     name: PEO Fighters and Advanced Aircraft Directorate
     abbreviation: AFLCMC/WA
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, fighter_aircraft]
-    capability_tags: [fighter_aircraft]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 285, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - fighter_aircraft
+    capability_tags:
+      - fighter_aircraft
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 285
+        usage: seed_reference_only
+      - source_id: source.public-url.aflcmc-af-mil.df90fc7559
+        page: 285
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.bombers
     type: program_executive_office
     name: PEO Bombers Directorate
     abbreviation: AFLCMC/WB
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, bombers]
-    capability_tags: [bombers]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 285, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - bombers
+    capability_tags:
+      - bombers
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 285
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.isr-sof
     type: program_executive_office
     name: PEO Intelligence, Surveillance, Reconnaissance and SOF Directorate
     abbreviation: AFLCMC/WI
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, isr, special_operations]
-    capability_tags: [isr, sof]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 286, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - isr
+      - special_operations
+    capability_tags:
+      - isr
+      - sof
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 286
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.mobility
     type: program_executive_office
     name: PEO Mobility Directorate
     abbreviation: AFLCMC/WL
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, mobility_aircraft]
-    capability_tags: [airlift, tankers]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 287, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - mobility_aircraft
+    capability_tags:
+      - airlift
+      - tankers
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 287
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.training
     type: program_executive_office
     name: PEO Training Directorate
     abbreviation: AFLCMC/WN
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, training_systems]
-    capability_tags: [training]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 288, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - training_systems
+    capability_tags:
+      - training
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 288
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.aflcmc.jsf
     type: program_executive_office
     name: PEO Joint Strike Fighter Directorate
     abbreviation: JSF
     parent_id: org.air-force.aflcmc
     service: air_force
-    functions: [program_management, joint_strike_fighter]
-    capability_tags: [fighter_aircraft]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 288, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - joint_strike_fighter
+    capability_tags:
+      - fighter_aircraft
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 288
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afsc
     type: command
     name: Air Force Sustainment Center
     abbreviation: AFSC
     parent_id: org.air-force.afmc
     service: air_force
-    functions: [sustainment, logistics]
-    capability_tags: [sustainment]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 289, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - sustainment
+      - logistics
+    capability_tags:
+      - sustainment
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 289
+        usage: seed_reference_only
+      - source_id: source.public-url.tinker-af-mil.8789693734
+        page: 289
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.acc
     type: command
     name: Air Combat Command
     abbreviation: ACC
     parent_id: org.air-force
     service: air_force
-    functions: [combat_air_forces]
-    capability_tags: [air_combat]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 290, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - combat_air_forces
+    capability_tags:
+      - air_combat
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 290
+        usage: seed_reference_only
+      - source_id: source.public-url.1af-acc-af-mil.829c9f4e6e
+        page: 290
+        usage: directory_listed_public_link
+      - source_id: source.public-url.acc-af-mil.35908ce827
+        page: 290
+        usage: directory_listed_public_link
+      - source_id: source.public-url.acc-af-mil.8e349381b0
+        page: 290
+        usage: directory_listed_public_link
+      - source_id: source.public-url.acc-af-mil.9d41434b0b
+        page: 290
+        usage: directory_listed_public_link
+      - source_id: source.public-url.acc-af-mil.9ee7ce6780
+        page: 290
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afnwc
     type: command
     name: Air Force Nuclear Weapons Center
     abbreviation: AFNWC
     parent_id: org.air-force.afmc
     service: air_force
-    functions: [nuclear_weapons, acquisition]
-    capability_tags: [nuclear, strategic_deterrence]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 292, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - nuclear_weapons
+      - acquisition
+    capability_tags:
+      - nuclear
+      - strategic_deterrence
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 292
+        usage: seed_reference_only
+      - source_id: source.public-url.afnwc-af-mil.af10f5eb30
+        page: 292
+        usage: directory_listed_public_link
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afnwc.air-delivered
     type: program_executive_office
     name: PEO Air-Delivered Capability Directorate
     abbreviation: NAD
     parent_id: org.air-force.afnwc
     service: air_force
-    functions: [program_management, nuclear_weapons]
-    capability_tags: [nuclear]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 292, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - nuclear_weapons
+    capability_tags:
+      - nuclear
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 292
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afnwc.icbm
     type: program_executive_office
     name: PEO Intercontinental Ballistic Missile Systems Directorate
     abbreviation: ICBM Systems
     parent_id: org.air-force.afnwc
     service: air_force
-    functions: [program_management, icbm]
-    capability_tags: [strategic_deterrence]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 292, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - icbm
+    capability_tags:
+      - strategic_deterrence
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 292
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afnwc.nc3
     type: program_executive_office
     name: PEO Nuclear Command, Control and Communications Integration Directorate
     abbreviation: NC3
     parent_id: org.air-force.afnwc
     service: air_force
-    functions: [program_management, nuclear_command_control]
-    capability_tags: [nc3]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 292, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - program_management
+      - nuclear_command_control
+    capability_tags:
+      - nc3
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 292
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.foundational-tech
     type: directorate
     name: Foundational Technology Directorate
     abbreviation: AFRL Foundational Tech
     parent_id: org.air-force.afrl
     service: air_force
-    functions: [research]
-    capability_tags: [science_and_technology]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 293, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - research
+    capability_tags:
+      - science_and_technology
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 293
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.air-warfare
     type: directorate
     name: Air Warfare Directorate
     abbreviation: AFRL Air Warfare
     parent_id: org.air-force.afrl
     service: air_force
-    functions: [research, air_warfare]
-    capability_tags: [air_warfare]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 294, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - research
+      - air_warfare
+    capability_tags:
+      - air_warfare
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 294
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.space-warfare
     type: directorate
     name: Space Warfare Directorate
     abbreviation: AFRL Space Warfare
     parent_id: org.air-force.afrl
     service: air_force
-    functions: [research, space_warfare]
-    capability_tags: [space]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 294, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - research
+      - space_warfare
+    capability_tags:
+      - space
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 294
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.info-spectrum
     type: directorate
     name: Information and Spectrum Warfare Directorate
     abbreviation: AFRL ISW
     parent_id: org.air-force.afrl
     service: air_force
-    functions: [research, information_warfare, spectrum_warfare]
-    capability_tags: [spectrum_warfare, cyber]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 294, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - research
+      - information_warfare
+      - spectrum_warfare
+    capability_tags:
+      - spectrum_warfare
+      - cyber
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 294
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.afwerx
     type: office
     name: AFWERX
     abbreviation: AFWERX
     parent_id: org.air-force.afrl
     service: air_force
-    functions: [innovation, commercial_technology]
-    capability_tags: [front_door, commercial_solutions]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 295, usage: seed_reference_only }]
-
-  - <<: *defaults
+    functions:
+      - innovation
+      - commercial_technology
+    capability_tags:
+      - front_door
+      - commercial_solutions
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 295
+        usage: seed_reference_only
+  - location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     id: org.air-force.afrl.spacewerx
     type: office
     name: SPACEWERX
     abbreviation: SPACEWERX
     parent_id: org.air-force.afrl
     service: space_force
-    functions: [innovation, commercial_space]
-    capability_tags: [front_door, commercial_solutions, space]
-    sources: [{ source_id: source.dow-directory-2026-r6, page: 295, usage: seed_reference_only }]
+    functions:
+      - innovation
+      - commercial_space
+    capability_tags:
+      - front_door
+      - commercial_solutions
+      - space
+    sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 295
+        usage: seed_reference_only
