@@ -2,6 +2,7 @@ id: org.army
 type: service
 name: Department of the Army
 abbreviation: Army
+description_short: Service-level record under Department of War associated with service management, force modernization, and land warfare. Seeded from directory page 111.
 parent_id: org.dow
 service: army
 functions:
@@ -32,6 +33,7 @@ id: org.army.asa-alt
 type: acquisition_executive
 name: Assistant Secretary of the Army for Acquisition, Logistics and Technology
 abbreviation: ASA(ALT)
+description_short: Acquisition executive office under Department of the Army associated with acquisition, logistics, technology, Army modernization, and program management. Seeded from directory page 123.
 parent_id: org.army
 service: army
 functions:

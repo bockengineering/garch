@@ -2,6 +2,7 @@ id: org.test-centers
 type: test_center
 name: Startup Test Centers
 abbreviation: Test Centers
+description_short: Test center record in the cross-government directory map associated with test and evaluation, range testing, and evaluation. Seeded from directory page 439.
 parent_id: org.dow
 service: other
 functions:

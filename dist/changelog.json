@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-06-25T19:40:24.122Z",
+    "generated_at": "2026-06-25T20:12:05.842Z",
     "version": "0.1.0",
     "git": {
       "commit_sha": null,
@@ -9,10 +9,10 @@
   },
   "events": [
     {
-      "id": "build.20260625T194024122Z",
+      "id": "build.20260625T201205842Z",
       "type": "artifact_build",
       "title": "Generated public JSON artifacts from canonical YAML records.",
-      "created_at": "2026-06-25T19:40:24.122Z",
+      "created_at": "2026-06-25T20:12:05.842Z",
       "affected_entity_ids": [],
       "confidence": "high"
     },

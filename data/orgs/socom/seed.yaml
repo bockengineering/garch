@@ -2,6 +2,7 @@ id: org.socom
 type: command
 name: United States Special Operations Command
 abbreviation: USSOCOM
+description_short: Command record under Combatant Commands associated with special operations and joint command. Seeded from directory page 330.
 parent_id: org.cocoms
 service: socom
 functions:
@@ -23,6 +24,7 @@ id: org.socom.sof-atl
 type: acquisition_executive
 name: Special Operations Forces Acquisition, Technology and Logistics
 abbreviation: SOF AT&L
+description_short: Acquisition executive office under United States Special Operations Command associated with acquisition, technology, logistics, special operations, and rapid acquisition. Seeded from directory page 333.
 parent_id: org.socom
 service: socom
 functions:

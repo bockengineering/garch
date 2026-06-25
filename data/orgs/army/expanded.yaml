@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.headquarters
+  - id: org.army.headquarters
     type: office
     name: Army Headquarters
     abbreviation: Army HQ
+    description_short: Office record under Department of the Army associated with headquarters, service management, and army staff. Seeded from directory page 111.
     parent_id: org.army
     service: army
     functions:
@@ -14,19 +11,20 @@ records:
       - service_management
     capability_tags:
       - army_staff
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 111
         usage: seed_reference_only
         toc_order: 88
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.staff
+  - id: org.army.staff
     type: office
     name: Army Staff
     abbreviation: Army Staff
+    description_short: Office record under Army Headquarters associated with staff, service management, and army staff. Seeded from directory page 112.
     parent_id: org.army.headquarters
     service: army
     functions:
@@ -34,25 +32,30 @@ records:
       - service_management
     capability_tags:
       - army_staff
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 112
         usage: seed_reference_only
         toc_order: 89
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.hrc
+  - id: org.army.hrc
     type: command
     name: Army Human Resources Command
     abbreviation: HRC
+    description_short: Command record under Department of the Army associated with personnel and human resources. Seeded from directory page 115.
     parent_id: org.army
     service: army
     functions:
       - personnel
     capability_tags:
       - human_resources
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 115
@@ -64,32 +67,30 @@ records:
       - source_id: source.public-url.hrc-army-mil.ddcc91110a
         page: 115
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.secretariat
+  - id: org.army.secretariat
     type: office
     name: Office of the Secretary of the Army
     abbreviation: Army Secretariat
+    description_short: Office record under Department of the Army associated with service secretariat and executive leadership. Seeded from directory page 116.
     parent_id: org.army
     service: army
     functions:
       - service_secretariat
     capability_tags:
       - executive_leadership
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 116
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.rccto
+  - id: org.army.rccto
     type: office
     name: Army Rapid Capabilities and Critical Technologies Office
     abbreviation: RCCTO
+    description_short: Office record under Department of the Army associated with rapid acquisition, critical technologies, rapid fielding, directed energy, and space. Seeded from directory page 116.
     parent_id: org.army
     service: army
     functions:
@@ -99,6 +100,10 @@ records:
       - rapid_fielding
       - directed_energy
       - space
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 116
@@ -107,14 +112,11 @@ records:
       - source_id: source.public-url.army-mil.91fb8ddca6
         page: 116
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cio
+  - id: org.army.cio
     type: office
     name: Army Office of the Chief Information Officer
     abbreviation: Army CIO
+    description_short: Office record under Department of the Army associated with information technology, cybersecurity, data, IT, and cyber. Seeded from directory page 117.
     parent_id: org.army
     service: army
     functions:
@@ -124,19 +126,20 @@ records:
     capability_tags:
       - it
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 117
         usage: seed_reference_only
         toc_order: 94
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.smdc
+  - id: org.army.smdc
     type: command
     name: Army Space and Missile Defense Command
     abbreviation: USASMDC
+    description_short: Command record under Department of the Army associated with space and missile defense. Seeded from directory page 118.
     parent_id: org.army
     service: army
     functions:
@@ -145,25 +148,30 @@ records:
     capability_tags:
       - space
       - missile_defense
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 118
         usage: seed_reference_only
         toc_order: 95
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.national-guard
+  - id: org.army.national-guard
     type: command
     name: Army National Guard
     abbreviation: ARNG
+    description_short: Command record under Department of the Army associated with reserve component and domestic operations. Seeded from directory page 120.
     parent_id: org.army
     service: army
     functions:
       - reserve_component
     capability_tags:
       - domestic_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 120
@@ -172,14 +180,11 @@ records:
       - source_id: source.public-url.nationalguard-mil.c8c0e3c631
         page: 120
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.usace
+  - id: org.army.usace
     type: command
     name: Army Corps of Engineers
     abbreviation: USACE
+    description_short: Command record under Department of the Army associated with civil works, engineering, and infrastructure. Seeded from directory page 120.
     parent_id: org.army
     service: army
     functions:
@@ -188,6 +193,10 @@ records:
     capability_tags:
       - infrastructure
       - engineering
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 120
@@ -204,20 +213,21 @@ records:
       - source_id: source.public-url.usace-army-mil.484fa5e062
         page: 120
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.arcyber
+  - id: org.army.arcyber
     type: command
     name: Army Cyber Command
     abbreviation: ARCYBER
+    description_short: Command record under Department of the Army associated with cyber operations and cyber. Seeded from directory page 121.
     parent_id: org.army
     service: army
     functions:
       - cyber_operations
     capability_tags:
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 121
@@ -225,32 +235,30 @@ records:
       - source_id: source.public-url.arcyber-army-mil.12a32f3caa
         page: 121
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.asa-alt.usaasc
+  - id: org.army.asa-alt.usaasc
     type: office
     name: Army Acquisition Support Center
     abbreviation: USAASC
+    description_short: Office record under Assistant Secretary of the Army for Acquisition, Logistics and Technology associated with acquisition support and acquisition workforce. Seeded from directory page 124.
     parent_id: org.army.asa-alt
     service: army
     functions:
       - acquisition_support
     capability_tags:
       - acquisition_workforce
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 124
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.acquisition
+  - id: org.army.acquisition
     type: acquisition_executive
     name: Army Acquisition
     abbreviation: Army Acquisition
+    description_short: Acquisition executive office under Assistant Secretary of the Army for Acquisition, Logistics and Technology associated with acquisition, program management, and Army modernization. Seeded from directory page 125.
     parent_id: org.army.asa-alt
     service: army
     functions:
@@ -258,19 +266,20 @@ records:
       - program_management
     capability_tags:
       - army_modernization
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 125
         usage: seed_reference_only
         toc_order: 102
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.maneuver-ground
+  - id: org.army.pae.maneuver-ground
     type: portfolio
     name: Portfolio Acquisition Executive Maneuver - Ground
     abbreviation: PAE Maneuver Ground
+    description_short: Portfolio record under Army Acquisition associated with acquisition, ground maneuver, and ground combat. Seeded from directory page 128.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -278,18 +287,19 @@ records:
       - ground_maneuver
     capability_tags:
       - ground_combat
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 128
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.maneuver-ground
+  - id: org.army.cpe.maneuver-ground
     type: capability_program
     name: Capability Program Executive Maneuver - Ground
     abbreviation: CPE Maneuver Ground
+    description_short: Capability program record under Portfolio Acquisition Executive Maneuver - Ground associated with program management, ground maneuver, soldier systems, and ground combat. Seeded from directory page 129.
     parent_id: org.army.pae.maneuver-ground
     service: army
     functions:
@@ -298,18 +308,19 @@ records:
     capability_tags:
       - soldier_systems
       - ground_combat
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 129
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.maneuver-air
+  - id: org.army.pae.maneuver-air
     type: portfolio
     name: Portfolio Acquisition Executive Maneuver - Air
     abbreviation: PAE Maneuver Air
+    description_short: Portfolio record under Army Acquisition associated with acquisition and aviation. Seeded from directory page 133.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -317,18 +328,19 @@ records:
       - aviation
     capability_tags:
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 133
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.aviation
+  - id: org.army.cpe.aviation
     type: capability_program
     name: Capability Program Executive Aviation
     abbreviation: CPE Aviation
+    description_short: Capability program record under Portfolio Acquisition Executive Maneuver - Air associated with program management and aviation. Seeded from directory page 134.
     parent_id: org.army.pae.maneuver-air
     service: army
     functions:
@@ -336,18 +348,19 @@ records:
       - aviation
     capability_tags:
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 134
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.autonomy
+  - id: org.army.cpe.autonomy
     type: capability_program
     name: Capability Program Executive Autonomy
     abbreviation: CPE Autonomy
+    description_short: Capability program record under Portfolio Acquisition Executive Maneuver - Air associated with program management, autonomy, robotics, and UAS. Seeded from directory page 135.
     parent_id: org.army.pae.maneuver-air
     service: army
     functions:
@@ -357,18 +370,19 @@ records:
       - autonomy
       - robotics
       - uas
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 135
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.fires
+  - id: org.army.pae.fires
     type: portfolio
     name: Portfolio Acquisition Executive Fires
     abbreviation: PAE Fires
+    description_short: Portfolio record under Army Acquisition associated with acquisition, fires, and missiles. Seeded from directory page 137.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -377,6 +391,10 @@ records:
     capability_tags:
       - fires
       - missiles
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 137
@@ -384,14 +402,11 @@ records:
       - source_id: source.public-url.army-mil.5095cef0f0
         page: 137
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.offense
+  - id: org.army.cpe.offense
     type: capability_program
     name: Capability Program Executive Offense
     abbreviation: CPE Offense
+    description_short: Capability program record under Portfolio Acquisition Executive Fires associated with program management, fires, and offensive fires. Seeded from directory page 138.
     parent_id: org.army.pae.fires
     service: army
     functions:
@@ -399,18 +414,19 @@ records:
       - fires
     capability_tags:
       - offensive_fires
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 138
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.defensive-fires
+  - id: org.army.cpe.defensive-fires
     type: capability_program
     name: Capability Program Executive Defensive Fires
     abbreviation: CPE Defensive
+    description_short: Capability program record under Portfolio Acquisition Executive Fires associated with program management, air defense, and counter uas. Seeded from directory page 139.
     parent_id: org.army.pae.fires
     service: army
     functions:
@@ -419,19 +435,20 @@ records:
     capability_tags:
       - air_defense
       - counter_uas
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 139
         usage: seed_reference_only
         toc_order: 110
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.integrated-fires
+  - id: org.army.cpe.integrated-fires
     type: capability_program
     name: Capability Program Executive Integrated Fires
     abbreviation: CPE Integrated Fires
+    description_short: Capability program record under Portfolio Acquisition Executive Fires associated with program management, integrated fires, and guam defense. Seeded from directory page 140.
     parent_id: org.army.pae.fires
     service: army
     functions:
@@ -440,19 +457,20 @@ records:
     capability_tags:
       - guam_defense
       - integrated_fires
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 140
         usage: seed_reference_only
         toc_order: 111
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.c2-cc2
+  - id: org.army.pae.c2-cc2
     type: portfolio
     name: Portfolio Acquisition Executive C2/CC2
     abbreviation: PAE C2/CC2
+    description_short: Portfolio record under Army Acquisition associated with acquisition, command and control, C2, and networks. Seeded from directory page 141.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -461,18 +479,19 @@ records:
     capability_tags:
       - c2
       - networks
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 141
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.c2in
+  - id: org.army.cpe.c2in
     type: capability_program
     name: Capability Program Executive Command, Control, Communications and Network
     abbreviation: CPE C2IN
+    description_short: Capability program record under Portfolio Acquisition Executive C2/CC2 associated with program management, command and control, networks, and C2. Seeded from directory page 142.
     parent_id: org.army.pae.c2-cc2
     service: army
     functions:
@@ -482,19 +501,20 @@ records:
     capability_tags:
       - c2
       - networks
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 142
         usage: seed_reference_only
         toc_order: 113
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.st3
+  - id: org.army.cpe.st3
     type: capability_program
     name: Capability Program Executive Simulation, Training, Test and Threat
     abbreviation: CPE ST3
+    description_short: Capability program record under Portfolio Acquisition Executive C2/CC2 associated with simulation, training, and test and evaluation. Seeded from directory page 147.
     parent_id: org.army.pae.c2-cc2
     service: army
     functions:
@@ -504,6 +524,10 @@ records:
     capability_tags:
       - training
       - simulation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 147
@@ -512,14 +536,11 @@ records:
       - source_id: source.public-url.cpest3-army-mil.794273f6da
         page: 147
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.isw
+  - id: org.army.cpe.isw
     type: capability_program
     name: Capability Program Executive Intelligence and Spectrum Warfare
     abbreviation: CPE ISW
+    description_short: Capability program record under Portfolio Acquisition Executive C2/CC2 associated with intelligence, electronic warfare, cyber, and spectrum warfare. Seeded from directory page 151.
     parent_id: org.army.pae.c2-cc2
     service: army
     functions:
@@ -530,19 +551,20 @@ records:
       - spectrum_warfare
       - cyber
       - intelligence
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 151
         usage: seed_reference_only
         toc_order: 115
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.sustainment-ammo
+  - id: org.army.pae.sustainment-ammo
     type: portfolio
     name: Portfolio Acquisition Executive Agile Sustainment and Ammunition
     abbreviation: PAE Sustainment Ammo
+    description_short: Portfolio record under Army Acquisition associated with acquisition, sustainment, ammunition, and logistics. Seeded from directory page 157.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -552,18 +574,19 @@ records:
     capability_tags:
       - logistics
       - ammunition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 157
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.combat-logistics
+  - id: org.army.cpe.combat-logistics
     type: capability_program
     name: Capability Program Executive Combat Logistics
     abbreviation: CPE Combat Logistics
+    description_short: Capability program record under Portfolio Acquisition Executive Agile Sustainment and Ammunition associated with program management, logistics, and combat logistics. Seeded from directory page 158.
     parent_id: org.army.pae.sustainment-ammo
     service: army
     functions:
@@ -571,18 +594,19 @@ records:
       - logistics
     capability_tags:
       - combat_logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 158
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.ammo-energetics
+  - id: org.army.cpe.ammo-energetics
     type: capability_program
     name: Capability Program Executive Ammunition and Energetics
     abbreviation: CPE A&E
+    description_short: Capability program record under Portfolio Acquisition Executive Agile Sustainment and Ammunition associated with program management, ammunition, and energetics. Seeded from directory page 161.
     parent_id: org.army.pae.sustainment-ammo
     service: army
     functions:
@@ -592,19 +616,20 @@ records:
     capability_tags:
       - ammunition
       - energetics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 161
         usage: seed_reference_only
         toc_order: 119
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pae.layered-protection-cbrn
+  - id: org.army.pae.layered-protection-cbrn
     type: portfolio
     name: Portfolio Acquisition Executive Layered Protection and CBRN
     abbreviation: PAE Layered Protection CBRN
+    description_short: Portfolio record under Army Acquisition associated with acquisition, protection, CBRN, and layered protection. Seeded from directory page 164.
     parent_id: org.army.acquisition
     service: army
     functions:
@@ -614,18 +639,19 @@ records:
     capability_tags:
       - cbrn
       - layered_protection
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 164
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.cbrnd
+  - id: org.army.cpe.cbrnd
     type: capability_program
     name: Capability Program Executive Joint CBRN Defense
     abbreviation: CPE CBRND
+    description_short: Capability program record under Portfolio Acquisition Executive Layered Protection and CBRN associated with program management and CBRN. Seeded from directory page 165.
     parent_id: org.army.pae.layered-protection-cbrn
     service: army
     functions:
@@ -633,18 +659,19 @@ records:
       - cbrn
     capability_tags:
       - cbrn
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 165
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cpe.es2
+  - id: org.army.cpe.es2
     type: capability_program
     name: Capability Program Executive Enterprise Software and Service
     abbreviation: CPE ES2
+    description_short: Capability program record under Portfolio Acquisition Executive Layered Protection and CBRN associated with program management, enterprise software, software, and enterprise IT. Seeded from directory page 168.
     parent_id: org.army.pae.layered-protection-cbrn
     service: army
     functions:
@@ -653,19 +680,20 @@ records:
     capability_tags:
       - software
       - enterprise_it
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 168
         usage: seed_reference_only
         toc_order: 122
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.pit
+  - id: org.army.pit
     type: office
     name: Army Pathway for Innovation and Technology
     abbreviation: PIT
+    description_short: Office record under Department of the Army associated with innovation, technology transition, and front door. Seeded from directory page 171.
     parent_id: org.army
     service: army
     functions:
@@ -674,6 +702,10 @@ records:
     capability_tags:
       - front_door
       - innovation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 171
@@ -682,14 +714,11 @@ records:
       - source_id: source.public-url.pit-army-mil.ac14d0a958
         page: 171
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.fuze
+  - id: org.army.fuze
     type: office
     name: FUZE Program
     abbreviation: FUZE
+    description_short: Office record under Army Pathway for Innovation and Technology associated with innovation, commercial technology, and front door. Seeded from directory page 171.
     parent_id: org.army.pit
     service: army
     functions:
@@ -697,6 +726,10 @@ records:
       - commercial_technology
     capability_tags:
       - front_door
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 171
@@ -717,14 +750,11 @@ records:
       - source_id: source.public-url.fuze-army-mil.fd4b97dd3c
         page: 171
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.aal
+  - id: org.army.aal
     type: lab
     name: Army Application Lab
     abbreviation: AAL
+    description_short: Lab record under Army Pathway for Innovation and Technology associated with innovation, software, and commercial solutions. Seeded from directory page 172.
     parent_id: org.army.pit
     service: army
     functions:
@@ -732,6 +762,10 @@ records:
       - software
     capability_tags:
       - commercial_solutions
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 172
@@ -746,14 +780,11 @@ records:
       - source_id: source.public-url.aal-mil.fbd68d7a0f
         page: 172
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.t2com
+  - id: org.army.t2com
     type: command
     name: Army Transformation and Training Command
     abbreviation: T2COM
+    description_short: Command record under Department of the Army associated with training, transformation, and doctrine. Seeded from directory page 174.
     parent_id: org.army
     service: army
     functions:
@@ -762,6 +793,10 @@ records:
     capability_tags:
       - training
       - doctrine
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 174
@@ -770,14 +805,11 @@ records:
       - source_id: source.public-url.army-mil.13fa8bd081
         page: 174
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cac
+  - id: org.army.cac
     type: command
     name: Combined Arms Command
     abbreviation: CAC
+    description_short: Command record under Army Transformation and Training Command associated with training, doctrine, and combined arms. Seeded from directory page 175.
     parent_id: org.army.t2com
     service: army
     functions:
@@ -785,6 +817,10 @@ records:
       - doctrine
     capability_tags:
       - combined_arms
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 175
@@ -793,14 +829,11 @@ records:
       - source_id: source.public-url.usacac-army-mil.1e215df945
         page: 175
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.futures-concepts
+  - id: org.army.futures-concepts
     type: command
     name: Futures and Concepts Command
     abbreviation: FCC
+    description_short: Command record under Army Transformation and Training Command associated with concepts, requirements, and future concepts. Seeded from directory page 179.
     parent_id: org.army.t2com
     service: army
     functions:
@@ -808,6 +841,10 @@ records:
       - requirements
     capability_tags:
       - future_concepts
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 179
@@ -822,14 +859,11 @@ records:
       - source_id: source.public-url.army-mil.d662fb287a
         page: 179
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.devcom
+  - id: org.army.devcom
     type: lab
     name: Army Combat Capabilities Development Command
     abbreviation: DEVCOM
+    description_short: Lab record under Department of the Army associated with research, development, and science and technology. Seeded from directory page 181.
     parent_id: org.army
     service: army
     functions:
@@ -837,6 +871,10 @@ records:
       - development
     capability_tags:
       - science_and_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 181
@@ -853,14 +891,11 @@ records:
       - source_id: source.public-url.devcom-army-mil.a60301e81b
         page: 181
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.software-factory
+  - id: org.army.software-factory
     type: lab
     name: Army Software Factory
     abbreviation: Army Software Factory
+    description_short: Lab record under Department of the Army associated with software and training. Seeded from directory page 185.
     parent_id: org.army
     service: army
     functions:
@@ -868,19 +903,20 @@ records:
       - training
     capability_tags:
       - software
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 185
         usage: seed_reference_only
         toc_order: 134
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.trac
+  - id: org.army.trac
     type: lab
     name: The Research and Analysis Center
     abbreviation: TRAC
+    description_short: Lab record under Department of the Army associated with analysis and research. Seeded from directory page 186.
     parent_id: org.army
     service: army
     functions:
@@ -888,6 +924,10 @@ records:
       - research
     capability_tags:
       - analysis
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 186
@@ -896,14 +936,11 @@ records:
       - source_id: source.public-url.home-army-mil.6c9ff59e0e
         page: 186
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.amc
+  - id: org.army.amc
     type: command
     name: Army Material Command
     abbreviation: AMC
+    description_short: Command record under Department of the Army associated with materiel, sustainment, and logistics. Seeded from directory page 187.
     parent_id: org.army
     service: army
     functions:
@@ -912,6 +949,10 @@ records:
     capability_tags:
       - sustainment
       - logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 187
@@ -924,20 +965,21 @@ records:
         page: 187
         usage: seed_reference_only
         toc_order: 137
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.acc
+  - id: org.army.acc
     type: command
     name: Army Contracting Command
     abbreviation: ACC
+    description_short: Command record under Army Material Command associated with contracting. Seeded from directory page 187.
     parent_id: org.army.amc
     service: army
     functions:
       - contracting
     capability_tags:
       - contracting
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 187
@@ -955,14 +997,11 @@ records:
       - source_id: source.public-url.army-mil.48bd18b44e
         page: 187
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.amcom
+  - id: org.army.amcom
     type: command
     name: Army Aviation and Missile Command
     abbreviation: AMCOM
+    description_short: Command record under Army Material Command associated with aviation, missiles, and sustainment. Seeded from directory page 188.
     parent_id: org.army.amc
     service: army
     functions:
@@ -972,6 +1011,10 @@ records:
     capability_tags:
       - aviation
       - missiles
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 188
@@ -980,14 +1023,11 @@ records:
       - source_id: source.public-url.amcom-army-mil.86fcd7666e
         page: 188
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.cecom
+  - id: org.army.cecom
     type: command
     name: Army Communications-Electronics Command
     abbreviation: CECOM
+    description_short: Command record under Army Material Command associated with communications, electronics, sustainment, and C4I. Seeded from directory page 188.
     parent_id: org.army.amc
     service: army
     functions:
@@ -997,6 +1037,10 @@ records:
     capability_tags:
       - communications
       - c4i
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 188
@@ -1017,14 +1061,11 @@ records:
       - source_id: source.public-url.cecom-army-mil.aac8412da5
         page: 188
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.jmc
+  - id: org.army.jmc
     type: command
     name: U.S. Army Joint Munitions Command
     abbreviation: JMC
+    description_short: Command record under Army Material Command associated with munitions, sustainment, and ammunition. Seeded from directory page 189.
     parent_id: org.army.amc
     service: army
     functions:
@@ -1033,6 +1074,10 @@ records:
     capability_tags:
       - ammunition
       - munitions
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 189
@@ -1053,14 +1098,11 @@ records:
       - source_id: source.public-url.jmc-army-mil.d975aad158
         page: 189
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.asc
+  - id: org.army.asc
     type: command
     name: Army Sustainment Command
     abbreviation: ASC
+    description_short: Command record under Army Material Command associated with sustainment and logistics. Seeded from directory page 189.
     parent_id: org.army.amc
     service: army
     functions:
@@ -1068,6 +1110,10 @@ records:
       - logistics
     capability_tags:
       - logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 189
@@ -1076,20 +1122,21 @@ records:
       - source_id: source.public-url.aschq-army-mil.2c7320c47c
         page: 189
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.atec
+  - id: org.army.atec
     type: test_center
     name: Army Test and Evaluation Command
     abbreviation: ATEC
+    description_short: Test center record under Department of the Army associated with test and evaluation and test ranges. Seeded from directory page 190.
     parent_id: org.army
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_ranges
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 190
@@ -1110,14 +1157,11 @@ records:
       - source_id: source.public-url.atec-army-mil.cf35050555
         page: 190
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.tacom
+  - id: org.army.tacom
     type: command
     name: Tank, Automotive and Armaments Command
     abbreviation: TACOM
+    description_short: Command record under Army Material Command associated with ground systems, sustainment, and ground vehicles. Seeded from directory page 190.
     parent_id: org.army.amc
     service: army
     functions:
@@ -1125,6 +1169,10 @@ records:
       - sustainment
     capability_tags:
       - ground_vehicles
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 190
@@ -1133,20 +1181,21 @@ records:
       - source_id: source.public-url.tacom-army-mil.8d31bdf29e
         page: 190
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.army.western-hemisphere
+  - id: org.army.western-hemisphere
     type: command
     name: Army Western Hemisphere Command
     abbreviation: AWHC
+    description_short: Command record under Department of the Army associated with regional operations and western hemisphere. Seeded from directory page 191.
     parent_id: org.army
     service: army
     functions:
       - regional_operations
     capability_tags:
       - western_hemisphere
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 191

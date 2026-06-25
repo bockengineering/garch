@@ -20,7 +20,15 @@ function filterTree(nodes: OfficeTreeNode[], filters: { query: string; service: 
       const confidenceMatches = filters.confidence === "all" || node.confidence === filters.confidence;
       const queryMatches =
         normalizedQuery.length === 0 ||
-        [node.id, node.label, node.abbreviation ?? "", node.service ?? "", ...(node.metadata.functions as string[] | undefined ?? []), ...(node.metadata.capability_tags as string[] | undefined ?? [])]
+        [
+          node.id,
+          node.label,
+          node.abbreviation ?? "",
+          node.service ?? "",
+          typeof node.metadata.description_short === "string" ? node.metadata.description_short : "",
+          ...(node.metadata.functions as string[] | undefined ?? []),
+          ...(node.metadata.capability_tags as string[] | undefined ?? [])
+        ]
           .join(" ")
           .toLowerCase()
           .includes(normalizedQuery);

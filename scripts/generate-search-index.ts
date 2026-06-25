@@ -38,12 +38,13 @@ export function buildSearchIndexArtifact(data: LoadedData): SearchIndexArtifact 
         org.id,
         org.name,
         org.abbreviation,
+        org.description_short,
         org.service,
         org.type,
         ...org.functions,
         ...org.capability_tags
       ]),
-      matched_fields: ["id", "name", "abbreviation", "service", "type", "functions", "capability_tags"]
+      matched_fields: ["id", "name", "abbreviation", "description_short", "service", "type", "functions", "capability_tags"]
     })),
     ...data.people.map((person) => ({
       id: person.id,

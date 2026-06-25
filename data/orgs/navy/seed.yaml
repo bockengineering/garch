@@ -2,6 +2,7 @@ id: org.navy
 type: service
 name: Department of the Navy
 abbreviation: Navy
+description_short: Service-level record under Department of War associated with service management, naval operations, and maritime warfare. Seeded from directory page 194.
 parent_id: org.dow
 service: navy
 functions:
@@ -38,6 +39,7 @@ id: org.navy.asn-rda
 type: acquisition_executive
 name: Assistant Secretary of the Navy for Research, Development and Acquisition
 abbreviation: ASN RDA
+description_short: Acquisition executive office under Department of the Navy associated with acquisition, research, development, naval acquisition, and program management. Seeded from directory page 210.
 parent_id: org.navy
 service: navy
 functions:
@@ -63,6 +65,7 @@ id: org.navy.navsea
 type: command
 name: Naval Sea Systems Command
 abbreviation: NAVSEA
+description_short: Command record under Department of the Navy associated with acquisition, engineering, sustainment, ships, and undersea. Seeded from directory page 227.
 parent_id: org.navy
 service: navy
 functions:
@@ -95,6 +98,7 @@ id: org.navy.navair
 type: command
 name: Naval Air Systems Command
 abbreviation: NAVAIR
+description_short: Command record under Department of the Navy associated with acquisition, aviation, sustainment, naval aviation, and weapons. Seeded from directory page 236.
 parent_id: org.navy
 service: navy
 functions:
@@ -133,6 +137,7 @@ id: org.navy.navwar
 type: command
 name: Naval Information Warfare Systems Command
 abbreviation: NAVWAR
+description_short: Command record under Department of the Navy associated with acquisition, information warfare, C4I, command and control, and communications. Seeded from directory page 243.
 parent_id: org.navy
 service: navy
 functions:

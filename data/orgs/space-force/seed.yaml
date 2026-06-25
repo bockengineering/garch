@@ -2,6 +2,7 @@ id: org.space-force
 type: service
 name: United States Space Force
 abbreviation: USSF
+description_short: Service-level record under Department of War associated with service management, space operations, and space systems. Seeded from directory page 297.
 parent_id: org.dow
 service: space_force
 functions:
@@ -23,6 +24,7 @@ id: org.space-force.ssc
 type: command
 name: Space Systems Command
 abbreviation: SSC
+description_short: Command record under United States Space Force associated with acquisition, space systems, space acquisition, and satellites. Seeded from directory page 305.
 parent_id: org.space-force
 service: space_force
 functions:

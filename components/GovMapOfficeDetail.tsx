@@ -68,6 +68,10 @@ export default function GovMapOfficeDetail({
 
   const orgType = String(office.metadata.org_type ?? office.type);
   const sourceRefs = asSourceRefs(office.metadata.sources);
+  const description =
+    typeof office.metadata.description_short === "string" && office.metadata.description_short.trim().length > 0
+      ? office.metadata.description_short
+      : "No short description recorded.";
 
   return (
     <section className="bg-white">
@@ -84,6 +88,7 @@ export default function GovMapOfficeDetail({
       </div>
 
       <dl className="px-4 py-2">
+        <DetailRow label="Summary" value={description} />
         <DetailRow label="Type" value={formatLabel(orgType)} />
         <DetailRow label="Service" value={formatLabel(office.service ?? "unknown")} />
         <DetailRow label="Last verified" value={formatDate(office.last_verified)} />

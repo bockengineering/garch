@@ -47,6 +47,7 @@ export const orgSchema = z
     type: z.enum(orgTypeValues),
     name: z.string().trim().min(1),
     abbreviation: z.string().trim().min(1).nullable().optional(),
+    description_short: z.string().trim().min(1).nullable().optional(),
     parent_id: idSchema.nullable().optional(),
     service: z.enum(serviceValues),
     functions: z.array(z.string().trim().min(1)).default([]),

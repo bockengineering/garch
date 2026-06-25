@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.headquarters-staff
+  - id: org.space-force.headquarters-staff
     type: office
     name: Space Force Headquarters Staff
     abbreviation: USSF Staff
+    description_short: Office record under United States Space Force associated with headquarters, service management, and space operations. Seeded from directory page 299.
     parent_id: org.space-force
     service: space_force
     functions:
@@ -14,19 +11,20 @@ records:
       - service_management
     capability_tags:
       - space_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 299
         usage: seed_reference_only
         toc_order: 286
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.space-rco
+  - id: org.space-force.space-rco
     type: program_executive_office
     name: "Space Force: PEO Space Rapid Capabilities Office"
     abbreviation: Space RCO
+    description_short: Program executive office record under United States Space Force associated with rapid acquisition, space systems, rapid fielding, and space. Seeded from directory page 301.
     parent_id: org.space-force
     service: space_force
     functions:
@@ -35,6 +33,10 @@ records:
     capability_tags:
       - rapid_fielding
       - space
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 301
@@ -47,20 +49,21 @@ records:
         page: 301
         usage: seed_reference_only
         toc_order: 287
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.spoc
+  - id: org.space-force.spoc
     type: command
     name: Space Force Combat Forces Command
     abbreviation: SpOC
+    description_short: Command record under United States Space Force associated with space operations. Seeded from directory page 302.
     parent_id: org.space-force
     service: space_force
     functions:
       - space_operations
     capability_tags:
       - space_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 302
@@ -69,14 +72,11 @@ records:
       - source_id: source.public-url.spoc-spaceforce-mil.abd343c208
         page: 302
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.integration-office
+  - id: org.space-force.ssc.integration-office
     type: office
     name: Space Systems Integration Office
     abbreviation: SSIO
+    description_short: Office record under Space Systems Command associated with systems integration and space systems. Seeded from directory page 307.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -84,6 +84,10 @@ records:
       - space_systems
     capability_tags:
       - space_systems
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 307
@@ -92,14 +96,11 @@ records:
       - source_id: source.public-url.ssc-spaceforce-mil.7e10cd0498
         page: 307
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.starcom
+  - id: org.space-force.starcom
     type: command
     name: Space Training and Readiness Command
     abbreviation: STARCOM
+    description_short: Command record under United States Space Force associated with training, readiness, and test and evaluation. Seeded from directory page 311.
     parent_id: org.space-force
     service: space_force
     functions:
@@ -109,6 +110,10 @@ records:
     capability_tags:
       - training
       - test_and_evaluation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 311
@@ -129,14 +134,11 @@ records:
       - source_id: source.public-url.starcom-spaceforce-mil.fe85a44ac8
         page: 311
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.pae.space-sensing-targeting
+  - id: org.space-force.pae.space-sensing-targeting
     type: portfolio
     name: Portfolio Acquisition Executive for Space-Based Sensing and Targeting
     abbreviation: PAE SBST
+    description_short: Portfolio record under Space Systems Command associated with acquisition, space sensing, and targeting. Seeded from directory page 312.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -146,18 +148,19 @@ records:
     capability_tags:
       - space_sensing
       - targeting
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 312
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.pae-aats
+  - id: org.space-force.ssc.pae-aats
     type: portfolio
     name: PAE Assured Access to Space
     abbreviation: PAE AATS
+    description_short: Portfolio record under Space Systems Command associated with acquisition, launch, and space access. Seeded from directory page 312.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -167,6 +170,10 @@ records:
     capability_tags:
       - launch
       - space_access
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 312
@@ -174,14 +181,11 @@ records:
       - source_id: source.public-url.ssc-spaceforce-mil.57b4042afe
         page: 312
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.pae-combat-power
+  - id: org.space-force.ssc.pae-combat-power
     type: portfolio
     name: PAE Space Combat Power
     abbreviation: PAE CP
+    description_short: Portfolio record under Space Systems Command associated with acquisition, space combat power, orbital warfare, and space control. Seeded from directory page 313.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -190,6 +194,10 @@ records:
     capability_tags:
       - orbital_warfare
       - space_control
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 313
@@ -197,14 +205,11 @@ records:
       - source_id: source.public-url.ssc-spaceforce-mil.3db856dd4e
         page: 313
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.pae-bmc3i
+  - id: org.space-force.ssc.pae-bmc3i
     type: portfolio
     name: PAE Battle Management Command, Control and Communications
     abbreviation: PAE BMC3I
+    description_short: Portfolio record under Space Systems Command associated with acquisition, battle management, command and control, and C2. Seeded from directory page 314.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -214,6 +219,10 @@ records:
     capability_tags:
       - c2
       - battle_management
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 314
@@ -221,14 +230,11 @@ records:
       - source_id: source.public-url.ssc-spaceforce-mil.c15c82e943
         page: 314
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.peo-mcpnt
+  - id: org.space-force.ssc.peo-mcpnt
     type: program_executive_office
     name: PEO Military Communications and Positioning, Navigation and Timing
     abbreviation: PEO MCPNT
+    description_short: Program executive office record under Space Systems Command associated with program management, satellite communications, pnt, and satcom. Seeded from directory page 315.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -238,6 +244,10 @@ records:
     capability_tags:
       - satcom
       - pnt
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 315
@@ -245,14 +255,11 @@ records:
       - source_id: source.public-url.ssc-spaceforce-mil.967ffb2147
         page: 315
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.space-force.ssc.peo-otti
+  - id: org.space-force.ssc.peo-otti
     type: program_executive_office
     name: PEO Operational Test and Training Infrastructure
     abbreviation: PEO OTTI
+    description_short: Program executive office record under Space Systems Command associated with program management, test and evaluation, and training. Seeded from directory page 316.
     parent_id: org.space-force.ssc
     service: space_force
     functions:
@@ -262,6 +269,10 @@ records:
     capability_tags:
       - test_and_evaluation
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 316

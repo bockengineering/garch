@@ -1,31 +1,29 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms
+  - id: org.cocoms
     type: command
     name: Combatant Commands
     abbreviation: COCOMs
+    description_short: Command record under Department of War associated with joint command and combatant commands. Seeded from directory page 329.
     parent_id: org.dow
     service: cocom
     functions:
       - joint_command
     capability_tags:
       - combatant_commands
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 329
         usage: seed_reference_only
         toc_order: 325
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.indopacom
+  - id: org.cocoms.indopacom
     type: command
     name: Indo-Pacific Command
     abbreviation: INDOPACOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command and indo pacific. Seeded from directory page 340.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -33,19 +31,20 @@ records:
       - indo_pacific
     capability_tags:
       - indo_pacific
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 340
         usage: seed_reference_only
         toc_order: 345
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.centcom
+  - id: org.cocoms.centcom
     type: command
     name: US Central Command (CENTCOM)
     abbreviation: CENTCOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command, central region, middle east, and central asia. Seeded from directory page 350.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -54,6 +53,10 @@ records:
     capability_tags:
       - middle_east
       - central_asia
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 350
@@ -66,14 +69,11 @@ records:
         page: 350
         usage: seed_reference_only
         toc_order: 348
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.eucom
+  - id: org.cocoms.eucom
     type: command
     name: European Command
     abbreviation: EUCOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command and europe. Seeded from directory page 353.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -81,6 +81,10 @@ records:
       - europe
     capability_tags:
       - europe
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 353
@@ -95,14 +99,11 @@ records:
       - source_id: source.public-url.eucom-mil.e7b50a6ce8
         page: 353
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.southcom
+  - id: org.cocoms.southcom
     type: command
     name: Southern Command
     abbreviation: SOUTHCOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command and latin america. Seeded from directory page 357.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -110,6 +111,10 @@ records:
       - latin_america
     capability_tags:
       - latin_america
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 357
@@ -118,14 +123,11 @@ records:
       - source_id: source.public-url.southcom-mil.355a92a753
         page: 357
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.northcom
+  - id: org.cocoms.northcom
     type: command
     name: Northern Command
     abbreviation: NORTHCOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command and homeland defense. Seeded from directory page 359.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -133,6 +135,10 @@ records:
       - homeland_defense
     capability_tags:
       - homeland_defense
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 359
@@ -144,14 +150,11 @@ records:
       - source_id: source.public-url.northcom-mil.a394320f53
         page: 359
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.africom
+  - id: org.cocoms.africom
     type: command
     name: Africa Command
     abbreviation: AFRICOM
+    description_short: Command record under Combatant Commands associated with geographic combatant command and africa. Seeded from directory page 361.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -159,6 +162,10 @@ records:
       - africa
     capability_tags:
       - africa
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 361
@@ -173,14 +180,11 @@ records:
       - source_id: source.public-url.africom-mil.84a46e9ada
         page: 361
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.stratcom
+  - id: org.cocoms.stratcom
     type: command
     name: Strategic Command
     abbreviation: STRATCOM
+    description_short: Command record under Combatant Commands associated with functional combatant command, strategic deterrence, and nuclear. Seeded from directory page 365.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -189,6 +193,10 @@ records:
     capability_tags:
       - strategic_deterrence
       - nuclear
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 365
@@ -197,14 +205,11 @@ records:
       - source_id: source.public-url.stratcom-mil.4310a1fa2b
         page: 365
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.spacecom
+  - id: org.cocoms.spacecom
     type: command
     name: U.S. Space Command - SPACECOM
     abbreviation: SPACECOM
+    description_short: Command record under Combatant Commands associated with functional combatant command, space operations, and space. Seeded from directory page 367.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -212,6 +217,10 @@ records:
       - space_operations
     capability_tags:
       - space
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 367
@@ -230,14 +239,11 @@ records:
       - source_id: source.public-url.spacecom-mil.ceecce38a9
         page: 367
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.transcom
+  - id: org.cocoms.transcom
     type: command
     name: Transportation Command
     abbreviation: TRANSCOM
+    description_short: Command record under Combatant Commands associated with functional combatant command, transportation, mobility, and logistics. Seeded from directory page 368.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -246,6 +252,10 @@ records:
     capability_tags:
       - mobility
       - logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 368
@@ -254,14 +264,11 @@ records:
       - source_id: source.public-url.ustranscom-mil.13fa36181b
         page: 368
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.cocoms.cybercom
+  - id: org.cocoms.cybercom
     type: command
     name: Cyber Command
     abbreviation: CYBERCOM
+    description_short: Command record under Combatant Commands associated with functional combatant command, cyber operations, and cyber. Seeded from directory page 369.
     parent_id: org.cocoms
     service: cocom
     functions:
@@ -269,6 +276,10 @@ records:
       - cyber_operations
     capability_tags:
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 369

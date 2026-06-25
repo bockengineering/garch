@@ -2,6 +2,7 @@ id: org.air-force
 type: service
 name: Department of the Air Force
 abbreviation: DAF
+description_short: Service-level record under Department of War associated with service management, air and space operations, and air power. Seeded from directory page 265.
 parent_id: org.dow
 service: air_force
 functions:
@@ -23,6 +24,7 @@ id: org.air-force.saf-aq
 type: acquisition_executive
 name: Assistant Secretary of the Air Force for Acquisition, Technology and Logistics
 abbreviation: SAF/AQ
+description_short: Acquisition executive office under Department of the Air Force associated with acquisition, technology, logistics, Air Force acquisition, and program management. Seeded from directory page 273.
 parent_id: org.air-force
 service: air_force
 functions:
@@ -55,6 +57,7 @@ id: org.air-force.afrl
 type: lab
 name: Air Force Research Laboratory
 abbreviation: AFRL
+description_short: Lab record under Department of the Air Force associated with research, development, science and technology, and air power. Seeded from directory page 293.
 parent_id: org.air-force
 service: air_force
 functions:
@@ -89,6 +92,7 @@ id: org.air-force.aflcmc
 type: command
 name: Air Force Life Cycle Management Center
 abbreviation: AFLCMC
+description_short: Command record under Assistant Secretary of the Air Force for Acquisition, Technology and Logistics associated with acquisition, lifecycle management, sustainment, aircraft, and systems management. Seeded from directory page 276.
 parent_id: org.air-force.saf-aq
 service: air_force
 functions:

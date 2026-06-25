@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.headquarters-staff
+  - id: org.air-force.headquarters-staff
     type: office
     name: Air Force Headquarters Staff
     abbreviation: HAF
+    description_short: Office record under Department of the Air Force associated with headquarters, service management, and air force staff. Seeded from directory page 266.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -14,19 +11,20 @@ records:
       - service_management
     capability_tags:
       - air_force_staff
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 266
         usage: seed_reference_only
         toc_order: 236
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.academy
+  - id: org.air-force.academy
     type: office
     name: Air Force Academy
     abbreviation: USAFA
+    description_short: Office record under Department of the Air Force associated with education and training. Seeded from directory page 268.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -34,6 +32,10 @@ records:
       - training
     capability_tags:
       - education
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 268
@@ -42,14 +44,11 @@ records:
       - source_id: source.public-url.usafa-af-mil.766885df52
         page: 268
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aetc
+  - id: org.air-force.aetc
     type: command
     name: Air Education and Training Command
     abbreviation: AETC
+    description_short: Command record under Department of the Air Force associated with training and education. Seeded from directory page 269.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -57,6 +56,10 @@ records:
       - education
     capability_tags:
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 269
@@ -77,14 +80,11 @@ records:
       - source_id: source.public-url.aetc-af-mil.efc9dc7bb0
         page: 269
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.saf-cn
+  - id: org.air-force.saf-cn
     type: office
     name: Air Force Chief Information Office SAF/CN
     abbreviation: SAF/CN
+    description_short: Office record under Department of the Air Force associated with information technology, cybersecurity, data, IT, and cyber. Seeded from directory page 271.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -94,6 +94,10 @@ records:
     capability_tags:
       - it
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 271
@@ -106,20 +110,21 @@ records:
       - source_id: source.public-url.af-mil.d5255b29c2
         page: 271
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.saf-sb
+  - id: org.air-force.saf-sb
     type: office
     name: Air Force/Small Business (SAF/SB)
     abbreviation: SAF/SB
+    description_short: Office record under Department of the Air Force associated with small business. Seeded from directory page 272.
     parent_id: org.air-force
     service: air_force
     functions:
       - small_business
     capability_tags:
       - small_business
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 272
@@ -129,14 +134,11 @@ records:
         page: 272
         usage: seed_reference_only
         toc_order: 250
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.saf-sq
+  - id: org.air-force.saf-sq
     type: acquisition_executive
     name: Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ)
     abbreviation: SAF/SQ
+    description_short: Acquisition executive office under Department of the Air Force associated with space acquisition and integration. Seeded from directory page 272.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -144,6 +146,10 @@ records:
       - integration
     capability_tags:
       - space_acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 272
@@ -156,14 +162,11 @@ records:
         page: 272
         usage: seed_reference_only
         toc_order: 251
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.sda
+  - id: org.air-force.sda
     type: external_agency
     name: Space Development Agency
     abbreviation: SDA
+    description_short: External agency record under Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ) associated with space acquisition, space, and satellites. Seeded from directory page 272.
     parent_id: org.air-force.saf-sq
     service: space_force
     functions:
@@ -171,6 +174,10 @@ records:
     capability_tags:
       - space
       - satellites
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 272
@@ -184,14 +191,11 @@ records:
       - source_id: source.public-url.sda-mil.f1d644df31
         page: 272
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.pae
+  - id: org.air-force.pae
     type: acquisition_executive
     name: Air Force Program Acquisition Executives
     abbreviation: Air Force PAEs
+    description_short: Acquisition executive office under Assistant Secretary of the Air Force for Acquisition, Technology and Logistics associated with acquisition, portfolio management, and Air Force acquisition. Seeded from directory page 274.
     parent_id: org.air-force.saf-aq
     service: air_force
     functions:
@@ -199,25 +203,30 @@ records:
       - portfolio_management
     capability_tags:
       - air_force_acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 274
         usage: seed_reference_only
         toc_order: 253
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrco
+  - id: org.air-force.afrco
     type: program_executive_office
     name: Air Force Rapid Capabilities Office
     abbreviation: AFRCO
+    description_short: Program executive office record under Air Force Program Acquisition Executives associated with rapid acquisition and rapid fielding. Seeded from directory page 275.
     parent_id: org.air-force.pae
     service: air_force
     functions:
       - rapid_acquisition
     capability_tags:
       - rapid_fielding
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 275
@@ -225,14 +234,11 @@ records:
       - source_id: source.public-url.af-mil.f097f2e32e
         page: 275
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afmc
+  - id: org.air-force.afmc
     type: command
     name: Air Force Material Command
     abbreviation: AFMC
+    description_short: Command record under Department of the Air Force associated with materiel, acquisition, and sustainment. Seeded from directory page 275.
     parent_id: org.air-force
     service: air_force
     functions:
@@ -242,6 +248,10 @@ records:
     capability_tags:
       - sustainment
       - acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 275
@@ -254,14 +264,11 @@ records:
         page: 275
         usage: seed_reference_only
         toc_order: 255
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.peo-combat-mission-support
+  - id: org.air-force.peo-combat-mission-support
     type: program_executive_office
     name: PEO Combat and Mission Support
     abbreviation: PEO CM
+    description_short: Program executive office record under Air Force Program Acquisition Executives associated with program management and mission support. Seeded from directory page 275.
     parent_id: org.air-force.pae
     service: air_force
     functions:
@@ -269,6 +276,10 @@ records:
       - mission_support
     capability_tags:
       - mission_support
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 275
@@ -277,14 +288,11 @@ records:
       - source_id: source.public-url.ww3-safaq-hq-af-mil.9c93c5e7ed
         page: 275
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.c3bm
+  - id: org.air-force.aflcmc.c3bm
     type: program_executive_office
     name: PEO Command, Control, Communications and Battle Management
     abbreviation: PEO C3BM
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, command and control, battle management, and C3BM. Seeded from directory page 279.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -294,18 +302,19 @@ records:
     capability_tags:
       - c3bm
       - command_and_control
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 279
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.armament
+  - id: org.air-force.aflcmc.armament
     type: program_executive_office
     name: PEO Armament Directorate
     abbreviation: AFLCMC/EB
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, armaments, weapons, and munitions. Seeded from directory page 281.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -314,19 +323,20 @@ records:
     capability_tags:
       - weapons
       - munitions
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 281
         usage: seed_reference_only
         toc_order: 259
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.bes
+  - id: org.air-force.aflcmc.bes
     type: program_executive_office
     name: PEO Business and Enterprise Systems Directorate
     abbreviation: BES
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, enterprise systems, and enterprise IT. Seeded from directory page 282.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -334,6 +344,10 @@ records:
       - enterprise_systems
     capability_tags:
       - enterprise_it
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 282
@@ -354,14 +368,11 @@ records:
       - source_id: source.public-url.airforcebes-af-mil.ea95f0198e
         page: 282
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.electronic-systems
+  - id: org.air-force.aflcmc.electronic-systems
     type: program_executive_office
     name: PEO Electronic Systems Directorate
     abbreviation: AFLCMC/HB
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, electronic systems, electronic warfare, and avionics. Seeded from directory page 283.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -370,19 +381,20 @@ records:
     capability_tags:
       - electronic_warfare
       - avionics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 283
         usage: seed_reference_only
         toc_order: 261
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.cyber-networks
+  - id: org.air-force.aflcmc.cyber-networks
     type: program_executive_office
     name: PEO Cyber and Networks Directorate
     abbreviation: AFLCMC/HN
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, cyber, and networks. Seeded from directory page 283.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -392,6 +404,10 @@ records:
     capability_tags:
       - cyber
       - networks
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 283
@@ -400,14 +416,11 @@ records:
       - source_id: source.public-url.aflcmc-af-mil.215701bb8c
         page: 283
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.propulsion
+  - id: org.air-force.aflcmc.propulsion
     type: program_executive_office
     name: PEO Propulsion Directorate
     abbreviation: AFLCMC/PB
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management and propulsion. Seeded from directory page 284.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -415,19 +428,20 @@ records:
       - propulsion
     capability_tags:
       - propulsion
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 284
         usage: seed_reference_only
         toc_order: 263
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.fighters
+  - id: org.air-force.aflcmc.fighters
     type: program_executive_office
     name: PEO Fighters and Advanced Aircraft Directorate
     abbreviation: AFLCMC/WA
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management and fighter aircraft. Seeded from directory page 285.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -435,6 +449,10 @@ records:
       - fighter_aircraft
     capability_tags:
       - fighter_aircraft
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 285
@@ -443,14 +461,11 @@ records:
       - source_id: source.public-url.aflcmc-af-mil.df90fc7559
         page: 285
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.bombers
+  - id: org.air-force.aflcmc.bombers
     type: program_executive_office
     name: PEO Bombers Directorate
     abbreviation: AFLCMC/WB
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management and bombers. Seeded from directory page 285.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -458,19 +473,20 @@ records:
       - bombers
     capability_tags:
       - bombers
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 285
         usage: seed_reference_only
         toc_order: 266
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.isr-sof
+  - id: org.air-force.aflcmc.isr-sof
     type: program_executive_office
     name: PEO Intelligence, Surveillance, Reconnaissance and SOF Directorate
     abbreviation: AFLCMC/WI
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, ISR, special operations, and sof. Seeded from directory page 286.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -480,18 +496,19 @@ records:
     capability_tags:
       - isr
       - sof
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 286
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.mobility
+  - id: org.air-force.aflcmc.mobility
     type: program_executive_office
     name: PEO Mobility Directorate
     abbreviation: AFLCMC/WL
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, mobility aircraft, airlift, and tankers. Seeded from directory page 287.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -500,19 +517,20 @@ records:
     capability_tags:
       - airlift
       - tankers
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 287
         usage: seed_reference_only
         toc_order: 269
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.training
+  - id: org.air-force.aflcmc.training
     type: program_executive_office
     name: PEO Training Directorate
     abbreviation: AFLCMC/WN
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, training systems, and training. Seeded from directory page 288.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -520,19 +538,20 @@ records:
       - training_systems
     capability_tags:
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 288
         usage: seed_reference_only
         toc_order: 270
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.aflcmc.jsf
+  - id: org.air-force.aflcmc.jsf
     type: program_executive_office
     name: PEO Joint Strike Fighter Directorate
     abbreviation: JSF
+    description_short: Program executive office record under Air Force Life Cycle Management Center associated with program management, joint strike fighter, and fighter aircraft. Seeded from directory page 288.
     parent_id: org.air-force.aflcmc
     service: air_force
     functions:
@@ -540,19 +559,20 @@ records:
       - joint_strike_fighter
     capability_tags:
       - fighter_aircraft
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 288
         usage: seed_reference_only
         toc_order: 272
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afsc
+  - id: org.air-force.afsc
     type: command
     name: Air Force Sustainment Center
     abbreviation: AFSC
+    description_short: Command record under Air Force Material Command associated with sustainment and logistics. Seeded from directory page 289.
     parent_id: org.air-force.afmc
     service: air_force
     functions:
@@ -560,6 +580,10 @@ records:
       - logistics
     capability_tags:
       - sustainment
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 289
@@ -568,20 +592,21 @@ records:
       - source_id: source.public-url.tinker-af-mil.8789693734
         page: 289
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.acc
+  - id: org.air-force.acc
     type: command
     name: Air Combat Command
     abbreviation: ACC
+    description_short: Command record under Department of the Air Force associated with combat air forces and air combat. Seeded from directory page 290.
     parent_id: org.air-force
     service: air_force
     functions:
       - combat_air_forces
     capability_tags:
       - air_combat
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 290
@@ -602,14 +627,11 @@ records:
       - source_id: source.public-url.acc-af-mil.9ee7ce6780
         page: 290
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afnwc
+  - id: org.air-force.afnwc
     type: command
     name: Air Force Nuclear Weapons Center
     abbreviation: AFNWC
+    description_short: Command record under Air Force Material Command associated with nuclear weapons, acquisition, nuclear, and strategic deterrence. Seeded from directory page 292.
     parent_id: org.air-force.afmc
     service: air_force
     functions:
@@ -618,6 +640,10 @@ records:
     capability_tags:
       - nuclear
       - strategic_deterrence
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 292
@@ -626,14 +652,11 @@ records:
       - source_id: source.public-url.afnwc-af-mil.af10f5eb30
         page: 292
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afnwc.air-delivered
+  - id: org.air-force.afnwc.air-delivered
     type: program_executive_office
     name: PEO Air-Delivered Capability Directorate
     abbreviation: NAD
+    description_short: Program executive office record under Air Force Nuclear Weapons Center associated with program management, nuclear weapons, and nuclear. Seeded from directory page 292.
     parent_id: org.air-force.afnwc
     service: air_force
     functions:
@@ -641,18 +664,19 @@ records:
       - nuclear_weapons
     capability_tags:
       - nuclear
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afnwc.icbm
+  - id: org.air-force.afnwc.icbm
     type: program_executive_office
     name: PEO Intercontinental Ballistic Missile Systems Directorate
     abbreviation: ICBM Systems
+    description_short: Program executive office record under Air Force Nuclear Weapons Center associated with program management, icbm, and strategic deterrence. Seeded from directory page 292.
     parent_id: org.air-force.afnwc
     service: air_force
     functions:
@@ -660,19 +684,20 @@ records:
       - icbm
     capability_tags:
       - strategic_deterrence
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
         toc_order: 277
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afnwc.nc3
+  - id: org.air-force.afnwc.nc3
     type: program_executive_office
     name: PEO Nuclear Command, Control and Communications Integration Directorate
     abbreviation: NC3
+    description_short: Program executive office record under Air Force Nuclear Weapons Center associated with program management, nuclear command and control, and nc3. Seeded from directory page 292.
     parent_id: org.air-force.afnwc
     service: air_force
     functions:
@@ -680,36 +705,38 @@ records:
       - nuclear_command_control
     capability_tags:
       - nc3
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.foundational-tech
+  - id: org.air-force.afrl.foundational-tech
     type: directorate
     name: Foundational Technology Directorate
     abbreviation: AFRL Foundational Tech
+    description_short: Directorate record under Air Force Research Laboratory associated with research and science and technology. Seeded from directory page 293.
     parent_id: org.air-force.afrl
     service: air_force
     functions:
       - research
     capability_tags:
       - science_and_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 293
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.air-warfare
+  - id: org.air-force.afrl.air-warfare
     type: directorate
     name: Air Warfare Directorate
     abbreviation: AFRL Air Warfare
+    description_short: Directorate record under Air Force Research Laboratory associated with research and air warfare. Seeded from directory page 294.
     parent_id: org.air-force.afrl
     service: air_force
     functions:
@@ -717,18 +744,19 @@ records:
       - air_warfare
     capability_tags:
       - air_warfare
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 294
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.space-warfare
+  - id: org.air-force.afrl.space-warfare
     type: directorate
     name: Space Warfare Directorate
     abbreviation: AFRL Space Warfare
+    description_short: Directorate record under Air Force Research Laboratory associated with research, space warfare, and space. Seeded from directory page 294.
     parent_id: org.air-force.afrl
     service: air_force
     functions:
@@ -736,18 +764,19 @@ records:
       - space_warfare
     capability_tags:
       - space
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 294
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.info-spectrum
+  - id: org.air-force.afrl.info-spectrum
     type: directorate
     name: Information and Spectrum Warfare Directorate
     abbreviation: AFRL ISW
+    description_short: Directorate record under Air Force Research Laboratory associated with research, information warfare, spectrum warfare, and cyber. Seeded from directory page 294.
     parent_id: org.air-force.afrl
     service: air_force
     functions:
@@ -757,18 +786,19 @@ records:
     capability_tags:
       - spectrum_warfare
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 294
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.afwerx
+  - id: org.air-force.afrl.afwerx
     type: office
     name: AFWERX
     abbreviation: AFWERX
+    description_short: Office record under Air Force Research Laboratory associated with innovation, commercial technology, front door, and commercial solutions. Seeded from directory page 295.
     parent_id: org.air-force.afrl
     service: air_force
     functions:
@@ -777,18 +807,19 @@ records:
     capability_tags:
       - front_door
       - commercial_solutions
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 295
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.air-force.afrl.spacewerx
+  - id: org.air-force.afrl.spacewerx
     type: office
     name: SPACEWERX
     abbreviation: SPACEWERX
+    description_short: Office record under Air Force Research Laboratory associated with innovation, commercial space, front door, commercial solutions, and space. Seeded from directory page 295.
     parent_id: org.air-force.afrl
     service: space_force
     functions:
@@ -798,6 +829,10 @@ records:
       - front_door
       - commercial_solutions
       - space
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 295

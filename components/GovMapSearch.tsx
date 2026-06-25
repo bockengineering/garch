@@ -34,7 +34,7 @@ export default function GovMapSearch({
           <input
             value={query}
             onChange={(event) => onQueryChange(event.target.value)}
-            placeholder="Search offices, abbreviations, services, functions, capability tags"
+            placeholder="Search offices, descriptions, abbreviations, services, functions, capability tags"
             className="h-10 w-full border border-stone-300 bg-white px-3 text-sm text-stone-950 outline-none focus:border-stone-700"
           />
         </label>

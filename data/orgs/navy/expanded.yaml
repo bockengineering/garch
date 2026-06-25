@@ -1,31 +1,29 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.secretary
+  - id: org.navy.secretary
     type: office
     name: Secretary of the Navy
     abbreviation: SECNAV
+    description_short: Office record under Department of the Navy associated with service secretariat and executive leadership. Seeded from directory page 194.
     parent_id: org.navy
     service: navy
     functions:
       - service_secretariat
     capability_tags:
       - executive_leadership
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 194
         usage: seed_reference_only
         toc_order: 156
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.osbp
+  - id: org.navy.osbp
     type: office
     name: Navy Office of Small Business Programs
     abbreviation: OSBP
+    description_short: Office record under Department of the Navy associated with small business and industrial base. Seeded from directory page 194.
     parent_id: org.navy
     service: navy
     functions:
@@ -33,19 +31,20 @@ records:
       - industrial_base
     capability_tags:
       - small_business
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 194
         usage: seed_reference_only
         toc_order: 159
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navrco
+  - id: org.navy.navrco
     type: office
     name: Navy Rapid Capabilities Office
     abbreviation: NAVRCO
+    description_short: Office record under Department of the Navy associated with rapid acquisition, innovation, front door, and rapid fielding. Seeded from directory page 195.
     parent_id: org.navy
     service: navy
     functions:
@@ -54,6 +53,10 @@ records:
     capability_tags:
       - front_door
       - rapid_fielding
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 195
@@ -74,14 +77,11 @@ records:
       - source_id: source.public-url.navsea-navy-mil.6165263348
         page: 195
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.don-cio
+  - id: org.navy.don-cio
     type: office
     name: Department of the Navy Chief Information Office
     abbreviation: DON CIO
+    description_short: Office record under Department of the Navy associated with information technology, cybersecurity, IT, and cyber. Seeded from directory page 197.
     parent_id: org.navy
     service: navy
     functions:
@@ -90,6 +90,10 @@ records:
     capability_tags:
       - it
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 197
@@ -104,14 +108,11 @@ records:
       - source_id: source.public-url.secnav-navy-mil.287cce9e8f
         page: 197
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.cno
+  - id: org.navy.cno
     type: office
     name: Office of the Chief of Naval Operations
     abbreviation: OPNAV
+    description_short: Office record under Department of the Navy associated with naval operations and requirements. Seeded from directory page 197.
     parent_id: org.navy
     service: navy
     functions:
@@ -119,25 +120,30 @@ records:
       - requirements
     capability_tags:
       - naval_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 197
         usage: seed_reference_only
         toc_order: 166
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.fleet-forces
+  - id: org.navy.fleet-forces
     type: command
     name: U.S. Navy Fleet Forces Command
     abbreviation: USFF
+    description_short: Command record under Department of the Navy associated with fleet operations and fleet readiness. Seeded from directory page 203.
     parent_id: org.navy
     service: navy
     functions:
       - fleet_operations
     capability_tags:
       - fleet_readiness
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 203
@@ -158,14 +164,11 @@ records:
       - source_id: source.public-url.airlant-usff-navy-mil.e712955d12
         page: 203
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pacific-fleet
+  - id: org.navy.pacific-fleet
     type: command
     name: U.S. Pacific Fleet
     abbreviation: USPACFLT
+    description_short: Command record under Department of the Navy associated with fleet operations, pacific, and fleet readiness. Seeded from directory page 206.
     parent_id: org.navy
     service: navy
     functions:
@@ -173,6 +176,10 @@ records:
       - pacific
     capability_tags:
       - fleet_readiness
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 206
@@ -190,20 +197,21 @@ records:
       - source_id: source.public-url.csp-navy-mil.97ed223174
         page: 206
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navifor
+  - id: org.navy.navifor
     type: command
     name: U.S. Navy Information Forces
     abbreviation: NAVIFOR
+    description_short: Command record under Department of the Navy associated with information warfare. Seeded from directory page 208.
     parent_id: org.navy
     service: navy
     functions:
       - information_warfare
     capability_tags:
       - information_warfare
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 208
@@ -220,33 +228,31 @@ records:
       - source_id: source.public-url.necc-usff-navy-mil.a4ff63acf2
         page: 208
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.cnaf
+  - id: org.navy.cnaf
     type: command
     name: Naval Air Forces
     abbreviation: CNAF
+    description_short: Command record under Department of the Navy associated with naval aviation and aviation. Seeded from directory page 209.
     parent_id: org.navy
     service: navy
     functions:
       - naval_aviation
     capability_tags:
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 209
         usage: seed_reference_only
         toc_order: 170
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.onr
+  - id: org.navy.onr
     type: lab
     name: Office of Naval Research
     abbreviation: ONR
+    description_short: Lab record under Assistant Secretary of the Navy for Research, Development and Acquisition associated with research and science and technology. Seeded from directory page 211.
     parent_id: org.navy.asn-rda
     service: navy
     functions:
@@ -254,6 +260,10 @@ records:
       - science_and_technology
     capability_tags:
       - science_and_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 211
@@ -262,20 +272,21 @@ records:
       - source_id: source.public-url.onr-navy-mil.cf20cb9c45
         page: 211
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.nrl
+  - id: org.navy.nrl
     type: lab
     name: Naval Research Laboratory
     abbreviation: NRL
+    description_short: Lab record under Office of Naval Research associated with research and science and technology. Seeded from directory page 213.
     parent_id: org.navy.onr
     service: navy
     functions:
       - research
     capability_tags:
       - science_and_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 213
@@ -295,14 +306,11 @@ records:
       - source_id: source.public-url.nrl-navy-mil.dce1e0de7d
         page: 213
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.rdt-e
+  - id: org.navy.rdt-e
     type: office
     name: Research, Development, Test and Engineering
     abbreviation: RDT&E
+    description_short: Office record under Assistant Secretary of the Navy for Research, Development and Acquisition associated with research, development, test and evaluation, engineering, and rdte. Seeded from directory page 216.
     parent_id: org.navy.asn-rda
     service: navy
     functions:
@@ -312,19 +320,20 @@ records:
       - engineering
     capability_tags:
       - rdte
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 216
         usage: seed_reference_only
         toc_order: 176
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pae
+  - id: org.navy.pae
     type: acquisition_executive
     name: Navy Portfolio Acquisition Executives
     abbreviation: Navy PAEs
+    description_short: Acquisition executive office under Assistant Secretary of the Navy for Research, Development and Acquisition associated with acquisition, portfolio management, and naval acquisition. Seeded from directory page 217.
     parent_id: org.navy.asn-rda
     service: navy
     functions:
@@ -332,19 +341,20 @@ records:
       - portfolio_management
     capability_tags:
       - naval_acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 217
         usage: seed_reference_only
         toc_order: 177
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pae.ras
+  - id: org.navy.pae.ras
     type: portfolio
     name: Portfolio Acquisition Executive Robotics and Autonomous Systems
     abbreviation: PAE RAS
+    description_short: Portfolio record under Navy Portfolio Acquisition Executives associated with acquisition, robotics, and autonomy. Seeded from directory page 219.
     parent_id: org.navy.pae
     service: navy
     functions:
@@ -354,18 +364,19 @@ records:
     capability_tags:
       - autonomy
       - robotics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 219
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pae.maritime
+  - id: org.navy.pae.maritime
     type: portfolio
     name: Portfolio Acquisition Executive Maritime
     abbreviation: PAE Maritime
+    description_short: Portfolio record under Navy Portfolio Acquisition Executives associated with acquisition, maritime systems, ships, and maritime. Seeded from directory page 219.
     parent_id: org.navy.pae
     service: navy
     functions:
@@ -374,18 +385,19 @@ records:
     capability_tags:
       - ships
       - maritime
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 219
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.peo.aircraft-carriers
+  - id: org.navy.peo.aircraft-carriers
     type: program_executive_office
     name: Program Executive Officer Aircraft Carriers
     abbreviation: PEO Aircraft Carriers
+    description_short: Program executive office record under Portfolio Acquisition Executive Maritime associated with program management, aircraft carriers, and ships. Seeded from directory page 221.
     parent_id: org.navy.pae.maritime
     service: navy
     functions:
@@ -393,19 +405,20 @@ records:
       - aircraft_carriers
     capability_tags:
       - ships
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 221
         usage: seed_reference_only
         toc_order: 180
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pae.munitions
+  - id: org.navy.pae.munitions
     type: portfolio
     name: Portfolio Acquisition Executive Munitions
     abbreviation: PAE Munitions
+    description_short: Portfolio record under Navy Portfolio Acquisition Executives associated with acquisition, munitions, and weapons. Seeded from directory page 222.
     parent_id: org.navy.pae
     service: navy
     functions:
@@ -414,18 +427,19 @@ records:
     capability_tags:
       - weapons
       - munitions
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 222
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.peo.iws
+  - id: org.navy.peo.iws
     type: program_executive_office
     name: PEO Integrated Warfare Systems
     abbreviation: PEO IWS
+    description_short: Program executive office record under Portfolio Acquisition Executive Munitions associated with program management, warfare systems, combat systems, sensors, and weapons. Seeded from directory page 223.
     parent_id: org.navy.pae.munitions
     service: navy
     functions:
@@ -435,6 +449,10 @@ records:
       - combat_systems
       - sensors
       - weapons
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 223
@@ -443,14 +461,11 @@ records:
       - source_id: source.public-url.navsea-navy-mil.553020eb19
         page: 223
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.pae.mission-systems
+  - id: org.navy.pae.mission-systems
     type: portfolio
     name: Portfolio Acquisition Executive Mission Systems
     abbreviation: PAE Mission Systems
+    description_short: Portfolio record under Navy Portfolio Acquisition Executives associated with acquisition and mission systems. Seeded from directory page 226.
     parent_id: org.navy.pae
     service: navy
     functions:
@@ -458,37 +473,39 @@ records:
       - mission_systems
     capability_tags:
       - mission_systems
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 226
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.industrial-operations
+  - id: org.navy.navsea.industrial-operations
     type: directorate
     name: Industrial Operations
     abbreviation: NAVSEA 04
+    description_short: Directorate record under Naval Sea Systems Command associated with industrial operations and shipyards. Seeded from directory page 227.
     parent_id: org.navy.navsea
     service: navy
     functions:
       - industrial_operations
     capability_tags:
       - shipyards
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 227
         usage: seed_reference_only
         toc_order: 185
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.sea21
+  - id: org.navy.navsea.sea21
     type: directorate
     name: Surface Ship Maintenance, Modernization and Sustainment
     abbreviation: SEA 21
+    description_short: Directorate record under Naval Sea Systems Command associated with surface ship maintenance, sustainment, and surface ships. Seeded from directory page 228.
     parent_id: org.navy.navsea
     service: navy
     functions:
@@ -496,6 +513,10 @@ records:
       - sustainment
     capability_tags:
       - surface_ships
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 228
@@ -515,52 +536,51 @@ records:
       - source_id: source.public-url.navsea-navy-mil.f84fc1c739
         page: 228
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.sea05
+  - id: org.navy.navsea.sea05
     type: directorate
     name: Engineering Directorate
     abbreviation: SEA 05
+    description_short: Directorate record under Naval Sea Systems Command associated with engineering. Seeded from directory page 228.
     parent_id: org.navy.navsea
     service: navy
     functions:
       - engineering
     capability_tags:
       - engineering
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 228
         usage: seed_reference_only
         toc_order: 188
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.sea07
+  - id: org.navy.navsea.sea07
     type: directorate
     name: Undersea Warfare
     abbreviation: SEA 07
+    description_short: Directorate record under Naval Sea Systems Command associated with undersea warfare and undersea. Seeded from directory page 228.
     parent_id: org.navy.navsea
     service: navy
     functions:
       - undersea_warfare
     capability_tags:
       - undersea
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 228
         usage: seed_reference_only
         toc_order: 189
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.warfare-centers
+  - id: org.navy.navsea.warfare-centers
     type: test_center
     name: NAVSEA Warfare Centers
     abbreviation: NAVSEA WCs
+    description_short: Test center record under Naval Sea Systems Command associated with engineering, test and evaluation, and warfare centers. Seeded from directory page 228.
     parent_id: org.navy.navsea
     service: navy
     functions:
@@ -568,6 +588,10 @@ records:
       - test_and_evaluation
     capability_tags:
       - warfare_centers
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 228
@@ -576,14 +600,11 @@ records:
       - source_id: source.public-url.navsea-navy-mil.49ffeef3b2
         page: 228
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.peo-ssn
+  - id: org.navy.navsea.peo-ssn
     type: program_executive_office
     name: PEO Attack Submarines
     abbreviation: PEO SSN
+    description_short: Program executive office record under Naval Sea Systems Command associated with program management, submarines, and undersea. Seeded from directory page 232.
     parent_id: org.navy.navsea
     service: navy
     functions:
@@ -592,19 +613,20 @@ records:
     capability_tags:
       - submarines
       - undersea
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 232
         usage: seed_reference_only
         toc_order: 192
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navsea.peo-usc
+  - id: org.navy.navsea.peo-usc
     type: program_executive_office
     name: PEO Unmanned and Small Combatants
     abbreviation: PEO USC
+    description_short: Program executive office record under Naval Sea Systems Command associated with program management, unmanned systems, small combatants, and unmanned. Seeded from directory page 233.
     parent_id: org.navy.navsea
     service: navy
     functions:
@@ -614,19 +636,20 @@ records:
     capability_tags:
       - unmanned
       - small_combatants
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 233
         usage: seed_reference_only
         toc_order: 194
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.nawcad
+  - id: org.navy.navair.nawcad
     type: test_center
     name: Naval Air Warfare Center Aircraft Division
     abbreviation: NAWCAD
+    description_short: Test center record under Naval Air Systems Command associated with aviation, test and evaluation, engineering, and test ranges. Seeded from directory page 236.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -636,18 +659,19 @@ records:
     capability_tags:
       - aviation
       - test_ranges
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 236
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.nawcwd
+  - id: org.navy.navair.nawcwd
     type: test_center
     name: Naval Air Warfare Center Weapons Division
     abbreviation: NAWCWD
+    description_short: Test center record under Naval Air Systems Command associated with weapons, test and evaluation, engineering, and test ranges. Seeded from directory page 237.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -657,6 +681,10 @@ records:
     capability_tags:
       - weapons
       - test_ranges
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 237
@@ -676,14 +704,11 @@ records:
       - source_id: source.public-url.navair-navy-mil.d8b356b850
         page: 237
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.peo-a
+  - id: org.navy.navair.peo-a
     type: program_executive_office
     name: PEO Air Anti-Submarine Warfare, Assault and Special Mission
     abbreviation: PEO(A)
+    description_short: Program executive office record under Naval Air Systems Command associated with program management, naval aviation, aviation, and anti submarine warfare. Seeded from directory page 238.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -692,19 +717,20 @@ records:
     capability_tags:
       - aviation
       - anti_submarine_warfare
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 238
         usage: seed_reference_only
         toc_order: 200
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.peo-t
+  - id: org.navy.navair.peo-t
     type: program_executive_office
     name: PEO Tactical Aircraft Programs
     abbreviation: PEO(T)
+    description_short: Program executive office record under Naval Air Systems Command associated with program management, tactical aircraft, and aviation. Seeded from directory page 240.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -713,6 +739,10 @@ records:
     capability_tags:
       - aviation
       - tactical_aircraft
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 240
@@ -724,14 +754,11 @@ records:
       - source_id: source.public-url.navair-navy-mil.7cdc8fb415
         page: 240
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.peo-uw
+  - id: org.navy.navair.peo-uw
     type: program_executive_office
     name: PEO Unmanned Aviation and Strike Weapons
     abbreviation: PEO(U&W)
+    description_short: Program executive office record under Naval Air Systems Command associated with program management, unmanned aviation, strike weapons, UAS, and weapons. Seeded from directory page 241.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -741,6 +768,10 @@ records:
     capability_tags:
       - uas
       - weapons
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 241
@@ -749,14 +780,11 @@ records:
       - source_id: source.public-url.navair-navy-mil.77194ce578
         page: 241
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navair.peo-f35
+  - id: org.navy.navair.peo-f35
     type: program_executive_office
     name: PEO F-35 Lightning II Joint Program Office
     abbreviation: PEO F-35
+    description_short: Program executive office record under Naval Air Systems Command associated with program management, joint strike fighter, and fighter aircraft. Seeded from directory page 242.
     parent_id: org.navy.navair
     service: navy
     functions:
@@ -764,6 +792,10 @@ records:
       - joint_strike_fighter
     capability_tags:
       - fighter_aircraft
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 242
@@ -772,14 +804,11 @@ records:
       - source_id: source.public-url.navair-navy-mil.023bae2e05
         page: 242
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.niwc-atlantic
+  - id: org.navy.navwar.niwc-atlantic
     type: lab
     name: NIWC Atlantic
     abbreviation: NIWC Atlantic
+    description_short: Lab record under Naval Information Warfare Systems Command associated with information warfare, engineering, C4I, and cyber. Seeded from directory page 243.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -788,6 +817,10 @@ records:
     capability_tags:
       - c4i
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 243
@@ -799,14 +832,11 @@ records:
       - source_id: source.public-url.niwcatlantic-navy-mil.9825df785d
         page: 243
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.niwc-pacific
+  - id: org.navy.navwar.niwc-pacific
     type: lab
     name: NIWC Pacific
     abbreviation: NIWC Pacific
+    description_short: Lab record under Naval Information Warfare Systems Command associated with information warfare, engineering, C4I, and cyber. Seeded from directory page 243.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -815,6 +845,10 @@ records:
     capability_tags:
       - c4i
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 243
@@ -825,33 +859,31 @@ records:
       - source_id: source.public-url.niwcpacific-navy-mil.b47f5c48fb
         page: 243
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.cyber
+  - id: org.navy.navwar.cyber
     type: directorate
     name: NAVWAR Cyber Directorate
     abbreviation: NAVWAR Cyber
+    description_short: Directorate record under Naval Information Warfare Systems Command associated with cyber. Seeded from directory page 244.
     parent_id: org.navy.navwar
     service: navy
     functions:
       - cyber
     capability_tags:
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 244
         usage: seed_reference_only
         toc_order: 207
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.peo-c4i
+  - id: org.navy.navwar.peo-c4i
     type: program_executive_office
     name: PEO Command, Control, Communications, Computers and Intelligence
     abbreviation: PEO C4I
+    description_short: Program executive office record under Naval Information Warfare Systems Command associated with program management, C4I, and command and control. Seeded from directory page 244.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -860,6 +892,10 @@ records:
     capability_tags:
       - c4i
       - command_and_control
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 244
@@ -868,14 +904,11 @@ records:
       - source_id: source.public-url.peoc4i-navy-mil.1fcc651b44
         page: 244
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.peo-digital
+  - id: org.navy.navwar.peo-digital
     type: program_executive_office
     name: PEO Digital and Enterprise Services
     abbreviation: PEO Digital
+    description_short: Program executive office record under Naval Information Warfare Systems Command associated with program management, enterprise IT, digital services, and software. Seeded from directory page 249.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -885,6 +918,10 @@ records:
     capability_tags:
       - software
       - enterprise_it
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 249
@@ -896,14 +933,11 @@ records:
       - source_id: source.public-url.peodigital-navy-mil.9cfe01a8f2
         page: 249
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.peo-mlb
+  - id: org.navy.navwar.peo-mlb
     type: program_executive_office
     name: PEO Manpower, Logistics and Business Solutions
     abbreviation: PEO MLB
+    description_short: Program executive office record under Naval Information Warfare Systems Command associated with program management, logistics it, business systems, enterprise IT, and logistics. Seeded from directory page 253.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -913,6 +947,10 @@ records:
     capability_tags:
       - enterprise_it
       - logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 253
@@ -926,14 +964,11 @@ records:
       - source_id: source.public-url.peomlb-navy-mil.a3c42af04a
         page: 253
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.navwar.space-field-activity
+  - id: org.navy.navwar.space-field-activity
     type: office
     name: NAVWAR Space Field Activity
     abbreviation: NAVWAR SFA
+    description_short: Office record under Naval Information Warfare Systems Command associated with space, information warfare, and C4I. Seeded from directory page 254.
     parent_id: org.navy.navwar
     service: navy
     functions:
@@ -942,19 +977,20 @@ records:
     capability_tags:
       - space
       - c4i
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 254
         usage: seed_reference_only
         toc_order: 212
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.navy.strategic-systems
+  - id: org.navy.strategic-systems
     type: command
     name: Strategic Systems Programs
     abbreviation: SSP
+    description_short: Command record under Department of the Navy associated with strategic systems and nuclear deterrence. Seeded from directory page 256.
     parent_id: org.navy
     service: navy
     functions:
@@ -962,6 +998,10 @@ records:
       - nuclear_deterrence
     capability_tags:
       - strategic_systems
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 256
@@ -970,14 +1010,11 @@ records:
       - source_id: source.public-url.ssp-navy-mil.cb49a9d24b
         page: 256
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps
+  - id: org.marine-corps
     type: service
     name: Marine Corps
     abbreviation: USMC
+    description_short: Service-level record under Department of War associated with service management, expeditionary operations, and expeditionary. Seeded from directory page 258.
     parent_id: org.dow
     service: marine_corps
     functions:
@@ -985,57 +1022,60 @@ records:
       - expeditionary_operations
     capability_tags:
       - expeditionary
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 258
         usage: seed_reference_only
         toc_order: 221
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.aviation
+  - id: org.marine-corps.aviation
     type: office
     name: Marine Corps Aviation
     abbreviation: USMC Aviation
+    description_short: Office record under Marine Corps associated with aviation. Seeded from directory page 259.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
       - aviation
     capability_tags:
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 259
         usage: seed_reference_only
         toc_order: 223
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.training-command
+  - id: org.marine-corps.training-command
     type: command
     name: Marine Corps Training Command
     abbreviation: Training Command
+    description_short: Command record under Marine Corps associated with training. Seeded from directory page 260.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
       - training
     capability_tags:
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 260
         usage: seed_reference_only
         toc_order: 224
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.mcwl
+  - id: org.marine-corps.mcwl
     type: lab
     name: Marine Corps Warfighting Laboratory
     abbreviation: MCWL
+    description_short: Lab record under Marine Corps associated with experimentation, future concepts, and warfighting lab. Seeded from directory page 261.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
@@ -1043,6 +1083,10 @@ records:
       - future_concepts
     capability_tags:
       - warfighting_lab
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 261
@@ -1053,14 +1097,11 @@ records:
       - source_id: source.public-url.mcwl-marines-mil.6090f3fb32
         page: 261
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.marcorsyscom
+  - id: org.marine-corps.marcorsyscom
     type: command
     name: Marine Corps Systems Command
     abbreviation: MARCORSYSCOM
+    description_short: Command record under Marine Corps associated with acquisition, systems command, and marine corps acquisition. Seeded from directory page 261.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
@@ -1068,6 +1109,10 @@ records:
       - systems_command
     capability_tags:
       - marine_corps_acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 261
@@ -1076,14 +1121,11 @@ records:
       - source_id: source.public-url.marcorsyscom-marines-mil.d0db3f7bfb
         page: 261
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.pae
+  - id: org.marine-corps.pae
     type: portfolio
     name: Portfolio Acquisition Executive for the Marine Corps
     abbreviation: PAE USMC
+    description_short: Portfolio record under Marine Corps Systems Command associated with acquisition, portfolio management, and marine corps acquisition. Seeded from directory page 261.
     parent_id: org.marine-corps.marcorsyscom
     service: marine_corps
     functions:
@@ -1091,25 +1133,30 @@ records:
       - portfolio_management
     capability_tags:
       - marine_corps_acquisition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 261
         usage: seed_reference_only
         toc_order: 227
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.forces-reserve
+  - id: org.marine-corps.forces-reserve
     type: command
     name: Marine Forces Reserve
     abbreviation: MARFORRES
+    description_short: Command record under Marine Corps associated with reserve component and reserve. Seeded from directory page 264.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
       - reserve_component
     capability_tags:
       - reserve
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 264
@@ -1118,14 +1165,11 @@ records:
       - source_id: source.public-url.marforres-marines-mil.b012bcfd8e
         page: 264
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.marine-corps.edcom
+  - id: org.marine-corps.edcom
     type: command
     name: Marine Corps Training and Education Command
     abbreviation: EDCOM
+    description_short: Command record under Marine Corps associated with training and education. Seeded from directory page 264.
     parent_id: org.marine-corps
     service: marine_corps
     functions:
@@ -1133,6 +1177,10 @@ records:
       - education
     capability_tags:
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 264

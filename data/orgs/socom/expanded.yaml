@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.headquarters-staff
+  - id: org.socom.headquarters-staff
     type: office
     name: SOCOM Headquarters Staff
     abbreviation: SOCOM Staff
+    description_short: Office record under United States Special Operations Command associated with headquarters, joint command, and special operations. Seeded from directory page 330.
     parent_id: org.socom
     service: socom
     functions:
@@ -14,6 +11,10 @@ records:
       - joint_command
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 330
@@ -25,14 +26,11 @@ records:
       - source_id: source.public-url.socom-mil.d6b417c44a
         page: 330
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.jsou
+  - id: org.socom.jsou
     type: office
     name: Joint Special Operations University
     abbreviation: JSOU
+    description_short: Office record under United States Special Operations Command associated with education, training, and special operations. Seeded from directory page 332.
     parent_id: org.socom
     service: socom
     functions:
@@ -41,6 +39,10 @@ records:
     capability_tags:
       - special_operations
       - training
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 332
@@ -49,14 +51,11 @@ records:
       - source_id: source.public-url.jsou-edu.4d330ae185
         page: 332
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.st-directorate
+  - id: org.socom.st-directorate
     type: directorate
     name: SOCOM Science and Technology Directorate
     abbreviation: SOCOM S&T
+    description_short: Directorate record under United States Special Operations Command associated with science and technology, research, and special operations. Seeded from directory page 333.
     parent_id: org.socom
     service: socom
     functions:
@@ -65,19 +64,20 @@ records:
     capability_tags:
       - special_operations
       - science_and_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 333
         usage: seed_reference_only
         toc_order: 330
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.sofwerx
+  - id: org.socom.sofwerx
     type: lab
     name: SOFWERX
     abbreviation: SOFWERX
+    description_short: Lab record under SOCOM Science and Technology Directorate associated with innovation, commercial technology, front door, and special operations. Seeded from directory page 334.
     parent_id: org.socom.st-directorate
     service: socom
     functions:
@@ -86,18 +86,19 @@ records:
     capability_tags:
       - front_door
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 334
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.dir-eis
+  - id: org.socom.dir-eis
     type: directorate
     name: Directorate of Enterprise Information Systems
     abbreviation: SOF DIR-EIS
+    description_short: Directorate record under United States Special Operations Command associated with enterprise IT and information systems. Seeded from directory page 334.
     parent_id: org.socom
     service: socom
     functions:
@@ -105,19 +106,20 @@ records:
       - information_systems
     capability_tags:
       - enterprise_it
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 334
         usage: seed_reference_only
         toc_order: 331
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-fixed-wing
+  - id: org.socom.peo-fixed-wing
     type: program_executive_office
     name: SOF PEO Fixed Wing
     abbreviation: PEO-FW
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, fixed wing aircraft, special operations, and aviation. Seeded from directory page 335.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -126,6 +128,10 @@ records:
     capability_tags:
       - special_operations
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 335
@@ -134,14 +140,11 @@ records:
       - source_id: source.public-url.socom-mil.c3817a505a
         page: 335
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-maritime
+  - id: org.socom.peo-maritime
     type: program_executive_office
     name: SOF PEO Maritime
     abbreviation: PEO-M
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, maritime, and special operations. Seeded from directory page 336.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -150,6 +153,10 @@ records:
     capability_tags:
       - special_operations
       - maritime
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 336
@@ -158,14 +165,11 @@ records:
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 336
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-rotary-wing
+  - id: org.socom.peo-rotary-wing
     type: program_executive_office
     name: SOF PEO Rotary Wing
     abbreviation: PEO-RW
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, rotary wing aircraft, special operations, and aviation. Seeded from directory page 336.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -174,19 +178,20 @@ records:
     capability_tags:
       - special_operations
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 336
         usage: seed_reference_only
         toc_order: 334
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-digital-applications
+  - id: org.socom.peo-digital-applications
     type: program_executive_office
     name: SOF PEO Digital Applications
     abbreviation: PEO-SDA
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, digital applications, software, and special operations. Seeded from directory page 336.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -195,19 +200,20 @@ records:
     capability_tags:
       - software
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 336
         usage: seed_reference_only
         toc_order: 335
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-services
+  - id: org.socom.peo-services
     type: program_executive_office
     name: SOF PEO Services
     abbreviation: PEO Services
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, services, and special operations. Seeded from directory page 337.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -215,6 +221,10 @@ records:
       - services
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 337
@@ -223,14 +233,11 @@ records:
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 337
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-sofsa
+  - id: org.socom.peo-sofsa
     type: program_executive_office
     name: SOF PEO Special Operations Forces Support Activity
     abbreviation: PEO-SOFSA
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, support activity, special operations, and support. Seeded from directory page 337.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -239,19 +246,20 @@ records:
     capability_tags:
       - special_operations
       - support
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 337
         usage: seed_reference_only
         toc_order: 337
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-warrior
+  - id: org.socom.peo-warrior
     type: program_executive_office
     name: SOF PEO Special Operations Forces Warrior
     abbreviation: PEO-SW
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, operator equipment, special operations, and lethality. Seeded from directory page 337.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -260,19 +268,20 @@ records:
     capability_tags:
       - special_operations
       - lethality
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 337
         usage: seed_reference_only
         toc_order: 338
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.peo-tis
+  - id: org.socom.peo-tis
     type: program_executive_office
     name: SOF PEO Tactical Information Systems
     abbreviation: PEO-TIS
+    description_short: Program executive office record under Special Operations Forces Acquisition, Technology and Logistics associated with program management, tactical information systems, C4I, and special operations. Seeded from directory page 338.
     parent_id: org.socom.sof-atl
     service: socom
     functions:
@@ -281,6 +290,10 @@ records:
     capability_tags:
       - c4i
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 338
@@ -289,20 +302,21 @@ records:
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 338
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.jsoc
+  - id: org.socom.jsoc
     type: command
     name: Joint Special Operations Command
     abbreviation: JSOC
+    description_short: Command record under United States Special Operations Command associated with special operations. Seeded from directory page 338.
     parent_id: org.socom
     service: socom
     functions:
       - special_operations
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 338
@@ -311,14 +325,11 @@ records:
       - source_id: source.public-url.socom-mil.183124fabe
         page: 338
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.nsw
+  - id: org.socom.nsw
     type: command
     name: Naval Special Warfare Command
     abbreviation: NSW
+    description_short: Command record under United States Special Operations Command associated with special operations and maritime. Seeded from directory page 338.
     parent_id: org.socom
     service: socom
     functions:
@@ -326,6 +337,10 @@ records:
       - maritime
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 338
@@ -334,14 +349,11 @@ records:
       - source_id: source.public-url.nsw-navy-mil.ddff9afd11
         page: 338
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.usasoc
+  - id: org.socom.usasoc
     type: command
     name: Army Special Operations Command
     abbreviation: USASOC
+    description_short: Command record under United States Special Operations Command associated with special operations and land. Seeded from directory page 339.
     parent_id: org.socom
     service: socom
     functions:
@@ -349,6 +361,10 @@ records:
       - land
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 339
@@ -357,14 +373,11 @@ records:
       - source_id: source.public-url.army-mil.59b564e09a
         page: 339
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.afsoc
+  - id: org.socom.afsoc
     type: command
     name: Air Force Special Operations Command
     abbreviation: AFSOC
+    description_short: Command record under United States Special Operations Command associated with special operations and aviation. Seeded from directory page 339.
     parent_id: org.socom
     service: socom
     functions:
@@ -372,6 +385,10 @@ records:
       - aviation
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 339
@@ -392,14 +409,11 @@ records:
       - source_id: source.public-url.afsoc-af-mil.c713b9c353
         page: 339
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.socom.marsoc
+  - id: org.socom.marsoc
     type: command
     name: Marine Corps Special Operations Command
     abbreviation: MARSOC
+    description_short: Command record under United States Special Operations Command associated with special operations and expeditionary. Seeded from directory page 339.
     parent_id: org.socom
     service: socom
     functions:
@@ -407,6 +421,10 @@ records:
       - expeditionary
     capability_tags:
       - special_operations
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 339

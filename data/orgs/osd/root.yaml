@@ -2,6 +2,7 @@ id: org.dow
 type: department
 name: Department of War
 abbreviation: DoW
+description_short: Root department record for the public office map, linking offices, programs, people, sources, and change history.
 service: dow
 functions:
   - defense_policy
@@ -21,6 +22,7 @@ id: org.osd
 type: office
 name: Office of the Secretary of War
 abbreviation: OSW
+description_short: Office record under Department of War associated with defense policy, oversight, and executive leadership. Seeded from directory page 66.
 parent_id: org.dow
 service: osd
 functions:
@@ -45,6 +47,7 @@ id: org.osd.re
 type: directorate
 name: Research and Engineering
 abbreviation: R&E
+description_short: Directorate record under Office of the Secretary of War associated with research, engineering, technology transition, science and technology, and prototypes. Seeded from directory page 87.
 parent_id: org.osd
 service: osd
 functions:
@@ -68,6 +71,7 @@ id: org.osd.as
 type: acquisition_executive
 name: Acquisition and Sustainment
 abbreviation: A&S
+description_short: Acquisition executive office under Office of the Secretary of War associated with acquisition, sustainment, industrial base, and logistics. Seeded from directory page 73.
 parent_id: org.osd
 service: osd
 functions:
@@ -90,6 +94,7 @@ id: org.osd.diu
 type: office
 name: Defense Innovation Unit
 abbreviation: DIU
+description_short: Office record under Office of the Secretary of War associated with commercial technology, rapid transition, commercial solutions, and prototypes. Seeded from directory page 100.
 parent_id: org.osd
 service: osd
 functions:
@@ -115,6 +120,7 @@ id: org.osd.darpa
 type: external_agency
 name: Defense Advanced Research Projects Agency
 abbreviation: DARPA
+description_short: External agency record under Office of the Secretary of War associated with research, advanced development, breakthrough technology, and prototypes. Seeded from directory page 93.
 parent_id: org.osd
 service: osd
 functions:
@@ -152,6 +158,7 @@ id: org.osd.osc
 type: office
 name: Office of Strategic Capital
 abbreviation: OSC
+description_short: Office record under Office of the Secretary of War associated with capital access, industrial base, strategic capital, and financing. Seeded from directory page 97.
 parent_id: org.osd
 service: osd
 functions:

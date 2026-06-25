@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.navy
+  - id: org.test-centers.navy
     type: test_center
     name: Navy Test Ranges
     abbreviation: Navy Test Ranges
+    description_short: Test center record under Startup Test Centers associated with test and evaluation, test ranges, maritime, and aviation. Seeded from directory page 439.
     parent_id: org.test-centers
     service: navy
     functions:
@@ -15,36 +12,38 @@ records:
       - test_ranges
       - maritime
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 439
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.navy.narragansett-bay
+  - id: org.test-centers.navy.narragansett-bay
     type: test_center
     name: Narragansett Bay Test Facility
     abbreviation: NBTF
+    description_short: Test center record under Navy Test Ranges associated with test and evaluation and test range. Seeded from directory page 439.
     parent_id: org.test-centers.navy
     service: navy
     functions:
       - test_and_evaluation
     capability_tags:
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 439
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.navy.point-mugu
+  - id: org.test-centers.navy.point-mugu
     type: test_center
     name: Point Mugu Sea Range
     abbreviation: Point Mugu
+    description_short: Test center record under Navy Test Ranges associated with test and evaluation, sea range, and aviation. Seeded from directory page 439.
     parent_id: org.test-centers.navy
     service: navy
     functions:
@@ -52,18 +51,19 @@ records:
     capability_tags:
       - sea_range
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 439
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.navy.china-lake
+  - id: org.test-centers.navy.china-lake
     type: test_center
     name: Naval Air Weapons Station China Lake
     abbreviation: China Lake
+    description_short: Test center record under Navy Test Ranges associated with test and evaluation, weapons, and weapons test. Seeded from directory page 439.
     parent_id: org.test-centers.navy
     service: navy
     functions:
@@ -71,72 +71,76 @@ records:
       - weapons
     capability_tags:
       - weapons_test
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 439
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army
+  - id: org.test-centers.army
     type: test_center
     name: Army Test Ranges
     abbreviation: Army Test Ranges
+    description_short: Test center record under Startup Test Centers associated with test and evaluation and test ranges. Seeded from directory page 439.
     parent_id: org.test-centers
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_ranges
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 439
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.aberdeen
+  - id: org.test-centers.army.aberdeen
     type: test_center
     name: Aberdeen Test Center
     abbreviation: ATC
+    description_short: Test center record under Army Test Ranges associated with test and evaluation and test range. Seeded from directory page 440.
     parent_id: org.test-centers.army
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 440
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.dugway
+  - id: org.test-centers.army.dugway
     type: test_center
     name: Dugway Proving Ground
     abbreviation: DPG
+    description_short: Test center record under Army Test Ranges associated with test and evaluation and test range. Seeded from directory page 440.
     parent_id: org.test-centers.army
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 440
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.electronic-proving-ground
+  - id: org.test-centers.army.electronic-proving-ground
     type: test_center
     name: Electronic Proving Ground
     abbreviation: EPG
+    description_short: Test center record under Army Test Ranges associated with test and evaluation, electronic warfare, and test range. Seeded from directory page 440.
     parent_id: org.test-centers.army
     service: army
     functions:
@@ -145,36 +149,38 @@ records:
     capability_tags:
       - electronic_warfare
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 440
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.redstone
+  - id: org.test-centers.army.redstone
     type: test_center
     name: Redstone Test Center
     abbreviation: RTC
+    description_short: Test center record under Army Test Ranges associated with test and evaluation and test range. Seeded from directory page 440.
     parent_id: org.test-centers.army
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 440
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.white-sands
+  - id: org.test-centers.army.white-sands
     type: test_center
     name: White Sands Missile Range
     abbreviation: WSMR
+    description_short: Test center record under Army Test Ranges associated with test and evaluation, missile testing, and missile range. Seeded from directory page 440.
     parent_id: org.test-centers.army
     service: army
     functions:
@@ -182,36 +188,38 @@ records:
       - missile_testing
     capability_tags:
       - missile_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 440
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.army.yuma
+  - id: org.test-centers.army.yuma
     type: test_center
     name: Yuma Proving Ground
     abbreviation: YPG
+    description_short: Test center record under Army Test Ranges associated with test and evaluation and test range. Seeded from directory page 441.
     parent_id: org.test-centers.army
     service: army
     functions:
       - test_and_evaluation
     capability_tags:
       - test_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 441
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.air-force
+  - id: org.test-centers.air-force
     type: test_center
     name: Air Force Test Ranges
     abbreviation: Air Force Test Ranges
+    description_short: Test center record under Startup Test Centers associated with test and evaluation, test ranges, and aviation. Seeded from directory page 441.
     parent_id: org.test-centers
     service: air_force
     functions:
@@ -219,18 +227,19 @@ records:
     capability_tags:
       - test_ranges
       - aviation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 441
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.air-force.eglin
+  - id: org.test-centers.air-force.eglin
     type: test_center
     name: Eglin Gulf Test and Training Range
     abbreviation: Eglin Range
+    description_short: Test center record under Air Force Test Ranges associated with test and evaluation, training, and air range. Seeded from directory page 441.
     parent_id: org.test-centers.air-force
     service: air_force
     functions:
@@ -238,18 +247,19 @@ records:
       - training
     capability_tags:
       - air_range
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 441
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.air-force.arnold
+  - id: org.test-centers.air-force.arnold
     type: test_center
     name: Arnold Engineering Development Complex
     abbreviation: AEDC
+    description_short: Test center record under Air Force Test Ranges associated with test and evaluation, engineering, and engineering test. Seeded from directory page 441.
     parent_id: org.test-centers.air-force
     service: air_force
     functions:
@@ -257,18 +267,19 @@ records:
       - engineering
     capability_tags:
       - engineering_test
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 441
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.mda.xlab
+  - id: org.test-centers.mda.xlab
     type: test_center
     name: C2BMC Experimentations Lab
     abbreviation: X-Lab
+    description_short: Test center record under Startup Test Centers associated with test and evaluation, command and control, missile defense, and C2. Seeded from directory page 441.
     parent_id: org.test-centers
     service: osd
     functions:
@@ -278,18 +289,19 @@ records:
     capability_tags:
       - missile_defense
       - c2
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 441
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.ffrdc
+  - id: org.test-centers.ffrdc
     type: test_center
     name: State and FFRDC Test Ranges
     abbreviation: State and FFRDC Test Ranges
+    description_short: Test center record under Startup Test Centers associated with test and evaluation, test ranges, and FFRDC. Seeded from directory page 442.
     parent_id: org.test-centers
     service: other
     functions:
@@ -297,18 +309,19 @@ records:
     capability_tags:
       - test_ranges
       - ffrdc
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 442
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.test-centers.ffrdc.mitre-bluetech
+  - id: org.test-centers.ffrdc.mitre-bluetech
     type: test_center
     name: MITRE BlueTech Lab
     abbreviation: MITRE BlueTech
+    description_short: Test center record under State and FFRDC Test Ranges associated with test and evaluation, maritime, and FFRDC. Seeded from directory page 442.
     parent_id: org.test-centers.ffrdc
     service: other
     functions:
@@ -317,6 +330,10 @@ records:
     capability_tags:
       - ffrdc
       - maritime
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 442

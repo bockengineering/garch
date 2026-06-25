@@ -43,7 +43,7 @@ This keeps runtime consumers independent from YAML parsing and lets FBud use the
 
 Primary canonical record types:
 
-- Organizations and offices: hierarchy, service, function, capability tags, source status.
+- Organizations and offices: hierarchy, short description, service, function, capability tags, source status.
 - People: public-safe person records without private contact information.
 - Assignments: person-to-office roles, separate from organizations.
 - Programs: capability or acquisition programs linked to offices and budget lines.
@@ -63,6 +63,7 @@ id: org.example.office
 type: office
 name: Example Office
 abbreviation: EXO
+description_short: Office under Example Parent associated with acquisition and command and control.
 parent_id: org.example
 service: other
 functions:

@@ -1,12 +1,9 @@
 records:
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.oig
+  - id: org.osd.oig
     type: office
     name: Office of Inspector General
     abbreviation: OIG
+    description_short: Office record under Office of the Secretary of War associated with oversight, audit, investigations, and accountability. Seeded from directory page 66.
     parent_id: org.osd
     service: osd
     functions:
@@ -15,19 +12,20 @@ records:
       - investigations
     capability_tags:
       - accountability
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 66
         usage: seed_reference_only
         toc_order: 29
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.direct-reporting
+  - id: org.osd.direct-reporting
     type: portfolio
     name: Direct Reporting Programs
     abbreviation: DRP
+    description_short: Portfolio record under Office of the Secretary of War associated with direct reporting, acquisition, and rapid fielding. Seeded from directory page 68.
     parent_id: org.osd
     service: osd
     functions:
@@ -35,19 +33,20 @@ records:
       - acquisition
     capability_tags:
       - rapid_fielding
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 68
         usage: seed_reference_only
         toc_order: 30
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.jiatf-401
+  - id: org.osd.jiatf-401
     type: portfolio
     name: Joint Interagency Task Force 401 (JIATF 401) Direct Reporting Portfolio Manager
     abbreviation: JIATF-401
+    description_short: Portfolio record under Office of the Secretary of War associated with counter uas, direct reporting, and drones. Seeded from directory page 68.
     parent_id: org.osd
     service: osd
     functions:
@@ -56,6 +55,10 @@ records:
     capability_tags:
       - counter_uas
       - drones
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 68
@@ -68,14 +71,11 @@ records:
         page: 68
         usage: seed_reference_only
         toc_order: 31
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.golden-dome
+  - id: org.osd.golden-dome
     type: portfolio
     name: Golden Dome Direct Reporting Portfolio Manager
     abbreviation: Golden Dome
+    description_short: Portfolio record under Office of the Secretary of War associated with missile defense and direct reporting. Seeded from directory page 69.
     parent_id: org.osd
     service: osd
     functions:
@@ -83,6 +83,10 @@ records:
       - direct_reporting
     capability_tags:
       - missile_defense
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 69
@@ -92,14 +96,11 @@ records:
         page: 69
         usage: seed_reference_only
         toc_order: 32
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.submarine-drpm
+  - id: org.osd.submarine-drpm
     type: portfolio
     name: Submarine Direct Reporting Portfolio Manager
     abbreviation: DRPM Submarines
+    description_short: Portfolio record under Office of the Secretary of War associated with submarine programs, direct reporting, undersea, and submarines. Seeded from directory page 70.
     parent_id: org.osd
     service: osd
     functions:
@@ -108,19 +109,20 @@ records:
     capability_tags:
       - undersea
       - submarines
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 70
         usage: seed_reference_only
         toc_order: 33
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.critical-major-weapons-drpm
+  - id: org.osd.critical-major-weapons-drpm
     type: portfolio
     name: Critical Major Weapon Systems Programs Direct Reporting Portfolio Manager
     abbreviation: DRPM Critical Weapons
+    description_short: Portfolio record under Office of the Secretary of War associated with major weapon systems, direct reporting, and weapon systems. Seeded from directory page 71.
     parent_id: org.osd
     service: osd
     functions:
@@ -128,19 +130,20 @@ records:
       - direct_reporting
     capability_tags:
       - weapon_systems
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 71
         usage: seed_reference_only
         toc_order: 34
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.comptroller
+  - id: org.osd.comptroller
     type: office
     name: Under Secretary of War (Comptroller)
     abbreviation: Comptroller
+    description_short: Office record under Office of the Secretary of War associated with financial management and budget. Seeded from directory page 72.
     parent_id: org.osd
     service: osd
     functions:
@@ -148,6 +151,10 @@ records:
       - budget
     capability_tags:
       - budget
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 72
@@ -162,14 +169,11 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 72
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.cape
+  - id: org.osd.cape
     type: office
     name: Office of Cost Assessment and Program Evaluation
     abbreviation: CAPE
+    description_short: Office record under Office of the Secretary of War associated with cost assessment, program evaluation, and analysis. Seeded from directory page 72.
     parent_id: org.osd
     service: osd
     functions:
@@ -177,6 +181,10 @@ records:
       - program_evaluation
     capability_tags:
       - analysis
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 72
@@ -185,14 +193,11 @@ records:
       - source_id: source.public-url.cape-osd-mil.68e1f674cf
         page: 72
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.cio
+  - id: org.osd.cio
     type: office
     name: DoW Chief Information Officer
     abbreviation: CIO
+    description_short: Office record under Office of the Secretary of War associated with information technology, cybersecurity, IT, and cyber. Seeded from directory page 72.
     parent_id: org.osd
     service: osd
     functions:
@@ -201,6 +206,10 @@ records:
     capability_tags:
       - it
       - cyber
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 72
@@ -212,14 +221,11 @@ records:
       - source_id: source.public-url.dowcio-war-gov.18f611da78
         page: 72
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.sco
+  - id: org.osd.sco
     type: office
     name: Strategic Capabilities Office
     abbreviation: SCO
+    description_short: Office record under Office of the Secretary of War associated with strategic capabilities, prototyping, prototypes, and fielded capability. Seeded from directory page 73.
     parent_id: org.osd
     service: osd
     functions:
@@ -228,19 +234,20 @@ records:
     capability_tags:
       - prototypes
       - fielded_capability
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 73
         usage: seed_reference_only
         toc_order: 39
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.as.asd-a
+  - id: org.osd.as.asd-a
     type: office
     name: Assistant Secretary of War for Acquisition
     abbreviation: ASD(A)
+    description_short: Office record under Acquisition and Sustainment associated with acquisition, portfolio management, and acquisition policy. Seeded from directory page 76.
     parent_id: org.osd.as
     service: osd
     functions:
@@ -248,6 +255,10 @@ records:
       - portfolio_management
     capability_tags:
       - acquisition_policy
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 76
@@ -267,14 +278,11 @@ records:
       - source_id: source.public-url.acq-osd-mil.91b844ad8e
         page: 76
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.as.asd-s
+  - id: org.osd.as.asd-s
     type: office
     name: Assistant Secretary of War for Sustainment
     abbreviation: ASD(S)
+    description_short: Office record under Acquisition and Sustainment associated with sustainment and logistics. Seeded from directory page 79.
     parent_id: org.osd.as
     service: osd
     functions:
@@ -282,6 +290,10 @@ records:
       - logistics
     capability_tags:
       - logistics
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 79
@@ -301,14 +313,11 @@ records:
       - source_id: source.public-url.acq-osd-mil.c60ed0bdc9
         page: 79
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.as.asd-eie
+  - id: org.osd.as.asd-eie
     type: office
     name: Assistant Secretary of War for Energy, Installations, and Environment
     abbreviation: ASD(EI&E)
+    description_short: Office record under Acquisition and Sustainment associated with installations, energy, environment, and infrastructure. Seeded from directory page 80.
     parent_id: org.osd.as
     service: osd
     functions:
@@ -317,18 +326,19 @@ records:
       - environment
     capability_tags:
       - infrastructure
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 80
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.as.asd-nd-cbd
+  - id: org.osd.as.asd-nd-cbd
     type: office
     name: Assistant Secretary for Nuclear Deterrence, Chemical, and Biological Defense Policy and Programs
     abbreviation: ASD(ND-CBD)
+    description_short: Office record under Acquisition and Sustainment associated with nuclear deterrence, chemical biological defense, nuclear, and CBRN. Seeded from directory page 81.
     parent_id: org.osd.as
     service: osd
     functions:
@@ -337,18 +347,19 @@ records:
     capability_tags:
       - nuclear
       - cbrn
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 81
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.as.asd-ibp
+  - id: org.osd.as.asd-ibp
     type: office
     name: Assistant Secretary of War for Industrial Base Policy
     abbreviation: ASD(IBP)
+    description_short: Office record under Acquisition and Sustainment associated with industrial base, economic security, and supply chain. Seeded from directory page 82.
     parent_id: org.osd.as
     service: osd
     functions:
@@ -357,18 +368,19 @@ records:
     capability_tags:
       - industrial_base
       - supply_chain
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 82
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.re.cdao
+  - id: org.osd.re.cdao
     type: office
     name: Chief Digital and Artificial Intelligence Office
     abbreviation: CDAO
+    description_short: Office record under Research and Engineering associated with data, artificial intelligence, digital, ai, and data platforms. Seeded from directory page 88.
     parent_id: org.osd.re
     service: osd
     functions:
@@ -379,19 +391,20 @@ records:
       - ai
       - data_platforms
       - command_and_control
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 88
         usage: seed_reference_only
         toc_order: 50
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.re.science-technology
+  - id: org.osd.re.science-technology
     type: office
     name: Science and Technology Office
     abbreviation: S&T
+    description_short: Office record under Research and Engineering associated with science and technology, research, and technology transition. Seeded from directory page 89.
     parent_id: org.osd.re
     service: osd
     functions:
@@ -399,18 +412,19 @@ records:
       - research
     capability_tags:
       - technology_transition
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 89
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.re.critical-technologies
+  - id: org.osd.re.critical-technologies
     type: office
     name: Critical Technologies Assistant Secretary
     abbreviation: ASD(CT)
+    description_short: Office record under Research and Engineering associated with critical technologies, directed energy, and advanced technology. Seeded from directory page 91.
     parent_id: org.osd.re
     service: osd
     functions:
@@ -418,18 +432,19 @@ records:
     capability_tags:
       - directed_energy
       - advanced_technology
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 91
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.re.mission-capabilities
+  - id: org.osd.re.mission-capabilities
     type: office
     name: Mission Capabilities Assistant Secretary
     abbreviation: ASD(MC)
+    description_short: Office record under Research and Engineering associated with mission engineering, prototypes, and test and evaluation. Seeded from directory page 91.
     parent_id: org.osd.re
     service: osd
     functions:
@@ -439,18 +454,19 @@ records:
     capability_tags:
       - mission_engineering
       - prototypes
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 91
         usage: seed_reference_only
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.re.mda
+  - id: org.osd.re.mda
     type: external_agency
     name: Missile Defense Agency
     abbreviation: MDA
+    description_short: External agency record under Research and Engineering associated with missile defense, acquisition, and command and control. Seeded from directory page 96.
     parent_id: org.osd.re
     service: osd
     functions:
@@ -459,6 +475,10 @@ records:
     capability_tags:
       - missile_defense
       - command_and_control
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 96
@@ -478,20 +498,21 @@ records:
       - source_id: source.public-url.mda-mil.534375b802
         page: 96
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.dote
+  - id: org.osd.dote
     type: office
     name: Director, Operational Test and Evaluation
     abbreviation: DOT&E
+    description_short: Office record under Office of the Secretary of War associated with operational test and evaluation and test and evaluation. Seeded from directory page 102.
     parent_id: org.osd
     service: osd
     functions:
       - operational_test_and_evaluation
     capability_tags:
       - test_and_evaluation
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 102
@@ -500,14 +521,11 @@ records:
       - source_id: source.public-url.dote-osd-mil.eaf753fbf7
         page: 102
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.policy
+  - id: org.osd.policy
     type: office
     name: Under Secretary of War for Policy
     abbreviation: OUSD(P)
+    description_short: Office record under Office of the Secretary of War associated with policy and strategy. Seeded from directory page 102.
     parent_id: org.osd
     service: osd
     functions:
@@ -515,6 +533,10 @@ records:
       - strategy
     capability_tags:
       - strategy
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 102
@@ -523,14 +545,11 @@ records:
       - source_id: source.public-url.policy-defense-gov.72b8ef6cd6
         page: 102
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.is
+  - id: org.osd.is
     type: office
     name: Under Secretary of War for Intelligence and Security
     abbreviation: OUSD(I&S)
+    description_short: Office record under Office of the Secretary of War associated with intelligence and security. Seeded from directory page 105.
     parent_id: org.osd
     service: osd
     functions:
@@ -539,19 +558,20 @@ records:
     capability_tags:
       - intelligence
       - security
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 105
         usage: seed_reference_only
         toc_order: 71
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.is.disa
+  - id: org.osd.is.disa
     type: external_agency
     name: Defense Information Systems Agency
     abbreviation: DISA
+    description_short: External agency record under Under Secretary of War for Intelligence and Security associated with information systems, networks, cyber, and C4I. Seeded from directory page 106.
     parent_id: org.osd.is
     service: osd
     functions:
@@ -562,6 +582,10 @@ records:
       - c4i
       - cyber
       - networks
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 106
@@ -576,20 +600,21 @@ records:
       - source_id: source.public-url.disa-mil.8d057f20b6
         page: 106
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.is.dia
+  - id: org.osd.is.dia
     type: external_agency
     name: Defense Intelligence Agency
     abbreviation: DIA
+    description_short: External agency record under Under Secretary of War for Intelligence and Security associated with intelligence. Seeded from directory page 108.
     parent_id: org.osd.is
     service: osd
     functions:
       - intelligence
     capability_tags:
       - intelligence
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 108
@@ -598,14 +623,11 @@ records:
       - source_id: source.public-url.dia-mil.4439b337dd
         page: 108
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.is.dcsa
+  - id: org.osd.is.dcsa
     type: external_agency
     name: Defense Counterintelligence and Security Agency
     abbreviation: DCSA
+    description_short: External agency record under Under Secretary of War for Intelligence and Security associated with counterintelligence, security, and vetting. Seeded from directory page 108.
     parent_id: org.osd.is
     service: osd
     functions:
@@ -614,6 +636,10 @@ records:
     capability_tags:
       - security
       - vetting
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 108
@@ -622,14 +648,11 @@ records:
       - source_id: source.public-url.dcsa-mil.2a51cff856
         page: 108
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.dam
+  - id: org.osd.dam
     type: office
     name: Director of Administration and Management
     abbreviation: DA&M
+    description_short: Office record under Office of the Secretary of War associated with administration, management, and headquarters services. Seeded from directory page 110.
     parent_id: org.osd
     service: osd
     functions:
@@ -637,6 +660,10 @@ records:
       - management
     capability_tags:
       - headquarters_services
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 110
@@ -645,20 +672,21 @@ records:
       - source_id: source.public-url.dam-defense-gov.fb87c0ee56
         page: 110
         usage: directory_listed_public_link
-  - location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    id: org.osd.whs
+  - id: org.osd.whs
     type: office
     name: Washington Headquarters Services
     abbreviation: WHS
+    description_short: Office record under Director of Administration and Management associated with headquarters services and support services. Seeded from directory page 110.
     parent_id: org.osd.dam
     service: osd
     functions:
       - headquarters_services
     capability_tags:
       - support_services
+    location_ids: []
+    status: needs_review
+    confidence: low
+    last_verified: 2026-06-11
     sources:
       - source_id: source.dow-directory-2026-r6
         page: 110
