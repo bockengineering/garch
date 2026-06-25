@@ -18,6 +18,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 266
         usage: seed_reference_only
+        toc_order: 236
   - location_ids: []
     status: needs_review
     confidence: low
@@ -37,6 +38,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 268
         usage: seed_reference_only
+        toc_order: 238
       - source_id: source.public-url.usafa-af-mil.766885df52
         page: 268
         usage: directory_listed_public_link
@@ -59,6 +61,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 269
         usage: seed_reference_only
+        toc_order: 239
       - source_id: source.public-url.aetc-af-mil.2a9f6e980e
         page: 269
         usage: directory_listed_public_link
@@ -80,7 +83,7 @@ records:
     last_verified: 2026-06-11
     id: org.air-force.saf-cn
     type: office
-    name: Air Force Chief Information Office
+    name: Air Force Chief Information Office SAF/CN
     abbreviation: SAF/CN
     parent_id: org.air-force
     service: air_force
@@ -95,13 +98,21 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 271
         usage: seed_reference_only
+        toc_order: 246
+      - source_id: source.dow-directory-2026-r6
+        page: 271
+        usage: seed_reference_only
+        toc_order: 246
+      - source_id: source.public-url.af-mil.d5255b29c2
+        page: 271
+        usage: directory_listed_public_link
   - location_ids: []
     status: needs_review
     confidence: low
     last_verified: 2026-06-11
     id: org.air-force.saf-sb
     type: office
-    name: Air Force Small Business
+    name: Air Force/Small Business (SAF/SB)
     abbreviation: SAF/SB
     parent_id: org.air-force
     service: air_force
@@ -113,13 +124,18 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 272
         usage: seed_reference_only
+        toc_order: 250
+      - source_id: source.dow-directory-2026-r6
+        page: 272
+        usage: seed_reference_only
+        toc_order: 250
   - location_ids: []
     status: needs_review
     confidence: low
     last_verified: 2026-06-11
     id: org.air-force.saf-sq
     type: acquisition_executive
-    name: Assistant Secretary of the Air Force for Space Acquisition and Integration
+    name: Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ)
     abbreviation: SAF/SQ
     parent_id: org.air-force
     service: air_force
@@ -132,9 +148,14 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 272
         usage: seed_reference_only
+        toc_order: 251
       - source_id: source.public-url.safsq-hq-af-mil.5641bd0020
         page: 272
         usage: directory_listed_public_link
+      - source_id: source.dow-directory-2026-r6
+        page: 272
+        usage: seed_reference_only
+        toc_order: 251
   - location_ids: []
     status: needs_review
     confidence: low
@@ -182,6 +203,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 274
         usage: seed_reference_only
+        toc_order: 253
   - location_ids: []
     status: needs_review
     confidence: low
@@ -209,7 +231,7 @@ records:
     last_verified: 2026-06-11
     id: org.air-force.afmc
     type: command
-    name: Air Force Materiel Command
+    name: Air Force Material Command
     abbreviation: AFMC
     parent_id: org.air-force
     service: air_force
@@ -224,9 +246,14 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 275
         usage: seed_reference_only
+        toc_order: 255
       - source_id: source.public-url.afmc-af-mil.38a3b41f0c
         page: 275
         usage: directory_listed_public_link
+      - source_id: source.dow-directory-2026-r6
+        page: 275
+        usage: seed_reference_only
+        toc_order: 255
   - location_ids: []
     status: needs_review
     confidence: low
@@ -246,6 +273,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 275
         usage: seed_reference_only
+        toc_order: 256
       - source_id: source.public-url.ww3-safaq-hq-af-mil.9c93c5e7ed
         page: 275
         usage: directory_listed_public_link
@@ -290,6 +318,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 281
         usage: seed_reference_only
+        toc_order: 259
   - location_ids: []
     status: needs_review
     confidence: low
@@ -309,6 +338,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 282
         usage: seed_reference_only
+        toc_order: 260
       - source_id: source.public-url.aflcmc-af-mil.91cf0d4fd0
         page: 282
         usage: directory_listed_public_link
@@ -344,6 +374,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 283
         usage: seed_reference_only
+        toc_order: 261
   - location_ids: []
     status: needs_review
     confidence: low
@@ -365,6 +396,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 283
         usage: seed_reference_only
+        toc_order: 262
       - source_id: source.public-url.aflcmc-af-mil.215701bb8c
         page: 283
         usage: directory_listed_public_link
@@ -387,6 +419,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 284
         usage: seed_reference_only
+        toc_order: 263
   - location_ids: []
     status: needs_review
     confidence: low
@@ -406,6 +439,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 285
         usage: seed_reference_only
+        toc_order: 265
       - source_id: source.public-url.aflcmc-af-mil.df90fc7559
         page: 285
         usage: directory_listed_public_link
@@ -428,6 +462,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 285
         usage: seed_reference_only
+        toc_order: 266
   - location_ids: []
     status: needs_review
     confidence: low
@@ -469,6 +504,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 287
         usage: seed_reference_only
+        toc_order: 269
   - location_ids: []
     status: needs_review
     confidence: low
@@ -488,6 +524,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 288
         usage: seed_reference_only
+        toc_order: 270
   - location_ids: []
     status: needs_review
     confidence: low
@@ -507,6 +544,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 288
         usage: seed_reference_only
+        toc_order: 272
   - location_ids: []
     status: needs_review
     confidence: low
@@ -526,6 +564,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 289
         usage: seed_reference_only
+        toc_order: 273
       - source_id: source.public-url.tinker-af-mil.8789693734
         page: 289
         usage: directory_listed_public_link
@@ -547,6 +586,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 290
         usage: seed_reference_only
+        toc_order: 274
       - source_id: source.public-url.1af-acc-af-mil.829c9f4e6e
         page: 290
         usage: directory_listed_public_link
@@ -582,6 +622,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
+        toc_order: 275
       - source_id: source.public-url.afnwc-af-mil.af10f5eb30
         page: 292
         usage: directory_listed_public_link
@@ -623,6 +664,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
+        toc_order: 277
   - location_ids: []
     status: needs_review
     confidence: low

@@ -35,11 +35,26 @@ export function buildOfficeTree(graph: GraphArtifact): OfficeTreeNode[] {
     }
   });
 
-  const sourcePage = (node: OfficeTreeNode) => {
+  const sourceSortKey = (node: OfficeTreeNode) => {
     const sources = node.metadata.sources;
 
     if (!Array.isArray(sources)) {
       return Number.POSITIVE_INFINITY;
+    }
+
+    const tocOrders = sources
+      .map((source) => {
+        if (typeof source !== "object" || source === null || !("toc_order" in source)) {
+          return null;
+        }
+
+        const tocOrder = (source as { toc_order?: unknown }).toc_order;
+        return typeof tocOrder === "number" ? tocOrder : null;
+      })
+      .filter((tocOrder): tocOrder is number => tocOrder !== null);
+
+    if (tocOrders.length > 0) {
+      return Math.min(...tocOrders);
     }
 
     const pages = sources
@@ -63,11 +78,11 @@ export function buildOfficeTree(graph: GraphArtifact): OfficeTreeNode[] {
       })
       .filter((page): page is number => page !== null);
 
-    return pages.length > 0 ? Math.min(...pages) : Number.POSITIVE_INFINITY;
+    return pages.length > 0 ? Math.min(...pages) * 1000 : Number.POSITIVE_INFINITY;
   };
 
   const sortTree = (nodes: OfficeTreeNode[]) => {
-    nodes.sort((a, b) => sourcePage(a) - sourcePage(b) || a.label.localeCompare(b.label));
+    nodes.sort((a, b) => sourceSortKey(a) - sourceSortKey(b) || a.label.localeCompare(b.label));
     nodes.forEach((node) => sortTree(node.children));
   };
 

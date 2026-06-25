@@ -17,3 +17,4 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 439
     usage: seed_reference_only
+    toc_order: 472

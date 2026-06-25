@@ -17,6 +17,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 297
     usage: seed_reference_only
+    toc_order: 283
 ---
 id: org.space-force.ssc
 type: command
@@ -38,6 +39,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 305
     usage: seed_reference_only
+    toc_order: 289
   - source_id: source.public-url.ssc-spaceforce-mil.7ce01f38d1
     page: 305
     usage: directory_listed_public_link

@@ -18,13 +18,14 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 299
         usage: seed_reference_only
+        toc_order: 286
   - location_ids: []
     status: needs_review
     confidence: low
     last_verified: 2026-06-11
     id: org.space-force.space-rco
     type: program_executive_office
-    name: Space Rapid Capabilities Office
+    name: "Space Force: PEO Space Rapid Capabilities Office"
     abbreviation: Space RCO
     parent_id: org.space-force
     service: space_force
@@ -38,9 +39,14 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 301
         usage: seed_reference_only
+        toc_order: 287
       - source_id: source.public-url.spaceforce-mil.ac3d420b0d
         page: 301
         usage: directory_listed_public_link
+      - source_id: source.dow-directory-2026-r6
+        page: 301
+        usage: seed_reference_only
+        toc_order: 287
   - location_ids: []
     status: needs_review
     confidence: low
@@ -59,6 +65,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 302
         usage: seed_reference_only
+        toc_order: 288
       - source_id: source.public-url.spoc-spaceforce-mil.abd343c208
         page: 302
         usage: directory_listed_public_link
@@ -81,6 +88,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 307
         usage: seed_reference_only
+        toc_order: 291
       - source_id: source.public-url.ssc-spaceforce-mil.7e10cd0498
         page: 307
         usage: directory_listed_public_link
@@ -105,6 +113,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 311
         usage: seed_reference_only
+        toc_order: 292
       - source_id: source.public-url.starcom-spaceforce-mil.5a4dc13135
         page: 311
         usage: directory_listed_public_link

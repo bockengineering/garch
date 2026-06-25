@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "generated_at": "2026-06-25T19:24:04.517Z",
+    "generated_at": "2026-06-25T19:40:24.122Z",
     "version": "0.1.0",
     "record_counts": {
-      "orgs": 2100,
+      "orgs": 2085,
       "people": 4571,
       "assignments": 4937,
       "programs": 0,
@@ -101,7 +101,7 @@
     {
       "id": "org.air-force.saf-cn",
       "type": "org",
-      "title": "Air Force Chief Information Office",
+      "title": "Air Force Chief Information Office SAF/CN",
       "subtitle": "SAF/CN",
       "service": "air_force",
       "confidence": "low",
@@ -134,7 +134,7 @@
     {
       "id": "org.air-force.saf-sb",
       "type": "org",
-      "title": "Air Force Small Business",
+      "title": "Air Force/Small Business (SAF/SB)",
       "subtitle": "SAF/SB",
       "service": "air_force",
       "confidence": "low",
@@ -162,7 +162,7 @@
     {
       "id": "org.air-force.saf-sq",
       "type": "org",
-      "title": "Assistant Secretary of the Air Force for Space Acquisition and Integration",
+      "title": "Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ)",
       "subtitle": "SAF/SQ",
       "service": "air_force",
       "confidence": "low",
@@ -173,10 +173,11 @@
         "force",
         "saf",
         "sq",
-        "assistant",
-        "secretary",
+        "office",
         "of",
         "the",
+        "assistant",
+        "secretary",
         "for",
         "space",
         "acquisition",
@@ -289,7 +290,7 @@
     {
       "id": "org.air-force.afmc",
       "type": "org",
-      "title": "Air Force Materiel Command",
+      "title": "Air Force Material Command",
       "subtitle": "AFMC",
       "service": "air_force",
       "confidence": "low",
@@ -299,8 +300,9 @@
         "air",
         "force",
         "afmc",
-        "materiel",
+        "material",
         "command",
+        "materiel",
         "acquisition",
         "sustainment"
       ],
@@ -2487,7 +2489,7 @@
     {
       "id": "org.army.amc",
       "type": "org",
-      "title": "Army Materiel Command",
+      "title": "Army Material Command",
       "subtitle": "AMC",
       "service": "army",
       "confidence": "low",
@@ -2496,8 +2498,9 @@
         "org",
         "army",
         "amc",
-        "materiel",
+        "material",
         "command",
+        "materiel",
         "sustainment",
         "logistics"
       ],
@@ -2865,7 +2868,7 @@
     {
       "id": "org.cocoms.centcom",
       "type": "org",
-      "title": "U.S. Central Command",
+      "title": "US Central Command (CENTCOM)",
       "subtitle": "CENTCOM",
       "service": "cocom",
       "confidence": "low",
@@ -2874,8 +2877,7 @@
         "org",
         "cocoms",
         "centcom",
-        "u",
-        "s",
+        "us",
         "central",
         "command",
         "cocom",
@@ -3046,7 +3048,7 @@
     {
       "id": "org.cocoms.spacecom",
       "type": "org",
-      "title": "U.S. Space Command",
+      "title": "U.S. Space Command - SPACECOM",
       "subtitle": "SPACECOM",
       "service": "cocom",
       "confidence": "low",
@@ -4370,35 +4372,6 @@
       ]
     },
     {
-      "id": "org.navy.navfac",
-      "type": "org",
-      "title": "Naval Facilities Engineering Systems Command",
-      "subtitle": "NAVFAC",
-      "service": "navy",
-      "confidence": "low",
-      "url": "/offices/org.navy.navfac",
-      "tokens": [
-        "org",
-        "navy",
-        "navfac",
-        "naval",
-        "facilities",
-        "engineering",
-        "systems",
-        "command",
-        "infrastructure"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.navy.strategic-systems",
       "type": "org",
       "title": "Strategic Systems Programs",
@@ -4879,7 +4852,7 @@
     {
       "id": "org.osd.jiatf-401",
       "type": "org",
-      "title": "Joint Interagency Task Force 401 Direct Reporting Portfolio",
+      "title": "Joint Interagency Task Force 401 (JIATF 401) Direct Reporting Portfolio Manager",
       "subtitle": "JIATF-401",
       "service": "osd",
       "confidence": "low",
@@ -4896,6 +4869,7 @@
         "direct",
         "reporting",
         "portfolio",
+        "manager",
         "counter",
         "uas",
         "drones"
@@ -4913,7 +4887,7 @@
     {
       "id": "org.osd.golden-dome",
       "type": "org",
-      "title": "Golden Dome Direct Reporting Portfolio",
+      "title": "Golden Dome Direct Reporting Portfolio Manager",
       "subtitle": "Golden Dome",
       "service": "osd",
       "confidence": "low",
@@ -4926,6 +4900,7 @@
         "direct",
         "reporting",
         "portfolio",
+        "manager",
         "missile",
         "defense"
       ],
@@ -5004,38 +4979,9 @@
       ]
     },
     {
-      "id": "org.osd.sapco",
-      "type": "org",
-      "title": "Special Access Programs Central Office",
-      "subtitle": "SAPCO",
-      "service": "osd",
-      "confidence": "low",
-      "url": "/offices/org.osd.sapco",
-      "tokens": [
-        "org",
-        "osd",
-        "sapco",
-        "special",
-        "access",
-        "programs",
-        "central",
-        "office",
-        "security"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.osd.comptroller",
       "type": "org",
-      "title": "Under Secretary of War Comptroller",
+      "title": "Under Secretary of War (Comptroller)",
       "subtitle": "Comptroller",
       "service": "osd",
       "confidence": "low",
@@ -5328,41 +5274,6 @@
         "security",
         "supply",
         "chain"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.osd.pr",
-      "type": "org",
-      "title": "Under Secretary of Defense for Personnel and Readiness",
-      "subtitle": "OUSD(P&R)",
-      "service": "osd",
-      "confidence": "low",
-      "url": "/offices/org.osd.pr",
-      "tokens": [
-        "org",
-        "osd",
-        "pr",
-        "under",
-        "secretary",
-        "of",
-        "defense",
-        "for",
-        "personnel",
-        "and",
-        "readiness",
-        "ousd",
-        "p",
-        "r",
-        "office"
       ],
       "matched_fields": [
         "id",
@@ -6680,7 +6591,7 @@
     {
       "id": "org.space-force.space-rco",
       "type": "org",
-      "title": "Space Rapid Capabilities Office",
+      "title": "Space Force: PEO Space Rapid Capabilities Office",
       "subtitle": "Space RCO",
       "service": "space_force",
       "confidence": "low",
@@ -6690,6 +6601,7 @@
         "space",
         "force",
         "rco",
+        "peo",
         "rapid",
         "capabilities",
         "office",
@@ -7620,38 +7532,6 @@
         "evaluation",
         "range",
         "testing"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.external",
-      "type": "org",
-      "title": "External Government and Reference Organizations",
-      "subtitle": "External",
-      "service": "other",
-      "confidence": "low",
-      "url": "/offices/org.external",
-      "tokens": [
-        "org",
-        "external",
-        "government",
-        "and",
-        "reference",
-        "organizations",
-        "other",
-        "agency",
-        "mapping",
-        "toc",
-        "seed",
-        "agencies"
       ],
       "matched_fields": [
         "id",
@@ -9954,42 +9834,6 @@
       ]
     },
     {
-      "id": "org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager",
-      "type": "org",
-      "title": "Joint Interagency Task Force 401 (JIATF 401) Direct Reporting Portfolio Manager",
-      "subtitle": "JIATF 401",
-      "service": "osd",
-      "confidence": "low",
-      "url": "/offices/org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager",
-      "tokens": [
-        "org",
-        "osd",
-        "joint",
-        "interagency",
-        "task",
-        "force",
-        "401",
-        "direct",
-        "reporting",
-        "portfolio",
-        "manager",
-        "jiatf",
-        "command",
-        "operations",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager.joint-counter-small-unmanned-aircraft-system-university",
       "type": "org",
       "title": "Joint Counter-Small Unmanned Aircraft System University (JCU)",
@@ -10061,39 +9905,6 @@
         "dominance",
         "command",
         "operations",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.osd.golden-dome-direct-reporting-portfolio-manager",
-      "type": "org",
-      "title": "Golden Dome Direct Reporting Portfolio Manager",
-      "subtitle": "other",
-      "service": "osd",
-      "confidence": "low",
-      "url": "/offices/org.osd.golden-dome-direct-reporting-portfolio-manager",
-      "tokens": [
-        "org",
-        "osd",
-        "golden",
-        "dome",
-        "direct",
-        "reporting",
-        "portfolio",
-        "manager",
-        "other",
-        "organization",
-        "mapping",
         "toc",
         "seed"
       ],
@@ -10372,38 +10183,6 @@
         "sapco",
         "organization",
         "mapping",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.osd.under-secretary-of-war",
-      "type": "org",
-      "title": "Under Secretary of War (Comptroller)",
-      "subtitle": "other",
-      "service": "osd",
-      "confidence": "low",
-      "url": "/offices/org.osd.under-secretary-of-war",
-      "tokens": [
-        "org",
-        "osd",
-        "under",
-        "secretary",
-        "of",
-        "war",
-        "comptroller",
-        "other",
-        "financial",
-        "management",
         "toc",
         "seed"
       ],
@@ -27927,35 +27706,6 @@
       ]
     },
     {
-      "id": "org.army.army-material-command",
-      "type": "org",
-      "title": "Army Material Command",
-      "subtitle": "command",
-      "service": "army",
-      "confidence": "low",
-      "url": "/offices/org.army.army-material-command",
-      "tokens": [
-        "org",
-        "army",
-        "material",
-        "command",
-        "logistics",
-        "operations",
-        "toc",
-        "seed",
-        "land"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.air-force.headquarters-staff.g-1-personnel",
       "type": "org",
       "title": "G-1 Personnel",
@@ -45006,42 +44756,6 @@
       ]
     },
     {
-      "id": "org.air-force.air-force-chief-information-office-saf-cn",
-      "type": "org",
-      "title": "Air Force Chief Information Office SAF/CN",
-      "subtitle": "command",
-      "service": "air_force",
-      "confidence": "low",
-      "url": "/offices/org.air-force.air-force-chief-information-office-saf-cn",
-      "tokens": [
-        "org",
-        "air",
-        "force",
-        "chief",
-        "information",
-        "office",
-        "saf",
-        "cn",
-        "command",
-        "and",
-        "cyber",
-        "operations",
-        "toc",
-        "seed",
-        "digital",
-        "aviation"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.air-force.air-force-chief-information-office-saf-cn.chief-data-and-ai-office",
       "type": "org",
       "title": "Chief Data and AI Office (CND)",
@@ -45333,89 +45047,6 @@
       ]
     },
     {
-      "id": "org.air-force.air-force-small-business",
-      "type": "org",
-      "title": "Air Force/Small Business (SAF/SB)",
-      "subtitle": "SAF/SB",
-      "service": "air_force",
-      "confidence": "low",
-      "url": "/offices/org.air-force.air-force-small-business",
-      "tokens": [
-        "org",
-        "air",
-        "force",
-        "small",
-        "business",
-        "saf",
-        "sb",
-        "command",
-        "information",
-        "and",
-        "cyber",
-        "operations",
-        "commercial",
-        "engagement",
-        "toc",
-        "seed",
-        "digital",
-        "aviation",
-        "industrial",
-        "base"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.air-force.office-of-the-assistant-secretary-of-the-air-force-for-space-acquisition",
-      "type": "org",
-      "title": "Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ)",
-      "subtitle": "SAF/SQ",
-      "service": "air_force",
-      "confidence": "low",
-      "url": "/offices/org.air-force.office-of-the-assistant-secretary-of-the-air-force-for-space-acquisition",
-      "tokens": [
-        "org",
-        "air",
-        "force",
-        "office",
-        "of",
-        "the",
-        "assistant",
-        "secretary",
-        "for",
-        "space",
-        "acquisition",
-        "and",
-        "integration",
-        "saf",
-        "sq",
-        "command",
-        "information",
-        "cyber",
-        "operations",
-        "toc",
-        "seed",
-        "digital",
-        "aviation"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.air-force.sda.capability-office",
       "type": "org",
       "title": "Capability Office",
@@ -45646,40 +45277,6 @@
         "information",
         "and",
         "cyber",
-        "operations",
-        "toc",
-        "seed",
-        "digital",
-        "aviation"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.air-force.air-force-material-command",
-      "type": "org",
-      "title": "Air Force Material Command",
-      "subtitle": "command",
-      "service": "air_force",
-      "confidence": "low",
-      "url": "/offices/org.air-force.air-force-material-command",
-      "tokens": [
-        "org",
-        "air",
-        "force",
-        "material",
-        "command",
-        "information",
-        "and",
-        "cyber",
-        "logistics",
         "operations",
         "toc",
         "seed",
@@ -49711,39 +49308,6 @@
         "and",
         "analysis",
         "command",
-        "operations",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.space-force.space-force-peo-space-rapid-capabilities-office",
-      "type": "org",
-      "title": "Space Force: PEO Space Rapid Capabilities Office",
-      "subtitle": "program_executive_office",
-      "service": "space_force",
-      "confidence": "low",
-      "url": "/offices/org.space-force.space-force-peo-space-rapid-capabilities-office",
-      "tokens": [
-        "org",
-        "space",
-        "force",
-        "peo",
-        "rapid",
-        "capabilities",
-        "office",
-        "program",
-        "executive",
-        "acquisition",
         "operations",
         "toc",
         "seed"
@@ -57437,36 +57001,6 @@
       ]
     },
     {
-      "id": "org.cocoms.us-central-command",
-      "type": "org",
-      "title": "US Central Command (CENTCOM)",
-      "subtitle": "CENTCOM",
-      "service": "cocom",
-      "confidence": "low",
-      "url": "/offices/org.cocoms.us-central-command",
-      "tokens": [
-        "org",
-        "cocoms",
-        "us",
-        "central",
-        "command",
-        "centcom",
-        "cocom",
-        "operations",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
       "id": "org.cocoms.us-central-command.centcom-headquarters-staff",
       "type": "org",
       "title": "CENTCOM Headquarters Staff",
@@ -61313,37 +60847,6 @@
         "component",
         "command",
         "jfmcc",
-        "cocom",
-        "operations",
-        "toc",
-        "seed"
-      ],
-      "matched_fields": [
-        "id",
-        "name",
-        "abbreviation",
-        "service",
-        "type",
-        "functions",
-        "capability_tags"
-      ]
-    },
-    {
-      "id": "org.cocoms.u-s-space-command-spacecom",
-      "type": "org",
-      "title": "U.S. Space Command - SPACECOM",
-      "subtitle": "SPACECOM",
-      "service": "cocom",
-      "confidence": "low",
-      "url": "/offices/org.cocoms.u-s-space-command-spacecom",
-      "tokens": [
-        "org",
-        "cocoms",
-        "u",
-        "s",
-        "space",
-        "command",
-        "spacecom",
         "cocom",
         "operations",
         "toc",

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T19:24:04.517Z",
+  "generated_at": "2026-06-25T19:40:24.122Z",
   "package_version": "0.1.0",
   "schema_version": "0.1.0",
   "record_counts": {
-    "orgs": 2100,
+    "orgs": 2085,
     "people": 4571,
     "assignments": 4937,
     "programs": 0,

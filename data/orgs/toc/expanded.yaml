@@ -1,30 +1,11 @@
 #TOC-derived seed records. Short factual labels only; source text is not republished.
 
 records:
-  - id: org.external
-    type: other
-    name: External Government and Reference Organizations
-    abbreviation: External
-    parent_id: org.dow
-    service: other
-    functions:
-      - external_agency_mapping
-    capability_tags:
-      - toc_seed
-      - external_agencies
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 51
-        usage: seed_reference_only
   - id: org.external.ffrdc
     type: external_agency
     name: Federally Funded Research and Development Centers
     abbreviation: FFRDCs
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - research_and_development
@@ -39,11 +20,12 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 368
   - id: org.external.doe
     type: department
     name: Department of Energy
     abbreviation: DOE
-    parent_id: org.external
+    parent_id: org.dow
     service: doe
     functions:
       - energy
@@ -59,6 +41,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 375
         usage: seed_reference_only
+        toc_order: 395
       - source_id: source.public-url.energy-gov.16c097bd22
         page: 375
         usage: directory_listed_public_link
@@ -78,7 +61,7 @@ records:
     type: department
     name: Department of Commerce
     abbreviation: Commerce
-    parent_id: org.external
+    parent_id: org.dow
     service: commerce
     functions:
       - commerce
@@ -94,6 +77,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 393
         usage: seed_reference_only
+        toc_order: 407
       - source_id: source.public-url.commerce-gov.01dd914285
         page: 393
         usage: directory_listed_public_link
@@ -113,7 +97,7 @@ records:
     type: department
     name: Department of Treasury
     abbreviation: Treasury
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - investment_security
@@ -128,6 +112,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 404
         usage: seed_reference_only
+        toc_order: 416
       - source_id: source.public-url.home-treasury-gov.dd4378f89e
         page: 404
         usage: directory_listed_public_link
@@ -138,7 +123,7 @@ records:
     type: external_agency
     name: Defense Innovation Ecosystem
     abbreviation: Innovation Ecosystem
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - commercial_engagement
@@ -153,11 +138,12 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 427
         usage: seed_reference_only
+        toc_order: 443
   - id: org.external.congress
     type: congressional_office
     name: Congressional Defense Committees
     abbreviation: Defense Committees
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - congressional_oversight
@@ -172,10 +158,11 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 458
         usage: seed_reference_only
+        toc_order: 484
   - id: org.external.white-house-office-of-management-and-budget
     type: congressional_office
     name: White House Office of Management and Budget (OMB)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - financial_management
@@ -189,6 +176,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 51
         usage: seed_reference_only
+        toc_order: 1
       - source_id: source.public-url.whitehouse-gov.9e285a77d4
         page: 51
         usage: directory_listed_public_link
@@ -210,6 +198,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 51
         usage: seed_reference_only
+        toc_order: 2
     abbreviation: OFCIO
   - id: org.external.white-house-office-of-management-and-budget.e-government-and-information-office.general-services-administration
     type: external_agency
@@ -454,6 +443,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 52
         usage: seed_reference_only
+        toc_order: 3
   - id: org.external.white-house-office-of-management-and-budget.resource-management-offices.treasury-housing-commerce
     type: other
     name: Treasury, Housing, Commerce
@@ -680,7 +670,7 @@ records:
   - id: org.external.federal-acquisition-regulation
     type: other
     name: Federal Acquisition Regulation (FAR)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - acquisition
@@ -695,6 +685,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 54
         usage: seed_reference_only
+        toc_order: 5
       - source_id: source.public-url.acq-osd-mil.902f53d21e
         page: 54
         usage: directory_listed_public_link
@@ -723,6 +714,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 54
         usage: seed_reference_only
+        toc_order: 6
   - id: org.external.federal-acquisition-regulation.federal-acquisition-regulatory-council.practitioner-album-far-part-12-acquisition-of-commercial-products-and-se
     type: office
     name: "Practitioner Album: FAR Part 12 - Acquisition of Commercial Products and Services"
@@ -787,7 +779,7 @@ records:
   - id: org.external.in-ation-adjustment-of-acquisition-related-thresholds
     type: other
     name: Inﬂation Adjustment of Acquisition-Related Thresholds
-    parent_id: org.external
+    parent_id: org.external.federal-acquisition-regulation
     service: other
     functions:
       - acquisition
@@ -805,7 +797,7 @@ records:
   - id: org.external.office-of-personnel-management
     type: office
     name: Office of Personnel Management (OPM)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - organization_mapping
@@ -819,6 +811,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 59
         usage: seed_reference_only
+        toc_order: 7
       - source_id: source.public-url.data-opm-gov.63f98645a2
         page: 59
         usage: directory_listed_public_link
@@ -846,10 +839,11 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 59
         usage: seed_reference_only
+        toc_order: 8
   - id: org.external.office-of-science-and-technology-policy
     type: office
     name: Office of Science and Technology Policy (OSTP)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - research_and_development
@@ -865,6 +859,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 60
         usage: seed_reference_only
+        toc_order: 14
       - source_id: source.public-url.whitehouse-gov.f2fc371d5f
         page: 60
         usage: directory_listed_public_link
@@ -886,6 +881,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 60
         usage: seed_reference_only
+        toc_order: 15
       - source_id: source.public-url.quantum-gov.a4adb8171d
         page: 60
         usage: directory_listed_public_link
@@ -893,7 +889,7 @@ records:
   - id: org.external.office-of-the-national-cyber-director
     type: office
     name: Office of the National Cyber Director (NCD)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - information_and_cyber
@@ -908,6 +904,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 60
         usage: seed_reference_only
+        toc_order: 16
       - source_id: source.public-url.whitehouse-gov.2b57b2642b
         page: 60
         usage: directory_listed_public_link
@@ -915,7 +912,7 @@ records:
   - id: org.external.government-accountability-office
     type: office
     name: Government Accountability Office (GAO)
-    parent_id: org.external
+    parent_id: org.dow
     service: other
     functions:
       - organization_mapping
@@ -929,6 +926,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 61
         usage: seed_reference_only
+        toc_order: 17
       - source_id: source.public-url.gao-gov.615327aa10
         page: 61
         usage: directory_listed_public_link
@@ -950,6 +948,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 62
         usage: seed_reference_only
+        toc_order: 18
   - id: org.external.government-accountability-office.gao-mission-teams.contracting-and-national-security-acquisitions
     type: other
     name: Contracting and National Security Acquisitions
@@ -1080,6 +1079,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 63
         usage: seed_reference_only
+        toc_order: 19
   - id: org.dow.joint-chiefs-of-staff.j1-manpower-and-personnel-directorate
     type: directorate
     name: J1 - Manpower and Personnel Directorate
@@ -1098,6 +1098,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 63
         usage: seed_reference_only
+        toc_order: 20
     abbreviation: J1
   - id: org.dow.joint-chiefs-of-staff.j2-intelligence
     type: other
@@ -1118,6 +1119,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 63
         usage: seed_reference_only
+        toc_order: 21
     abbreviation: J2
   - id: org.dow.joint-chiefs-of-staff.j3-operations
     type: other
@@ -1137,6 +1139,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 63
         usage: seed_reference_only
+        toc_order: 22
     abbreviation: J3
   - id: org.dow.joint-chiefs-of-staff.j4-logistics
     type: other
@@ -1157,6 +1160,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 63
         usage: seed_reference_only
+        toc_order: 23
     abbreviation: J4
   - id: org.dow.joint-chiefs-of-staff.j5-strategic-plans-and-policy
     type: other
@@ -1176,6 +1180,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 64
         usage: seed_reference_only
+        toc_order: 24
     abbreviation: J5
   - id: org.dow.joint-chiefs-of-staff.j6-command-control-communications-and-computers-cyber
     type: command
@@ -1197,6 +1202,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 64
         usage: seed_reference_only
+        toc_order: 25
     abbreviation: J6
   - id: org.dow.joint-chiefs-of-staff.j7-directorate-for-joint-force-development
     type: directorate
@@ -1217,6 +1223,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 64
         usage: seed_reference_only
+        toc_order: 26
     abbreviation: J7
   - id: org.dow.joint-chiefs-of-staff.j8-force-structure-resources-and-assessment-directorate
     type: directorate
@@ -1236,6 +1243,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 64
         usage: seed_reference_only
+        toc_order: 27
     abbreviation: J8
   - id: org.osd.oig.office-of-legislative-affairs-and-communications
     type: office
@@ -1259,29 +1267,10 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 66
         usage: seed_reference_only
-  - id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
-    type: command
-    name: Joint Interagency Task Force 401 (JIATF 401) Direct Reporting Portfolio Manager
-    parent_id: org.osd
-    service: osd
-    functions:
-      - operations
-    capability_tags:
-      - toc_seed
-      - osd
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 68
-        usage: seed_reference_only
-    abbreviation: JIATF 401
   - id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager.joint-counter-small-unmanned-aircraft-system-university
     type: office
     name: Joint Counter-Small Unmanned Aircraft System University (JCU)
-    parent_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    parent_id: org.osd.jiatf-401
     service: osd
     functions:
       - information_and_cyber
@@ -1304,28 +1293,10 @@ records:
   - id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager.drone-dominance-task-force
     type: command
     name: Drone Dominance Task Force
-    parent_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    parent_id: org.osd.jiatf-401
     service: osd
     functions:
       - operations
-    capability_tags:
-      - toc_seed
-      - osd
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 69
-        usage: seed_reference_only
-  - id: org.osd.golden-dome-direct-reporting-portfolio-manager
-    type: other
-    name: Golden Dome Direct Reporting Portfolio Manager
-    parent_id: org.osd
-    service: osd
-    functions:
-      - organization_mapping
     capability_tags:
       - toc_seed
       - osd
@@ -1499,21 +1470,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 72
         usage: seed_reference_only
-  - id: org.osd.under-secretary-of-war
-    type: other
-    name: Under Secretary of War (Comptroller)
-    parent_id: org.osd
-    service: osd
-    functions:
-      - financial_management
-    capability_tags:
-      - toc_seed
-      - osd
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
+        toc_order: 35
       - source_id: source.dow-directory-2026-r6
         page: 72
         usage: seed_reference_only
@@ -1560,6 +1517,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 74
         usage: seed_reference_only
+        toc_order: 41
       - source_id: source.public-url.acquisition-gov.7753187f9b
         page: 74
         usage: directory_listed_public_link
@@ -1823,6 +1781,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 76
         usage: seed_reference_only
+        toc_order: 42
   - id: org.osd.ousd-asd-assistant-secretary-of-war-for-acquisition-asd.ousd-asd-platform-and-weapon-portfolio-management
     type: other
     name: OUSD ASD(A) Platform and Weapon Portfolio Management
@@ -2234,6 +2193,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 79
         usage: seed_reference_only
+        toc_order: 43
   - id: org.osd.ousd-asd-assistant-secretary-of-war-for-sustainment.ousd-asd-logistics
     type: other
     name: OUSD ASD(S) Logistics
@@ -2399,6 +2359,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 80
         usage: seed_reference_only
+        toc_order: 44
       - source_id: source.public-url.acq-osd-mil.0cfa945466
         page: 80
         usage: directory_listed_public_link
@@ -2512,6 +2473,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 81
         usage: seed_reference_only
+        toc_order: 45
     abbreviation: ND-CBD
   - id: org.osd.ousd-asd-asst-sec-def-for-nuclear-deterrence-chemical-and-biological-def.physical-rda-programs
     type: office
@@ -2651,6 +2613,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 82
         usage: seed_reference_only
+        toc_order: 46
     abbreviation: IBP
   - id: org.osd.ousw-asd-assistant-secretary-of-war-for-industrial-base-policy-asd.asd-global-investments-and-economic-security
     type: other
@@ -2871,6 +2834,10 @@ records:
     confidence: low
     last_verified: 2026-06-11
     sources:
+      - source_id: source.dow-directory-2026-r6
+        page: 84
+        usage: seed_reference_only
+        toc_order: 47
       - source_id: source.dow-directory-2026-r6
         page: 84
         usage: seed_reference_only
@@ -3179,6 +3146,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 88
         usage: seed_reference_only
+        toc_order: 49
     abbreviation: OSI&A
   - id: org.osd.re.cdao.advana-for-financial-management-program-team
     type: office
@@ -3351,6 +3319,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 89
         usage: seed_reference_only
+        toc_order: 51
     abbreviation: R&E
   - id: org.osd.re.science-technology.osw-manufacturing-technology-program-mantech
     type: office
@@ -4121,6 +4090,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 96
         usage: seed_reference_only
+        toc_order: 55
     abbreviation: R&E
   - id: org.osd.osd-missile-defense-agency-mda.ground-systems-development
     type: other
@@ -4415,6 +4385,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 99
         usage: seed_reference_only
+        toc_order: 59
       - source_id: source.public-url.dfc-gov.167368bd27
         page: 99
         usage: directory_listed_public_link
@@ -4749,6 +4720,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 102
         usage: seed_reference_only
+        toc_order: 63
   - id: org.osd.policy.osd-indo-pacific-security-affairs
     type: other
     name: OSD (P) Indo-Pacific Security Affairs
@@ -4770,6 +4742,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 103
         usage: seed_reference_only
+        toc_order: 65
       - source_id: source.public-url.policy-defense-gov.7234ead731
         page: 103
         usage: directory_listed_public_link
@@ -4794,6 +4767,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 103
         usage: seed_reference_only
+        toc_order: 66
   - id: org.osd.policy.osd-space-policy
     type: other
     name: OSD (P) Space Policy
@@ -4814,6 +4788,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 103
         usage: seed_reference_only
+        toc_order: 67
   - id: org.osd.policy.osd-nuclear-deterrence-chemical-and-biological-defense-policy
     type: other
     name: OSD (P) Nuclear Deterrence, Chemical, and Biological Defense Policy
@@ -4834,6 +4809,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 103
         usage: seed_reference_only
+        toc_order: 68
   - id: org.osd.policy.osd-special-operations-and-low-intensity-conflict-asd
     type: other
     name: OSD (P) Special Operations and Low Intensity Conflict ASD(SO/LIC)
@@ -4852,6 +4828,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 104
         usage: seed_reference_only
+        toc_order: 69
       - source_id: source.public-url.policy-defense-gov.a4ba974864
         page: 104
         usage: directory_listed_public_link
@@ -4975,6 +4952,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 104
         usage: seed_reference_only
+        toc_order: 70
       - source_id: source.public-url.policy-defense-gov.06c3bc82df
         page: 104
         usage: directory_listed_public_link
@@ -4997,6 +4975,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 106
         usage: seed_reference_only
+        toc_order: 72
   - id: org.osd.is.defense-intelligence.chief-of-staff
     type: office
     name: Chief of Staff
@@ -5128,6 +5107,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 106
         usage: seed_reference_only
+        toc_order: 74
     abbreviation: I&S
   - id: org.osd.is.osd-counterintelligence-law-enforcement-and-security.critical-technology-protection
     type: other
@@ -5167,6 +5147,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 106
         usage: seed_reference_only
+        toc_order: 76
     abbreviation: I&S
   - id: org.osd.is.osd-intelligence-and-security-programs-and-resources.battlespace-awareness-and-security-programs
     type: office
@@ -6250,6 +6231,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 116
         usage: seed_reference_only
+        toc_order: 91
   - id: org.army.headquarters.army-financial-management-and-comptroller
     type: other
     name: Army Financial Management & Comptroller
@@ -6269,6 +6251,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 116
         usage: seed_reference_only
+        toc_order: 92
   - id: org.army.rccto.directed-energy-space-and-rapid-acquisition
     type: other
     name: Directed Energy, Space, And Rapid Acquisition
@@ -6731,6 +6714,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 119
         usage: seed_reference_only
+        toc_order: 96
     abbreviation: IE&E
   - id: org.army.headquarters.office-of-the-chief-legislative-liaison
     type: office
@@ -6752,6 +6736,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 119
         usage: seed_reference_only
+        toc_order: 97
       - source_id: source.public-url.army-mil.151744c117
         page: 119
         usage: directory_listed_public_link
@@ -6977,6 +6962,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 121
         usage: seed_reference_only
+        toc_order: 100
   - id: org.army.headquarters.army-office-of-assistant-secretary-for-acquisition-logistics-and-technol
     type: office
     name: "Army: Office of Assistant Secretary for Acquisition, Logistics and Technology ASA(ALT)"
@@ -7001,6 +6987,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 123
         usage: seed_reference_only
+        toc_order: 101
       - source_id: source.public-url.army-mil.579a331fa1
         page: 123
         usage: directory_listed_public_link
@@ -8964,6 +8951,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 165
         usage: seed_reference_only
+        toc_order: 121
     abbreviation: CPE-CBRND
   - id: org.army.pae.layered-protection-cbrn.capability-program-executive-joint-chemical-biological-radiological-and.chemical-biological-radiological-and-nuclear-special-operations-forces
     type: command
@@ -9428,6 +9416,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 172
         usage: seed_reference_only
+        toc_order: 126
   - id: org.army.pit.g-tead.global-tactical-edge-acquisition-g-tead-marketplace
     type: other
     name: Global Tactical Edge Acquisition G-TEAD Marketplace
@@ -9465,6 +9454,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 174
         usage: seed_reference_only
+        toc_order: 129
   - id: org.army.t2com.t2com-staff.g-2-tcom-intelligence
     type: other
     name: G-2 - TCOM Intelligence
@@ -10855,6 +10845,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 181
         usage: seed_reference_only
+        toc_order: 132
   - id: org.army.t2com.army-combat-capabilities-development-command-devcom
     type: command
     name: Army Combat Capabilities Development Command DEVCOM
@@ -10875,6 +10866,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 181
         usage: seed_reference_only
+        toc_order: 133
   - id: org.army.t2com.army-combat-capabilities-development-command-devcom.devcom-centers-and-lab
     type: lab
     name: DEVCOM Centers And Lab
@@ -11275,6 +11267,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 185
         usage: seed_reference_only
+        toc_order: 135
   - id: org.army.t2com.army-recruiting-command.army-recruiting-division-cadet-command
     type: directorate
     name: Army Recruiting Division, Cadet Command
@@ -11317,27 +11310,6 @@ records:
         page: 186
         usage: directory_listed_public_link
     abbreviation: AEMO
-  - id: org.army.army-material-command
-    type: command
-    name: Army Material Command
-    parent_id: org.army
-    service: army
-    functions:
-      - logistics
-      - operations
-    capability_tags:
-      - toc_seed
-      - army
-      - land
-      - logistics
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 187
-        usage: seed_reference_only
   - id: org.air-force.headquarters-staff.g-1-personnel
     type: other
     name: G-1 Personnel
@@ -11603,7 +11575,7 @@ records:
   - id: org.army.army-material-command.army-security-assistance-command
     type: command
     name: Army Security Assistance Command (USASAC)
-    parent_id: org.army.army-material-command
+    parent_id: org.army.amc
     service: army
     functions:
       - operations
@@ -11619,6 +11591,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 190
         usage: seed_reference_only
+        toc_order: 146
       - source_id: source.public-url.army-mil.4d04288a49
         page: 190
         usage: directory_listed_public_link
@@ -11626,7 +11599,7 @@ records:
   - id: org.army.army-material-command.security-assistance-group-ukraine-nato-security-assistance-and-training
     type: office
     name: Security Assistance Group-Ukraine (SAG-U) /NATO Security Assistance and Training for Ukraine
-    parent_id: org.army.army-material-command
+    parent_id: org.army.amc
     service: army
     functions:
       - information_and_cyber
@@ -11643,6 +11616,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 190
         usage: seed_reference_only
+        toc_order: 147
     abbreviation: SAG-U
   - id: org.army.western-hemisphere.82nd-airborne-division
     type: directorate
@@ -11971,6 +11945,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 194
         usage: seed_reference_only
+        toc_order: 157
   - id: org.navy.osbp.hqmc-installations-and-logistics
     type: other
     name: HQMC Installations and Logistics (HQMC I&L)
@@ -12065,6 +12040,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 195
         usage: seed_reference_only
+        toc_order: 160
   - id: org.navy.secretary.navy-energy-installations-and-the-environment
     type: other
     name: "Navy: Energy, Installations, and the Environment"
@@ -12083,6 +12059,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 195
         usage: seed_reference_only
+        toc_order: 161
   - id: org.navy.secretary.financial-management-and-controller
     type: other
     name: Financial Management and Controller (FM&C)
@@ -12101,6 +12078,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 196
         usage: seed_reference_only
+        toc_order: 163
       - source_id: source.public-url.secnav-navy-mil.48523ec2b3
         page: 196
         usage: directory_listed_public_link
@@ -13709,6 +13687,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 208
         usage: seed_reference_only
+        toc_order: 169
   - id: org.navy.secretary.u-s-navy-information-forces-navifor.information-warfare-squadron-two
     type: command
     name: Information Warfare Squadron (IWRON) Two
@@ -13942,6 +13921,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 210
         usage: seed_reference_only
+        toc_order: 171
     abbreviation: ASN RD&A
   - id: org.navy.secretary.asst-secretary-navy-for-research-development-and-acquisition.mission-systems
     type: other
@@ -14040,6 +14020,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 211
         usage: seed_reference_only
+        toc_order: 172
     abbreviation: DATM
   - id: org.navy.secretary.navy-modeling-and-simulation-office
     type: office
@@ -14059,6 +14040,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 211
         usage: seed_reference_only
+        toc_order: 173
     abbreviation: NMSO
   - id: org.navy.onr.code-31-command-control-computing-communications-cyber-intelligence-surv
     type: command
@@ -14762,6 +14744,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 216
         usage: seed_reference_only
+        toc_order: 175
   - id: org.navy.pae.maritime.surface-ship-maintenance-and-modernization-and-sustainment
     type: other
     name: Surface Ship Maintenance and Modernization and Sustainment
@@ -15751,6 +15734,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 228
         usage: seed_reference_only
+        toc_order: 186
   - id: org.navy.navsea.sea-21-surface-ship-maintenance-modernization-and-sustainment
     type: other
     name: SEA 21 Surface Ship Maintenance, Modernization and Sustainment
@@ -15773,6 +15757,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 228
         usage: seed_reference_only
+        toc_order: 187
       - source_id: source.public-url.navsea-navy-mil.4276546960
         page: 228
         usage: directory_listed_public_link
@@ -16613,6 +16598,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 233
         usage: seed_reference_only
+        toc_order: 193
       - source_id: source.public-url.navsea-navy-mil.af74818612
         page: 233
         usage: directory_listed_public_link
@@ -16825,6 +16811,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 235
         usage: seed_reference_only
+        toc_order: 195
   - id: org.navy.navsea.naval-nuclear-power-training-command.naval-nuclear-power-training-command-ballston-spa
     type: command
     name: Naval Nuclear Power Training Command (NNPTC) Ballston Spa
@@ -16871,6 +16858,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 236
         usage: seed_reference_only
+        toc_order: 197
   - id: org.navy.navair.chief-technology-office.navair-office-of-small-business
     type: office
     name: NAVAIR Office of Small Business
@@ -16916,6 +16904,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 236
         usage: seed_reference_only
+        toc_order: 198
   - id: org.navy.navair.naval-air-warfare-center-aircraft-division-nawcad.air-vehicle-engineering
     type: other
     name: Air Vehicle Engineering
@@ -17109,6 +17098,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 237
         usage: seed_reference_only
+        toc_order: 199
   - id: org.navy.navair.naval-air-warfare-center-weapons-division-nawcwd.port-hueneme-division-nswc-phd
     type: directorate
     name: Port Hueneme Division NSWC PHD
@@ -18218,6 +18208,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 243
         usage: seed_reference_only
+        toc_order: 206
   - id: org.navy.navwar.niwc-naval-information-warfare-center-pacific.command-and-control
     type: command
     name: Command and Control (C2)
@@ -18342,6 +18333,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 244
         usage: seed_reference_only
+        toc_order: 208
   - id: org.navy.navwar.peo-c4i.pma-pmw-101-multifunctional-information-distribution-system-program-offi
     type: program_office
     name: "PMA/PMW-101: Multifunctional Information Distribution System Program Office"
@@ -18904,6 +18896,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 253
         usage: seed_reference_only
+        toc_order: 211
     abbreviation: PEO MLB
   - id: org.navy.navwar.navwar-peo-for-manpower-logistics-and-business-solutions.navy-erp-financial-it-services
     type: office
@@ -19002,6 +18995,10 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 255
         usage: seed_reference_only
+        toc_order: 213
+      - source_id: source.dow-directory-2026-r6
+        page: 255
+        usage: seed_reference_only
   - id: org.navy.navfac-naval-facilities-engineering-systems-command.navfac-peo-industrial-infrastructure
     type: program_executive_office
     name: "NAVFAC: PEO Industrial Infrastructure"
@@ -19021,6 +19018,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 255
         usage: seed_reference_only
+        toc_order: 214
       - source_id: source.public-url.navfac-navy-mil.8cb6b2d5ad
         page: 255
         usage: directory_listed_public_link
@@ -19071,6 +19069,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 255
         usage: seed_reference_only
+        toc_order: 215
       - source_id: source.public-url.navifor-usff-navy-mil.301285a821
         page: 255
         usage: directory_listed_public_link
@@ -19214,6 +19213,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 256
         usage: seed_reference_only
+        toc_order: 216
   - id: org.navy.navfac-naval-facilities-engineering-systems-command.naval-nuclear-propulsion-program.naval-nuclear-laboratory
     type: lab
     name: Naval Nuclear Laboratory
@@ -19401,6 +19401,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 258
         usage: seed_reference_only
+        toc_order: 222
       - source_id: source.public-url.dmcs-marines-mil.500b3d76aa
         page: 258
         usage: directory_listed_public_link
@@ -19957,6 +19958,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 261
         usage: seed_reference_only
+        toc_order: 225
     abbreviation: MCCDC
   - id: org.marine-corps.marine-corps-combat-development-and-integration.capabilities-development-directorate
     type: directorate
@@ -20345,6 +20347,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 264
         usage: seed_reference_only
+        toc_order: 230
   - id: org.air-force.headquarters-staff.a1-manpower-personnel-and-services-af-a1
     type: office
     name: "A1: Manpower, Personnel, and Services AF/A1"
@@ -20647,6 +20650,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 268
         usage: seed_reference_only
+        toc_order: 237
   - id: org.air-force.air-force-financial-management-and-comptroller-saf-fm.office-of-the-deputy-assistant-secretary-for-budget-saf-fmb
     type: office
     name: Office Of The Deputy Assistant Secretary For Budget ─ SAF/FMB
@@ -20888,6 +20892,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 270
         usage: seed_reference_only
+        toc_order: 240
       - source_id: source.public-url.af-mil.0b723b631e
         page: 270
         usage: directory_listed_public_link
@@ -20972,6 +20977,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 270
         usage: seed_reference_only
+        toc_order: 241
     abbreviation: AF/TE
   - id: org.air-force.air-force-safety-center
     type: command
@@ -20994,6 +21000,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 270
         usage: seed_reference_only
+        toc_order: 242
       - source_id: source.public-url.safety-af-mil.4442cbd6c5
         page: 270
         usage: directory_listed_public_link
@@ -21021,6 +21028,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 270
         usage: seed_reference_only
+        toc_order: 243
   - id: org.air-force.air-force-judge-advocate-general-s-corps
     type: command
     name: Air Force Judge Advocate General’s Corps
@@ -21042,6 +21050,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 271
         usage: seed_reference_only
+        toc_order: 244
   - id: org.air-force.directorate-of-legislative-liaison
     type: directorate
     name: Directorate of Legislative Liaison (SAF/LL)
@@ -21062,35 +21071,12 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 271
         usage: seed_reference_only
+        toc_order: 245
     abbreviation: SAF/LL
-  - id: org.air-force.air-force-chief-information-office-saf-cn
-    type: command
-    name: Air Force Chief Information Office SAF/CN
-    parent_id: org.air-force
-    service: air_force
-    functions:
-      - information_and_cyber
-      - operations
-    capability_tags:
-      - toc_seed
-      - air_force
-      - digital
-      - aviation
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 271
-        usage: seed_reference_only
-      - source_id: source.public-url.af-mil.d5255b29c2
-        page: 271
-        usage: directory_listed_public_link
   - id: org.air-force.air-force-chief-information-office-saf-cn.chief-data-and-ai-office
     type: office
     name: Chief Data and AI Office (CND)
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - information_and_cyber
@@ -21110,7 +21096,7 @@ records:
   - id: org.air-force.air-force-chief-information-office-saf-cn.director-of-enterprise-information-technology
     type: other
     name: Director of Enterprise Information Technology (CNS)
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - research_and_development
@@ -21131,7 +21117,7 @@ records:
   - id: org.air-force.air-force-chief-information-office-saf-cn.chief-information-security-officer
     type: office
     name: Chief Information Security Officer (CNZ)
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - information_and_cyber
@@ -21150,7 +21136,7 @@ records:
   - id: org.air-force.air-force-chief-information-office-saf-cn.chief-technology-officer
     type: office
     name: Chief Technology Officer (CTO)
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - research_and_development
@@ -21176,7 +21162,7 @@ records:
   - id: org.air-force.air-force-chief-information-office-saf-cn.cyberspace-capabilities-center
     type: office
     name: Cyberspace Capabilities Center (CCC)
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - information_and_cyber
@@ -21198,7 +21184,7 @@ records:
   - id: org.air-force.air-force-chief-information-office-saf-cn.business-systems
     type: other
     name: Business Systems
-    parent_id: org.air-force.air-force-chief-information-office-saf-cn
+    parent_id: org.air-force.saf-cn
     service: air_force
     functions:
       - organization_mapping
@@ -21231,6 +21217,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 271
         usage: seed_reference_only
+        toc_order: 247
   - id: org.air-force.department-of-defense-cyber-crime-center
     type: department
     name: Department of Defense Cyber Crime Center (DC3)
@@ -21254,55 +21241,6 @@ records:
         page: 272
         usage: directory_listed_public_link
     abbreviation: DC3
-  - id: org.air-force.air-force-small-business
-    type: command
-    name: Air Force/Small Business (SAF/SB)
-    parent_id: org.air-force
-    service: air_force
-    functions:
-      - information_and_cyber
-      - operations
-      - commercial_engagement
-    capability_tags:
-      - toc_seed
-      - air_force
-      - digital
-      - aviation
-      - industrial_base
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 272
-        usage: seed_reference_only
-    abbreviation: SAF/SB
-  - id: org.air-force.office-of-the-assistant-secretary-of-the-air-force-for-space-acquisition
-    type: command
-    name: Office of the Assistant Secretary of the Air Force for Space Acquisition and Integration (SAF/SQ)
-    parent_id: org.air-force
-    service: air_force
-    functions:
-      - acquisition
-      - information_and_cyber
-      - operations
-    capability_tags:
-      - toc_seed
-      - air_force
-      - acquisition
-      - digital
-      - space
-      - aviation
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 272
-        usage: seed_reference_only
-    abbreviation: SAF/SQ
   - id: org.air-force.sda.capability-office
     type: office
     name: Capability Office
@@ -21447,30 +21385,8 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 275
         usage: seed_reference_only
+        toc_order: 254
     abbreviation: AFRCO
-  - id: org.air-force.air-force-material-command
-    type: command
-    name: Air Force Material Command
-    parent_id: org.air-force
-    service: air_force
-    functions:
-      - information_and_cyber
-      - logistics
-      - operations
-    capability_tags:
-      - toc_seed
-      - air_force
-      - digital
-      - aviation
-      - logistics
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 275
-        usage: seed_reference_only
   - id: org.air-force.aflcmc.acquisition-excellence-and-program-execution-directorate-aq-ez
     type: directorate
     name: Acquisition Excellence and Program Execution Directorate AQ-EZ
@@ -22433,6 +22349,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 284
         usage: seed_reference_only
+        toc_order: 264
       - source_id: source.public-url.aflcmc-af-mil.18a809ac60
         page: 284
         usage: directory_listed_public_link
@@ -22644,6 +22561,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 286
         usage: seed_reference_only
+        toc_order: 267
       - source_id: source.public-url.aflcmc-af-mil.2fe3f268b7
         page: 286
         usage: directory_listed_public_link
@@ -22788,6 +22706,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 286
         usage: seed_reference_only
+        toc_order: 268
       - source_id: source.public-url.aflcmc-af-mil.c2390773e2
         page: 286
         usage: directory_listed_public_link
@@ -22994,6 +22913,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 288
         usage: seed_reference_only
+        toc_order: 271
       - source_id: source.public-url.aflcmc-af-mil.3b45166f9b
         page: 288
         usage: directory_listed_public_link
@@ -23232,6 +23152,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
+        toc_order: 276
     abbreviation: NAD
   - id: org.air-force.afnwc.icbm.intercontinental-ballistic-missile-systems-directorate
     type: directorate
@@ -23274,6 +23195,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 292
         usage: seed_reference_only
+        toc_order: 278
     abbreviation: NC3
   - id: org.air-force.afnwc-nuclear-technology-and-integration-directorate
     type: directorate
@@ -23296,6 +23218,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 293
         usage: seed_reference_only
+        toc_order: 279
     abbreviation: AFNWC
   - id: org.air-force.afrl.foundational-tech.the-air-force-office-of-scientific-research
     type: command
@@ -23663,6 +23586,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 297
         usage: seed_reference_only
+        toc_order: 284
   - id: org.space-force.space-force-space-operations
     type: command
     name: "Space Force: Space Operations"
@@ -23682,6 +23606,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 299
         usage: seed_reference_only
+        toc_order: 285
   - id: org.air-force.headquarters-staff.s-1-personnel-human-capital
     type: other
     name: "S-1: Personnel / Human Capital"
@@ -23786,27 +23711,6 @@ records:
     capability_tags:
       - toc_seed
       - air_force
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 301
-        usage: seed_reference_only
-  - id: org.space-force.space-force-peo-space-rapid-capabilities-office
-    type: program_executive_office
-    name: "Space Force: PEO Space Rapid Capabilities Office"
-    parent_id: org.space-force
-    service: space_force
-    functions:
-      - acquisition
-      - operations
-    capability_tags:
-      - toc_seed
-      - space_force
-      - acquisition
-      - space
     location_ids: []
     status: needs_review
     confidence: low
@@ -24419,6 +24323,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 305
         usage: seed_reference_only
+        toc_order: 290
   - id: org.space-force.ssc.integration-office.space-superiority-division
     type: directorate
     name: Space Superiority Division
@@ -24978,6 +24883,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 312
         usage: seed_reference_only
+        toc_order: 293
   - id: org.space-force.starcom.space-systems-command-pae-assured-access-to-space
     type: portfolio
     name: "Space Systems Command: PAE Assured Access to Space (AATS) (SSC/AA)"
@@ -24999,6 +24905,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 312
         usage: seed_reference_only
+        toc_order: 294
     abbreviation: SSC/AA
   - id: org.space-force.starcom.space-systems-command-pae-assured-access-to-space.space-servicing-mobility-and-logistics-ssc-aaa
     type: other
@@ -25156,6 +25063,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 313
         usage: seed_reference_only
+        toc_order: 295
     abbreviation: SSC/SZ
   - id: org.space-force.starcom.space-systems-command-pae-space-combat-power.rapid-reaction-branch
     type: directorate
@@ -25294,6 +25202,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 314
         usage: seed_reference_only
+        toc_order: 296
     abbreviation: BMC3I
   - id: org.space-force.starcom.space-systems-command-pae-battle-management-command-control-and-comms.battle-management
     type: other
@@ -25453,6 +25362,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 315
         usage: seed_reference_only
+        toc_order: 297
     abbreviation: MCPNT
   - id: org.space-force.starcom.space-systems-command-peo-military-comms-and-positioning-navigation-and.tactical-satcom-delta
     type: command
@@ -25498,6 +25408,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 316
         usage: seed_reference_only
+        toc_order: 298
     abbreviation: SSC/TI
   - id: org.space-force.starcom.space-systems-command-peo-operational-test-and-training-infrastructure.engineering
     type: other
@@ -25542,7 +25453,7 @@ records:
   - id: org.coast-guard.coast-guard
     type: department
     name: Coast Guard (Part of Department of Homeland Security)
-    parent_id: org.external
+    parent_id: org.dow
     service: coast_guard
     functions:
       - organization_mapping
@@ -25558,6 +25469,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 318
         usage: seed_reference_only
+        toc_order: 299
       - source_id: source.public-url.uscg-mil.917077800d
         page: 318
         usage: directory_listed_public_link
@@ -25658,6 +25570,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 319
         usage: seed_reference_only
+        toc_order: 306
       - source_id: source.public-url.dco-uscg-mil.3af9311e94
         page: 319
         usage: directory_listed_public_link
@@ -25827,6 +25740,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 319
         usage: seed_reference_only
+        toc_order: 307
   - id: org.coast-guard.coast-guard.deputy-commandant-for-systems.peo-surface
     type: program_executive_office
     name: PEO - Surface
@@ -25951,6 +25865,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 320
         usage: seed_reference_only
+        toc_order: 309
     abbreviation: FORCECOM
   - id: org.coast-guard.coast-guard.special-missions-command
     type: command
@@ -25970,6 +25885,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 321
         usage: seed_reference_only
+        toc_order: 310
   - id: org.coast-guard.coast-guard.operational-logistics-command
     type: command
     name: Operational Logistics Command (LOGCOM)
@@ -25990,6 +25906,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 321
         usage: seed_reference_only
+        toc_order: 311
     abbreviation: LOGCOM
   - id: org.coast-guard.coast-guard.research-and-development-center
     type: office
@@ -26107,7 +26024,7 @@ records:
   - id: org.cocoms.combatant-command-staffs
     type: command
     name: Combatant Command Staffs
-    parent_id: org.cocoms
+    parent_id: org.dow
     service: cocom
     functions:
       - operations
@@ -26122,6 +26039,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 324
         usage: seed_reference_only
+        toc_order: 313
   - id: org.cocoms.combatant-command-staffs.joint-staff-pentagon
     type: office
     name: Joint Staff - Pentagon
@@ -26140,6 +26058,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 324
         usage: seed_reference_only
+        toc_order: 315
   - id: org.cocoms.combatant-command-staffs.j-1-manpower-and-personnel
     type: other
     name: J-1 Manpower and Personnel
@@ -26158,6 +26077,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 324
         usage: seed_reference_only
+        toc_order: 316
   - id: org.cocoms.combatant-command-staffs.j-2-intelligence
     type: other
     name: J-2 Intelligence
@@ -26177,6 +26097,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 324
         usage: seed_reference_only
+        toc_order: 317
   - id: org.cocoms.combatant-command-staffs.j-3-operations
     type: other
     name: J-3 Operations
@@ -26195,6 +26116,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 325
         usage: seed_reference_only
+        toc_order: 318
   - id: org.cocoms.combatant-command-staffs.j-4-logistics
     type: other
     name: J-4 Logistics
@@ -26214,6 +26136,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 325
         usage: seed_reference_only
+        toc_order: 319
   - id: org.cocoms.combatant-command-staffs.j-5-strategy-plans-and-policy-directors
     type: other
     name: J-5 Strategy, Plans & Policy directors
@@ -26232,6 +26155,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 326
         usage: seed_reference_only
+        toc_order: 320
   - id: org.cocoms.combatant-command-staffs.j-6-command-control-communications-and-computers-cyber-directors
     type: command
     name: J-6 Command, Control, Communications, & Computers/Cyber directors
@@ -26252,6 +26176,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 326
         usage: seed_reference_only
+        toc_order: 321
   - id: org.cocoms.combatant-command-staffs.j-7-training-and-exercises-directorate
     type: directorate
     name: J-7 Training and Exercises - Directorate
@@ -26272,6 +26197,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 327
         usage: seed_reference_only
+        toc_order: 322
   - id: org.cocoms.combatant-command-staffs.j-8-requirements-analysis-and-resources-directors
     type: other
     name: J-8 Requirements, Analysis, and Resources- Directors
@@ -26290,6 +26216,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 327
         usage: seed_reference_only
+        toc_order: 323
   - id: org.cocoms.combatant-command-staffs.j-8-requirements-analysis-and-resources-directors.j9-warfare
     type: other
     name: J9 Warfare
@@ -26522,6 +26449,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 333
         usage: seed_reference_only
+        toc_order: 329
     abbreviation: SOF-ATL
   - id: org.socom.usasoc.acquisition-technology-and-logistics.socom-acquisition-budget-here
     type: other
@@ -26979,6 +26907,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 341
         usage: seed_reference_only
+        toc_order: 346
   - id: org.cocoms.indopacom.indopacom-headquarters-staff.j1-manpower-and-personnel-directorate-indopacom
     type: directorate
     name: J1 - Manpower and Personnel Directorate, INDOPACOM
@@ -28107,29 +28036,10 @@ records:
         page: 349
         usage: seed_reference_only
     abbreviation: CFE-DM
-  - id: org.cocoms.us-central-command
-    type: command
-    name: US Central Command (CENTCOM)
-    parent_id: org.cocoms
-    service: cocom
-    functions:
-      - operations
-    capability_tags:
-      - toc_seed
-      - cocom
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 350
-        usage: seed_reference_only
-    abbreviation: CENTCOM
   - id: org.cocoms.us-central-command.centcom-headquarters-staff
     type: office
     name: CENTCOM Headquarters Staff
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - organization_mapping
@@ -28144,6 +28054,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 350
         usage: seed_reference_only
+        toc_order: 349
   - id: org.cocoms.us-central-command.centcom-headquarters-staff.j1-manpower-and-personnel-directorate-centcom
     type: directorate
     name: J1 - Manpower and Personnel Directorate, CENTCOM
@@ -28337,7 +28248,7 @@ records:
   - id: org.cocoms.us-central-command.naval-forces-central-command
     type: command
     name: Naval Forces Central Command (NAVCENT)
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - operations
@@ -28357,7 +28268,7 @@ records:
   - id: org.cocoms.us-central-command.marine-corps-forces-central-command
     type: command
     name: Marine Corps Forces Central Command (MARCENT)
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: marine_corps
     functions:
       - operations
@@ -28379,7 +28290,7 @@ records:
   - id: org.cocoms.us-central-command.air-forces-central-command
     type: command
     name: Air Forces Central Command (AFCENT)
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - information_and_cyber
@@ -28428,7 +28339,7 @@ records:
   - id: org.cocoms.us-central-command.special-operations-command-central
     type: command
     name: Special Operations Command Central (SOCCENT)
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - operations
@@ -28450,7 +28361,7 @@ records:
   - id: org.cocoms.us-central-command.u-s-space-forces-central
     type: command
     name: U.S. Space Forces Central (SPACECENT)
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - operations
@@ -28470,7 +28381,7 @@ records:
   - id: org.cocoms.us-central-command.defense-information-systems-agency-s-central-field-command
     type: command
     name: Defense Information Systems Agency’s Central Field Command
-    parent_id: org.cocoms.us-central-command
+    parent_id: org.cocoms.centcom
     service: cocom
     functions:
       - information_and_cyber
@@ -28504,6 +28415,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 354
         usage: seed_reference_only
+        toc_order: 352
   - id: org.cocoms.eucom.eucom-headquarters-staff.j2-intelligence-eucom
     type: other
     name: J2 Intelligence EUCOM
@@ -28790,6 +28702,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 357
         usage: seed_reference_only
+        toc_order: 355
   - id: org.cocoms.southcom.southcom-headquarters-staff.j2-intelligence-southcom
     type: other
     name: J2 Intelligence SOUTHCOM
@@ -29115,6 +29028,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 359
         usage: seed_reference_only
+        toc_order: 357
   - id: org.cocoms.northcom.northcom-headquarters-staff.j2-intelligence-northcom
     type: other
     name: J2 Intelligence NORTHCOM
@@ -29367,6 +29281,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 361
         usage: seed_reference_only
+        toc_order: 359
   - id: org.cocoms.africom.africom-headquarters-staff.j2-intelligence-africom
     type: other
     name: J2 Intelligence, AFRICOM
@@ -29810,6 +29725,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 365
         usage: seed_reference_only
+        toc_order: 361
   - id: org.cocoms.stratcom.stratcom-headquarters-staff.j1-human-capital-stratcom
     type: other
     name: J1 - Human Capital STRATCOM
@@ -30233,39 +30149,10 @@ records:
         page: 366
         usage: seed_reference_only
     abbreviation: JFMCC
-  - id: org.cocoms.u-s-space-command-spacecom
-    type: command
-    name: U.S. Space Command - SPACECOM
-    parent_id: org.cocoms
-    service: cocom
-    functions:
-      - operations
-    capability_tags:
-      - toc_seed
-      - cocom
-      - space
-    location_ids: []
-    status: needs_review
-    confidence: low
-    last_verified: 2026-06-11
-    sources:
-      - source_id: source.dow-directory-2026-r6
-        page: 367
-        usage: seed_reference_only
-      - source_id: source.public-url.spacecom-mil.20d20e8962
-        page: 367
-        usage: directory_listed_public_link
-      - source_id: source.public-url.spacecom-mil.5cbde9504f
-        page: 367
-        usage: directory_listed_public_link
-      - source_id: source.public-url.spacecom-mil.ceecce38a9
-        page: 367
-        usage: directory_listed_public_link
-    abbreviation: SPACECOM
   - id: org.cocoms.u-s-space-command-spacecom.spacecom-headquarters-staff
     type: office
     name: SPACECOM Headquarters Staff
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: cocom
     functions:
       - operations
@@ -30281,6 +30168,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 367
         usage: seed_reference_only
+        toc_order: 363
   - id: org.cocoms.u-s-space-command-spacecom.spacecom-headquarters-staff.j1-human-capital
     type: other
     name: J1 Human Capital
@@ -30424,7 +30312,7 @@ records:
   - id: org.cocoms.u-s-space-command-spacecom.marine-corps-forces-space-command
     type: command
     name: Marine Corps Forces Space Command
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: marine_corps
     functions:
       - operations
@@ -30443,7 +30331,7 @@ records:
   - id: org.cocoms.u-s-space-command-spacecom.navy-space-command
     type: command
     name: Navy Space Command
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: cocom
     functions:
       - operations
@@ -30462,7 +30350,7 @@ records:
   - id: org.cocoms.u-s-space-command-spacecom.air-forces-space
     type: command
     name: Air Forces Space
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: cocom
     functions:
       - information_and_cyber
@@ -30484,7 +30372,7 @@ records:
   - id: org.cocoms.u-s-space-command-spacecom.u-s-space-forces-space
     type: command
     name: U.S. Space Forces - Space (S4S)
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: cocom
     functions:
       - operations
@@ -30504,7 +30392,7 @@ records:
   - id: org.cocoms.u-s-space-command-spacecom.joint-functional-component-command-for-missile-defense
     type: command
     name: Joint Functional Component Command For Missile Defense
-    parent_id: org.cocoms.u-s-space-command-spacecom
+    parent_id: org.cocoms.spacecom
     service: cocom
     functions:
       - operations
@@ -30688,6 +30576,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 368
         usage: seed_reference_only
+        toc_order: 366
   - id: org.cocoms.transcom.air-mobility-command.618th-air-operations-center
     type: office
     name: 618th Air Operations Center
@@ -31000,6 +30889,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 369
   - id: org.external.ffrdc.ames-laboratory
     type: lab
     name: Ames Laboratory
@@ -31018,6 +30908,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 370
   - id: org.external.ffrdc.argonne-national-laboratory
     type: lab
     name: Argonne National Laboratory
@@ -31036,6 +30927,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 371
   - id: org.external.ffrdc.association-of-universities-for-research-in-astronomy
     type: other
     name: Association of Universities for Research in Astronomy
@@ -31054,6 +30946,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 372
   - id: org.external.ffrdc.association-of-universities-for-research-in-astronomy.nsf-s-national-optical-infrared-astronomy-research-laboratory
     type: lab
     name: NSF's National Optical-Infrared Astronomy Research Laboratory
@@ -31182,6 +31075,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 371
         usage: seed_reference_only
+        toc_order: 374
   - id: org.external.ffrdc.center-for-naval-analyses
     type: office
     name: Center for Naval Analyses
@@ -31200,6 +31094,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 375
   - id: org.external.ffrdc.center-for-nuclear-waste-regulatory-analyses
     type: office
     name: Center for Nuclear Waste Regulatory Analyses
@@ -31218,6 +31113,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 376
   - id: org.external.ffrdc.fermi-national-accelerator-laboratory
     type: lab
     name: Fermi National Accelerator Laboratory
@@ -31238,6 +31134,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 377
   - id: org.external.ffrdc.frederick-national-laboratory-for-cancer-research
     type: lab
     name: Frederick National Laboratory for Cancer Research
@@ -31256,6 +31153,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 378
   - id: org.external.ffrdc.institute-for-defense-analyses
     type: external_agency
     name: Institute for Defense Analyses
@@ -31273,6 +31171,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 379
   - id: org.external.ffrdc.institute-for-defense-analyses.center-for-communications-and-computing
     type: office
     name: Center for Communications and Computing
@@ -31344,6 +31243,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 380
   - id: org.external.ffrdc.lawrence-berkeley-national-laboratory
     type: lab
     name: Lawrence Berkeley National Laboratory
@@ -31362,6 +31262,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 372
         usage: seed_reference_only
+        toc_order: 381
   - id: org.external.ffrdc.lawrence-berkeley-national-laboratory.computing-sciences-and-operations
     type: other
     name: Computing Sciences and Operations
@@ -31399,6 +31300,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 373
         usage: seed_reference_only
+        toc_order: 382
   - id: org.external.ffrdc.lincoln-laboratory
     type: lab
     name: Lincoln Laboratory
@@ -31417,6 +31319,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 373
         usage: seed_reference_only
+        toc_order: 383
   - id: org.external.ffrdc.los-alamos-national-laboratory
     type: lab
     name: Los Alamos National Laboratory
@@ -31435,6 +31338,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 373
         usage: seed_reference_only
+        toc_order: 384
   - id: org.external.ffrdc.center-for-advanced-aviation-system-development
     type: office
     name: Center for Advanced Aviation System Development
@@ -31541,6 +31445,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 373
         usage: seed_reference_only
+        toc_order: 386
   - id: org.external.ffrdc.national-renewable-energy-laboratory
     type: lab
     name: National Renewable Energy Laboratory
@@ -31559,6 +31464,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 388
   - id: org.external.ffrdc.princeton-plasma-physics-laboratory
     type: lab
     name: Princeton Plasma Physics Laboratory
@@ -31577,6 +31483,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 389
   - id: org.external.ffrdc.rand-corporation
     type: external_agency
     name: RAND Corporation
@@ -31594,6 +31501,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 390
   - id: org.external.ffrdc.rand-corporation.arroyo-center
     type: office
     name: Arroyo Center
@@ -31687,6 +31595,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 392
   - id: org.external.ffrdc.software-engineering-institute
     type: external_agency
     name: Software Engineering Institute
@@ -31705,6 +31614,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 393
   - id: org.external.ffrdc.thomas-jefferson-national-accelerator-facility
     type: other
     name: Thomas Jefferson National Accelerator Facility
@@ -31723,6 +31633,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 374
         usage: seed_reference_only
+        toc_order: 394
   - id: org.external.doe.office-of-the-chief-financial-officer
     type: office
     name: Office of the Chief Financial Officer
@@ -31741,6 +31652,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 375
         usage: seed_reference_only
+        toc_order: 396
   - id: org.external.doe.office-of-intelligence-and-counterintelligence
     type: office
     name: Office of Intelligence and Counterintelligence
@@ -31760,6 +31672,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 375
         usage: seed_reference_only
+        toc_order: 398
   - id: org.external.doe.office-of-international-affairs
     type: office
     name: Office of International Affairs
@@ -31781,6 +31694,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 375
         usage: seed_reference_only
+        toc_order: 399
   - id: org.external.doe.office-of-international-affairs.office-of-foreign-investment-and-national-security
     type: office
     name: Office of Foreign Investment and National Security
@@ -31817,6 +31731,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 375
         usage: seed_reference_only
+        toc_order: 400
   - id: org.external.doe.arpa-e
     type: external_agency
     name: ARPA-E (Advanced Research Projects Agency-Energy)
@@ -31836,6 +31751,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 376
         usage: seed_reference_only
+        toc_order: 401
       - source_id: source.public-url.arpa-e-energy-gov.4cf727dd74
         page: 376
         usage: directory_listed_public_link
@@ -31859,6 +31775,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 377
         usage: seed_reference_only
+        toc_order: 402
       - source_id: source.public-url.energy-gov.c3b712bc45
         page: 377
         usage: directory_listed_public_link
@@ -32064,6 +31981,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 380
         usage: seed_reference_only
+        toc_order: 403
       - source_id: source.public-url.energy-gov.1382ceb585
         page: 380
         usage: directory_listed_public_link
@@ -33067,6 +32985,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 388
         usage: seed_reference_only
+        toc_order: 404
       - source_id: source.public-url.arpa-e-energy-gov.b296dd612b
         page: 388
         usage: directory_listed_public_link
@@ -33367,6 +33286,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 391
         usage: seed_reference_only
+        toc_order: 405
       - source_id: source.public-url.energy-gov.2d303f4650
         page: 391
         usage: directory_listed_public_link
@@ -33647,6 +33567,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 391
         usage: seed_reference_only
+        toc_order: 406
   - id: org.external.doe.office-of-environmental-management-em.office-of-field-operations-em-3
     type: office
     name: Office of Field Operations EM-3
@@ -34017,6 +33938,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 393
         usage: seed_reference_only
+        toc_order: 409
       - source_id: source.public-url.bis-gov.27cf4aecbf
         page: 393
         usage: directory_listed_public_link
@@ -34737,6 +34659,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 396
         usage: seed_reference_only
+        toc_order: 410
       - source_id: source.public-url.bea-gov.0ac3cbd3e9
         page: 396
         usage: directory_listed_public_link
@@ -34761,6 +34684,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 397
         usage: seed_reference_only
+        toc_order: 411
       - source_id: source.public-url.noaa-gov.63d1a115c6
         page: 397
         usage: directory_listed_public_link
@@ -34795,6 +34719,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 397
         usage: seed_reference_only
+        toc_order: 412
   - id: org.external.commerce.international-trade-administration.office-of-space-commerce
     type: office
     name: Office of Space Commerce
@@ -34973,6 +34898,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 399
         usage: seed_reference_only
+        toc_order: 413
       - source_id: source.public-url.nccoe-nist-gov.a8dca5d0fd
         page: 399
         usage: directory_listed_public_link
@@ -35697,6 +35623,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 402
         usage: seed_reference_only
+        toc_order: 414
       - source_id: source.public-url.uspto-gov.4ba49228c4
         page: 402
         usage: directory_listed_public_link
@@ -35731,6 +35658,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 402
         usage: seed_reference_only
+        toc_order: 415
   - id: org.external.treasury.cfius-the-committee-on-foreign-investment-in-the-united-states
     type: congressional_office
     name: CFIUS - The Committee on Foreign Investment in the United States
@@ -35748,6 +35676,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 404
         usage: seed_reference_only
+        toc_order: 417
       - source_id: source.public-url.home-treasury-gov.0021bf0ae7
         page: 404
         usage: directory_listed_public_link
@@ -35820,6 +35749,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 404
         usage: seed_reference_only
+        toc_order: 418
   - id: org.external.treasury.cfius-in-the-office-of-the-secretary-of-war.asd-global-investments-and-economic-security
     type: other
     name: ASD(IBP) Global Investments and Economic Security (GIES)
@@ -35934,6 +35864,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 405
         usage: seed_reference_only
+        toc_order: 419
       - source_id: source.public-url.energy-gov.b80f93aca5
         page: 405
         usage: directory_listed_public_link
@@ -35973,6 +35904,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 405
         usage: seed_reference_only
+        toc_order: 420
   - id: org.external.treasury.cfius-in-the-department-of-commerce.office-of-strategic-industries-and-economic-security
     type: office
     name: Office of Strategic Industries and Economic Security (SIES)
@@ -36012,6 +35944,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 405
         usage: seed_reference_only
+        toc_order: 421
   - id: org.external.treasury.cfius-in-the-department-of-justice.national-security-division
     type: directorate
     name: National Security Division
@@ -36046,6 +35979,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 405
         usage: seed_reference_only
+        toc_order: 422
   - id: org.external.defense-innovation.dow-sbir-programs
     type: office
     name: DoW SBIR Programs

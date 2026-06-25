@@ -18,6 +18,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 111
         usage: seed_reference_only
+        toc_order: 88
   - location_ids: []
     status: needs_review
     confidence: low
@@ -37,6 +38,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 112
         usage: seed_reference_only
+        toc_order: 89
   - location_ids: []
     status: needs_review
     confidence: low
@@ -55,6 +57,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 115
         usage: seed_reference_only
+        toc_order: 90
       - source_id: source.public-url.hrc-army-mil.c0027c0642
         page: 115
         usage: directory_listed_public_link
@@ -100,6 +103,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 116
         usage: seed_reference_only
+        toc_order: 93
       - source_id: source.public-url.army-mil.91fb8ddca6
         page: 116
         usage: directory_listed_public_link
@@ -124,6 +128,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 117
         usage: seed_reference_only
+        toc_order: 94
   - location_ids: []
     status: needs_review
     confidence: low
@@ -144,6 +149,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 118
         usage: seed_reference_only
+        toc_order: 95
   - location_ids: []
     status: needs_review
     confidence: low
@@ -162,6 +168,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 120
         usage: seed_reference_only
+        toc_order: 98
       - source_id: source.public-url.nationalguard-mil.c8c0e3c631
         page: 120
         usage: directory_listed_public_link
@@ -255,6 +262,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 125
         usage: seed_reference_only
+        toc_order: 102
   - location_ids: []
     status: needs_review
     confidence: low
@@ -415,6 +423,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 139
         usage: seed_reference_only
+        toc_order: 110
   - location_ids: []
     status: needs_review
     confidence: low
@@ -435,6 +444,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 140
         usage: seed_reference_only
+        toc_order: 111
   - location_ids: []
     status: needs_review
     confidence: low
@@ -476,6 +486,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 142
         usage: seed_reference_only
+        toc_order: 113
   - location_ids: []
     status: needs_review
     confidence: low
@@ -497,6 +508,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 147
         usage: seed_reference_only
+        toc_order: 114
       - source_id: source.public-url.cpest3-army-mil.794273f6da
         page: 147
         usage: directory_listed_public_link
@@ -522,6 +534,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 151
         usage: seed_reference_only
+        toc_order: 115
   - location_ids: []
     status: needs_review
     confidence: low
@@ -583,6 +596,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 161
         usage: seed_reference_only
+        toc_order: 119
   - location_ids: []
     status: needs_review
     confidence: low
@@ -643,6 +657,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 168
         usage: seed_reference_only
+        toc_order: 122
   - location_ids: []
     status: needs_review
     confidence: low
@@ -663,6 +678,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 171
         usage: seed_reference_only
+        toc_order: 123
       - source_id: source.public-url.pit-army-mil.ac14d0a958
         page: 171
         usage: directory_listed_public_link
@@ -685,6 +701,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 171
         usage: seed_reference_only
+        toc_order: 124
       - source_id: source.public-url.fuze-army-mil.112b135186
         page: 171
         usage: directory_listed_public_link
@@ -719,6 +736,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 172
         usage: seed_reference_only
+        toc_order: 125
       - source_id: source.public-url.aal-mil.4cb89f9be1
         page: 172
         usage: directory_listed_public_link
@@ -748,6 +766,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 174
         usage: seed_reference_only
+        toc_order: 128
       - source_id: source.public-url.army-mil.13fa8bd081
         page: 174
         usage: directory_listed_public_link
@@ -770,6 +789,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 175
         usage: seed_reference_only
+        toc_order: 130
       - source_id: source.public-url.usacac-army-mil.1e215df945
         page: 175
         usage: directory_listed_public_link
@@ -792,6 +812,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 179
         usage: seed_reference_only
+        toc_order: 131
       - source_id: source.public-url.api-army-mil.09d199604d
         page: 179
         usage: directory_listed_public_link
@@ -851,6 +872,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 185
         usage: seed_reference_only
+        toc_order: 134
   - location_ids: []
     status: needs_review
     confidence: low
@@ -870,6 +892,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 186
         usage: seed_reference_only
+        toc_order: 136
       - source_id: source.public-url.home-army-mil.6c9ff59e0e
         page: 186
         usage: directory_listed_public_link
@@ -879,7 +902,7 @@ records:
     last_verified: 2026-06-11
     id: org.army.amc
     type: command
-    name: Army Materiel Command
+    name: Army Material Command
     abbreviation: AMC
     parent_id: org.army
     service: army
@@ -893,9 +916,14 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 187
         usage: seed_reference_only
+        toc_order: 137
       - source_id: source.public-url.amc-army-mil.8d803fc572
         page: 187
         usage: directory_listed_public_link
+      - source_id: source.dow-directory-2026-r6
+        page: 187
+        usage: seed_reference_only
+        toc_order: 137
   - location_ids: []
     status: needs_review
     confidence: low
@@ -914,6 +942,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 187
         usage: seed_reference_only
+        toc_order: 139
       - source_id: source.public-url.acc-army-mil.1bc5975381
         page: 187
         usage: directory_listed_public_link
@@ -947,6 +976,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 188
         usage: seed_reference_only
+        toc_order: 140
       - source_id: source.public-url.amcom-army-mil.86fcd7666e
         page: 188
         usage: directory_listed_public_link
@@ -971,6 +1001,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 188
         usage: seed_reference_only
+        toc_order: 141
       - source_id: source.public-url.cecom-army-mil.2cb4eef928
         page: 188
         usage: directory_listed_public_link
@@ -1006,6 +1037,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 189
         usage: seed_reference_only
+        toc_order: 142
       - source_id: source.public-url.api-army-mil.3f5ce0450e
         page: 189
         usage: directory_listed_public_link
@@ -1040,6 +1072,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 189
         usage: seed_reference_only
+        toc_order: 143
       - source_id: source.public-url.aschq-army-mil.2c7320c47c
         page: 189
         usage: directory_listed_public_link
@@ -1061,6 +1094,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 190
         usage: seed_reference_only
+        toc_order: 144
       - source_id: source.public-url.atec-army-mil.1ee703fbc8
         page: 190
         usage: directory_listed_public_link
@@ -1095,6 +1129,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 190
         usage: seed_reference_only
+        toc_order: 145
       - source_id: source.public-url.tacom-army-mil.8d31bdf29e
         page: 190
         usage: directory_listed_public_link
@@ -1116,6 +1151,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 191
         usage: seed_reference_only
+        toc_order: 148
       - source_id: source.public-url.army-mil.30392f02f9
         page: 191
         usage: directory_listed_public_link

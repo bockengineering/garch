@@ -17,6 +17,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 265
     usage: seed_reference_only
+    toc_order: 235
 ---
 id: org.air-force.saf-aq
 type: acquisition_executive
@@ -39,6 +40,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 273
     usage: seed_reference_only
+    toc_order: 252
   - source_id: source.public-url.ww3-safaq-hq-af-mil.bcf2d02efa
     page: 273
     usage: directory_listed_public_link
@@ -69,6 +71,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 293
     usage: seed_reference_only
+    toc_order: 280
   - source_id: source.public-url.afrl-af-mil.74db64836b
     page: 293
     usage: directory_listed_public_link
@@ -103,6 +106,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 276
     usage: seed_reference_only
+    toc_order: 257
   - source_id: source.public-url.aflcmc-af-mil.111417c5d5
     page: 276
     usage: directory_listed_public_link

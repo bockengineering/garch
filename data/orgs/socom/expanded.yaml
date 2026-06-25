@@ -18,6 +18,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 330
         usage: seed_reference_only
+        toc_order: 327
       - source_id: source.public-url.socom-mil.460b3e03f8
         page: 330
         usage: directory_listed_public_link
@@ -44,6 +45,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 332
         usage: seed_reference_only
+        toc_order: 328
       - source_id: source.public-url.jsou-edu.4d330ae185
         page: 332
         usage: directory_listed_public_link
@@ -67,6 +69,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 333
         usage: seed_reference_only
+        toc_order: 330
   - location_ids: []
     status: needs_review
     confidence: low
@@ -106,6 +109,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 334
         usage: seed_reference_only
+        toc_order: 331
   - location_ids: []
     status: needs_review
     confidence: low
@@ -126,6 +130,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 335
         usage: seed_reference_only
+        toc_order: 332
       - source_id: source.public-url.socom-mil.c3817a505a
         page: 335
         usage: directory_listed_public_link
@@ -149,6 +154,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 336
         usage: seed_reference_only
+        toc_order: 333
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 336
         usage: directory_listed_public_link
@@ -172,6 +178,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 336
         usage: seed_reference_only
+        toc_order: 334
   - location_ids: []
     status: needs_review
     confidence: low
@@ -192,6 +199,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 336
         usage: seed_reference_only
+        toc_order: 335
   - location_ids: []
     status: needs_review
     confidence: low
@@ -211,6 +219,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 337
         usage: seed_reference_only
+        toc_order: 336
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 337
         usage: directory_listed_public_link
@@ -234,6 +243,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 337
         usage: seed_reference_only
+        toc_order: 337
   - location_ids: []
     status: needs_review
     confidence: low
@@ -254,6 +264,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 337
         usage: seed_reference_only
+        toc_order: 338
   - location_ids: []
     status: needs_review
     confidence: low
@@ -274,6 +285,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 338
         usage: seed_reference_only
+        toc_order: 339
       - source_id: source.public-url.socom-mil.dfef9e7337
         page: 338
         usage: directory_listed_public_link
@@ -295,6 +307,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 338
         usage: seed_reference_only
+        toc_order: 340
       - source_id: source.public-url.socom-mil.183124fabe
         page: 338
         usage: directory_listed_public_link
@@ -317,6 +330,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 338
         usage: seed_reference_only
+        toc_order: 341
       - source_id: source.public-url.nsw-navy-mil.ddff9afd11
         page: 338
         usage: directory_listed_public_link
@@ -339,6 +353,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 339
         usage: seed_reference_only
+        toc_order: 342
       - source_id: source.public-url.army-mil.59b564e09a
         page: 339
         usage: directory_listed_public_link
@@ -361,6 +376,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 339
         usage: seed_reference_only
+        toc_order: 343
       - source_id: source.public-url.afsoc-af-mil.5bac76de11
         page: 339
         usage: directory_listed_public_link
@@ -395,6 +411,7 @@ records:
       - source_id: source.dow-directory-2026-r6
         page: 339
         usage: seed_reference_only
+        toc_order: 344
       - source_id: source.public-url.marsoc-marines-mil.2273538536
         page: 339
         usage: directory_listed_public_link

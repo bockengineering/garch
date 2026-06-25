@@ -17,6 +17,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 194
     usage: seed_reference_only
+    toc_order: 158
   - source_id: source.public-url.defense-gov.769f2e6593
     page: 194
     usage: directory_listed_public_link
@@ -79,6 +80,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 227
     usage: seed_reference_only
+    toc_order: 184
   - source_id: source.public-url.navsea-navy-mil.06f3f56a16
     page: 227
     usage: directory_listed_public_link
@@ -110,6 +112,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 236
     usage: seed_reference_only
+    toc_order: 196
   - source_id: source.public-url.navair-navy-mil.040f193b85
     page: 236
     usage: directory_listed_public_link
@@ -148,6 +151,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 243
     usage: seed_reference_only
+    toc_order: 204
   - source_id: source.public-url.navwar-navy-mil.218ed53988
     page: 243
     usage: directory_listed_public_link

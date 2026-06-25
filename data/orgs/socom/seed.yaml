@@ -2,7 +2,7 @@ id: org.socom
 type: command
 name: United States Special Operations Command
 abbreviation: USSOCOM
-parent_id: org.dow
+parent_id: org.cocoms
 service: socom
 functions:
   - special_operations
@@ -17,6 +17,7 @@ sources:
   - source_id: source.dow-directory-2026-r6
     page: 330
     usage: seed_reference_only
+    toc_order: 326
 ---
 id: org.socom.sof-atl
 type: acquisition_executive

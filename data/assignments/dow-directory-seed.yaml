@@ -1,4 +1,3 @@
-# Directory-seeded person-to-office assignments. Treat as candidate/current-claimed until verified against official public sources.
 records:
   - id: assignment.aaron-amacker.cac-aviation-center-of-excellence.tactics-uas-branch-chief-avcoe
     person_id: person.aaron-amacker
@@ -870,7 +869,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.aissa-tovar.osd-pr.deputy-director-of-defense-production-act-investments
     person_id: person.aissa-tovar
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Deputy Director of Defense Production Act Investments
     role_type: deputy
     valid_from: null
@@ -1318,7 +1317,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.alex-morse.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.division-chief-c-suas-jiatf-401
     person_id: person.alex-morse
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Division Chief C-sUAS (JIATF-401)
     role_type: other
     valid_from: null
@@ -3908,7 +3907,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.anthony-padalino.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.jiatf-401-response-team-member
     person_id: person.anthony-padalino
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: JIATF-401 response team member
     role_type: other
     valid_from: null
@@ -3978,7 +3977,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.anthony-tata.osd-pr.undersecretary-of-war-for-personnel-and-readiness
     person_id: person.anthony-tata
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Undersecretary of War for Personnel and Readiness
     role_type: other
     valid_from: null
@@ -8626,7 +8625,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.cam-johnson.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.senior-program-analyst-at-joint-interagency-task-force-jiatf
     person_id: person.cam-johnson
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Senior Program Analyst at Joint Interagency Task Force (JIATF)
     role_type: other
     valid_from: null
@@ -8948,7 +8947,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.carla-johnson.osd-pr.associate-director-indian-incentive-program
     person_id: person.carla-johnson
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Associate Director Indian Incentive Program
     role_type: other
     valid_from: null
@@ -17474,7 +17473,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.derrick-davis.osd-pr.associate-director-for-industrial-cyber-security
     person_id: person.derrick-davis
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Associate Director for Industrial Cyber Security
     role_type: other
     valid_from: null
@@ -18174,7 +18173,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.doug-beaker-wickert.air-force-air-force-material-command.director-of-air-space-cyber-operations-a3-a6
     person_id: person.doug-beaker-wickert
-    org_id: org.air-force.air-force-material-command
+    org_id: org.air-force.afmc
     role_title: Director of air, space, cyber operations A3/A6
     role_type: other
     valid_from: null
@@ -20036,7 +20035,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.emmanuel-burks.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.counter-uas-capabilities-portfolio-manager-at-jiat-401
     person_id: person.emmanuel-burks
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Counter UAS Capabilities Portfolio Manager at JIAT-401
     role_type: other
     valid_from: null
@@ -24558,7 +24557,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.hi-sing-silen.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.test-integrator-joint-interagency-task-force
     person_id: person.hi-sing-silen
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Test Integrator, Joint Interagency Task Force
     role_type: test_and_evaluation
     valid_from: null
@@ -28814,7 +28813,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.jeffrey-r-register.osd-pr.director-defense-human-resources-activity-dhra
     person_id: person.jeffrey-r-register
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Director, Defense Human Resources Activity (DHRA)
     role_type: other
     valid_from: null
@@ -32314,7 +32313,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.john-shultz.osd-pr.deputy-director-of-the-warfighting-investments-resourcing-and-execution
     person_id: person.john-shultz
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Deputy Director of the Warfighting Investments, Resourcing, and Execution
     role_type: deputy
     valid_from: null
@@ -33098,7 +33097,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.jonathan-beha.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.requirements-and-training-division-chief-jiatf-401
     person_id: person.jonathan-beha
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Requirements and Training Division Chief JIATF-401
     role_type: requirements
     valid_from: null
@@ -34848,7 +34847,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.jules-w-hurst-iii.osd-under-secretary-of-war.under-secretary-of-war-comptroller-chief-financial-officer
     person_id: person.jules-w-hurst-iii
-    org_id: org.osd.under-secretary-of-war
+    org_id: org.osd.comptroller
     role_title: Under Secretary of War (Comptroller)/Chief Financial Officer
     role_type: under_secretary
     valid_from: null
@@ -42926,7 +42925,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.mark-slominski.air-force-air-force-material-command.mobilization-assistant-to-the-commander-air-force-material-command
     person_id: person.mark-slominski
-    org_id: org.air-force.air-force-material-command
+    org_id: org.air-force.afmc
     role_title: Mobilization Assistant to the Commander, Air Force Material Command
     role_type: other
     valid_from: null
@@ -43766,7 +43765,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.matt-mellor.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.lead-acquisitions-specialist-jiatf-401
     person_id: person.matt-mellor
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: lead acquisitions specialist JIATF-401
     role_type: other
     valid_from: null
@@ -43822,7 +43821,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.matt-ross.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.jiatf-401-director
     person_id: person.matt-ross
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: JIATF-401 director
     role_type: other
     valid_from: null
@@ -45530,7 +45529,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.merlynn-carson.osd-pr.senior-advisor-and-chief-of-staff
     person_id: person.merlynn-carson
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Senior Advisor & Chief of Staff
     role_type: chief_of_staff
     valid_from: null
@@ -47504,7 +47503,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.michael-sorrento.osd-pr.deputy-director-defense-human-resources-activity-dhra
     person_id: person.michael-sorrento
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Deputy Director, Defense Human Resources Activity (DHRA)
     role_type: deputy
     valid_from: null
@@ -51410,7 +51409,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.paul-lushenko.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.chief-strategist-for-jiatf-401
     person_id: person.paul-lushenko
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Chief Strategist for JIATF-401
     role_type: other
     valid_from: null
@@ -57668,7 +57667,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.ryan-mitchell.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.chief-of-requirements-branch-at-jiatf
     person_id: person.ryan-mitchell
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: Chief of Requirements Branch at JIATF
     role_type: requirements
     valid_from: null
@@ -59012,7 +59011,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.scott-mclellan.osd-joint-interagency-task-force-401-direct-reporting-portfolio-manager.jiatf-401-deputy-director
     person_id: person.scott-mclellan
-    org_id: org.osd.joint-interagency-task-force-401-direct-reporting-portfolio-manager
+    org_id: org.osd.jiatf-401
     role_title: JIATF-401 deputy director
     role_type: deputy
     valid_from: null
@@ -67370,7 +67369,7 @@ records:
     last_verified: 2026-06-25
   - id: assignment.vy-nguyen.osd-pr.acting-director-policy-analysis-and-transition-pa-and-t
     person_id: person.vy-nguyen
-    org_id: org.osd.pr
+    org_id: org.osd.office-of-the-under-secretary-of-defense-for-personnel-and-readiness
     role_title: Acting Director | Policy, Analysis & Transition (PA&T)
     role_type: other
     valid_from: null

@@ -27,6 +27,7 @@ export const sourceReferenceSchema = z
   .object({
     source_id: idSchema,
     page: z.union([z.number().int().positive(), z.string().trim().min(1)]).optional(),
+    toc_order: z.number().int().positive().optional(),
     usage: z.string().trim().min(1).optional()
   })
   .strict();
