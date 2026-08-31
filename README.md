@@ -2,7 +2,10 @@
 
 Government Architecture, Relationships, Changes, and History
 
-GARCH is a public, repo-backed data package and lightweight demo site for mapping government offices, programs, people, funding relationships, sources, and change history.
+GARCH is a public, repo-backed data package and working demo site for exploring government offices, people, assignments, sources, and change history.
+
+> [!IMPORTANT]
+> The current dataset is an exploratory seed map, not a verified directory of current appointments. Its source directory is freely available, but records derived only from it remain `low` confidence and `needs_review` or `current_claimed` until independently verified.
 
 The core contract is data-first:
 
@@ -16,11 +19,11 @@ canonical YAML records
 
 ## What This Repo Is
 
-This repo is a public-safe structured data package for government office mapping. It stores canonical records as YAML, validates cross-record references with TypeScript and Zod, builds static JSON artifacts in `dist/`, and includes a dense Next.js demo interface for inspection.
+This repo is a public-safe structured data package for government office mapping. It stores canonical records as YAML, validates cross-record references and public-safety rules with TypeScript and Zod, builds static JSON artifacts in `dist/`, and includes a searchable Next.js demo interface for inspection.
 
 ## What This Repo Is Not
 
-This is not a scraper, not a database-backed app, not an AI-agent workflow, and not a republication of the uploaded DoW Directory. The DoW Directory is only a seed source for initial mapping. Public claims should be verified against official or public sources before being treated as verified.
+This is not a scraper, not a database-backed app, not an AI-agent workflow, and not a republication of the source directory. The [free 2026 DoW Directory landing page](https://steveblank.com/2026/02/03/making-the-wrong-things-go-faster-at-the-department-of-war/) is used only as an initial seed map. Public claims should be independently verified before being treated as current.
 
 ## Why YAML Is Canonical
 
@@ -142,6 +145,14 @@ npm run validate
 
 Validation fails on duplicate IDs, invalid enum values, broken parent references, broken assignment/program/budget/funding references, missing canonical sources, seed-source policy issues, and orphaned generated graph nodes.
 
+Run the public-data profile and safety sweep:
+
+```bash
+npm run audit:data
+```
+
+The audit reports record grain, confidence and status distributions, source-license distribution, verification-date range, seed-only coverage, and contact/credential guardrails.
+
 ## Build Artifacts
 
 ```bash
@@ -155,6 +166,12 @@ npm run build:graph
 npm run build:search
 npm run build:changelog
 npm run build:manifest
+```
+
+Run a full production build:
+
+```bash
+npm run build
 ```
 
 ## Run The Demo Site
@@ -197,7 +214,7 @@ Candidate changes should include source IDs, short evidence notes, confidence, a
 
 ## Public Repo Safety Rules
 
-- Do not commit the uploaded directory PDF.
+- Do not commit the source directory PDF.
 - Do not republish directory passages.
 - Do not include private notes.
 - Do not include non-public contact information.
@@ -206,4 +223,4 @@ Candidate changes should include source IDs, short evidence notes, confidence, a
 - Prefer official sources.
 - Mark uncertain data as `low` or `unknown` confidence.
 
-The initial DoW Directory source record is marked `seed_only_no_republication`.
+The initial directory source record is marked `seed_only_no_republication` as a conservative project handling rule. That label prevents copied passages and confidence inflation; it does not imply that the freely available source is private.

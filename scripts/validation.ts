@@ -103,6 +103,156 @@ function sourceCoverageIssues(data: LoadedData): ValidationIssue[] {
   return issues;
 }
 
+function publicSafetyIssues(data: LoadedData): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const emailPattern = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i;
+  const phonePattern = /(?:\+?1[\s.-]?)?\(?[2-9]\d{2}\)?[\s.-]\d{3}[\s.-]\d{4}\b/;
+  const linkedInPattern = /(?:https?:\/\/)?(?:www\.)?linkedin\.com\//i;
+  const credentialPatterns = [
+    /\b(?:github_pat_|gh[pousr]_)[A-Za-z0-9_]{20,}\b/,
+    /\bsk-[A-Za-z0-9_-]{20,}\b/,
+    /\bAKIA[A-Z0-9]{16}\b/,
+    /\b(?:secret|token|api[_-]?key)\s*[:=]\s*["']?[A-Za-z0-9_./+-]{20,}/i
+  ];
+
+  const checkPublicText = (
+    entityType: string,
+    id: string,
+    field: string,
+    value: string | null | undefined
+  ) => {
+    if (!value) {
+      return;
+    }
+
+    const patterns = [
+      { code: "public_email_detected", pattern: emailPattern, label: "email address" },
+      { code: "public_phone_detected", pattern: phonePattern, label: "phone number" },
+      { code: "linkedin_url_detected", pattern: linkedInPattern, label: "LinkedIn URL" }
+    ];
+
+    patterns.forEach(({ code, pattern, label }) => {
+      if (pattern.test(value)) {
+        issues.push({
+          code,
+          message: `${entityType} ${id} field ${field} contains a ${label}`
+        });
+      }
+    });
+  };
+
+  data.people.forEach((person) => {
+    checkPublicText("person", person.id, "name", person.name);
+    person.aliases.forEach((alias) => checkPublicText("person", person.id, "aliases", alias));
+    person.public_profile_urls.forEach((url) =>
+      checkPublicText("person", person.id, "public_profile_urls", url)
+    );
+    checkPublicText("person", person.id, "notes", person.notes);
+
+    if ((person.notes?.length ?? 0) > 500) {
+      issues.push({
+        code: "public_text_too_long",
+        message: `person ${person.id} notes exceed the 500-character public-safe limit`
+      });
+    }
+  });
+
+  data.assignments.forEach((assignment) => {
+    checkPublicText("assignment", assignment.id, "role_title", assignment.role_title);
+  });
+
+  data.orgs.forEach((org) => {
+    checkPublicText("org", org.id, "name", org.name);
+    checkPublicText("org", org.id, "description_short", org.description_short);
+
+    if ((org.description_short?.length ?? 0) > 500) {
+      issues.push({
+        code: "public_text_too_long",
+        message: `org ${org.id} description_short exceeds the 500-character public-safe limit`
+      });
+    }
+  });
+
+  const recordGroups = [
+    ["org", data.orgs],
+    ["person", data.people],
+    ["assignment", data.assignments],
+    ["program", data.programs],
+    ["budget line", data.budgetLines],
+    ["funding", data.funding],
+    ["source", data.sources],
+    ["candidate change", data.candidateChanges]
+  ] as const;
+
+  recordGroups.forEach(([entityType, records]) => {
+    records.forEach((record) => {
+      const serialized = JSON.stringify(record);
+      if (credentialPatterns.some((pattern) => pattern.test(serialized))) {
+        issues.push({
+          code: "credential_pattern_detected",
+          message: `${entityType} ${record.id} contains a credential-like value`
+        });
+      }
+    });
+  });
+
+  return issues;
+}
+
+function sourcePolicyIssues(data: LoadedData): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const sourceById = new Map(data.sources.map((source) => [source.id, source]));
+
+  const checkRecord = (
+    entityType: string,
+    id: string,
+    confidence: string,
+    sources: Array<{ source_id: string; usage?: string }>
+  ) => {
+    const resolvedSources = sources
+      .map((sourceRef) => sourceById.get(sourceRef.source_id))
+      .filter((source) => source !== undefined);
+
+    if (
+      resolvedSources.length > 0 &&
+      resolvedSources.every((source) => source.license_status === "seed_only_no_republication") &&
+      !["low", "unknown"].includes(confidence)
+    ) {
+      issues.push({
+        code: "seed_only_confidence_too_high",
+        message: `${entityType} ${id} relies only on seed-only sources but has ${confidence} confidence`
+      });
+    }
+
+    sources.forEach((sourceRef) => {
+      if (
+        sourceRef.source_id === "source.dow-directory-2026-r6" &&
+        sourceRef.usage !== "seed_reference_only"
+      ) {
+        issues.push({
+          code: "seed_source_usage_missing",
+          message: `${entityType} ${id} must mark the directory source as seed_reference_only`
+        });
+      }
+    });
+  };
+
+  data.orgs.forEach((record) =>
+    checkRecord("org", record.id, record.confidence, record.sources)
+  );
+  data.people.forEach((record) =>
+    checkRecord("person", record.id, record.confidence, record.sources)
+  );
+  data.assignments.forEach((record) =>
+    checkRecord("assignment", record.id, record.confidence, record.sources)
+  );
+  data.programs.forEach((record) =>
+    checkRecord("program", record.id, record.confidence, record.sources)
+  );
+
+  return issues;
+}
+
 function referenceIssues(data: LoadedData): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const orgIds = new Set(data.orgs.map((org) => org.id));
@@ -280,6 +430,8 @@ export function validateData(data: LoadedData): ValidationIssue[] {
     ...duplicateIssues("source", data.sources.map((record) => record.id)),
     ...duplicateIssues("candidate change", data.candidateChanges.map((record) => record.id)),
     ...sourceCoverageIssues(data),
+    ...publicSafetyIssues(data),
+    ...sourcePolicyIssues(data),
     ...referenceIssues(data),
     ...hierarchyIssues(data)
   ];

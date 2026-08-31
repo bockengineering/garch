@@ -126,7 +126,7 @@ export default function GovMapShell({
           <div>
             <h1 className="text-2xl font-semibold tracking-normal">Government Office Map</h1>
             <p className="mt-1 text-sm text-stone-600">
-              Source-backed map of government offices, programs, people, and funding relationships.
+              Public-safe exploratory map. Seed-derived records require independent verification.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 text-xs text-stone-600 sm:grid-cols-4">

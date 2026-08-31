@@ -1,30 +1,32 @@
 import { promises as fs } from "node:fs";
 import path from "node:path";
 
-const allowedArtifacts = new Set([
+const artifactFiles = new Set([
   "graph.json",
   "search-index.json",
   "changelog.json",
   "manifest.json"
 ]);
 
-export const runtime = "nodejs";
-export const dynamic = "force-dynamic";
-
-export async function GET(_request: Request, { params }: { params: Promise<{ file: string }> }) {
+export async function GET(
+  _request: Request,
+  { params }: { params: Promise<{ file: string }> }
+) {
   const { file } = await params;
 
-  if (!allowedArtifacts.has(file)) {
-    return new Response("Not found", { status: 404 });
+  if (!artifactFiles.has(file)) {
+    return Response.json({ error: "Artifact not found" }, { status: 404 });
   }
 
-  const artifactPath = path.join(process.cwd(), "dist", file);
-  const content = await fs.readFile(artifactPath, "utf8");
-
-  return new Response(content, {
-    headers: {
-      "content-type": "application/json; charset=utf-8",
-      "cache-control": "no-store"
-    }
-  });
+  try {
+    const content = await fs.readFile(path.join(process.cwd(), "dist", file), "utf8");
+    return new Response(content, {
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400"
+      }
+    });
+  } catch {
+    return Response.json({ error: "Artifact not found" }, { status: 404 });
+  }
 }

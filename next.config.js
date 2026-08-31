@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  agentRules: false,
+  outputFileTracingIncludes: {
+    "/dist/[file]": ["./dist/*.json"]
+  }
+};
 
 module.exports = nextConfig;

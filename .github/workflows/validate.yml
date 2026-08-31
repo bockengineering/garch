@@ -32,6 +32,9 @@ jobs:
       - name: Validate data
         run: npm run validate
 
+      - name: Audit public data
+        run: npm run audit:data
+
       - name: Build artifacts
         run: |
           export GARCH_GENERATED_AT="$(node -e "console.log(require('./dist/manifest.json').generated_at)")"
@@ -39,3 +42,9 @@ jobs:
 
       - name: Fail if dist artifacts are stale
         run: git diff --exit-code dist
+
+      - name: Build production app
+        run: npm run build
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev

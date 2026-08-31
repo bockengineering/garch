@@ -28,10 +28,11 @@ function makeEdge(
   source: string,
   target: string,
   confidence: GraphEdge["confidence"],
-  metadata: Record<string, unknown> = {}
+  metadata: Record<string, unknown> = {},
+  identity?: string
 ): GraphEdge {
   return {
-    id: `${type}:${source}->${target}`,
+    id: identity ? `${type}:${identity}` : `${type}:${source}->${target}`,
     type,
     source,
     target,
@@ -60,10 +61,10 @@ function sourcedByEdges(
   confidence: GraphEdge["confidence"],
   refs: Array<{ source_id: string }>
 ) {
-  return refs.map((ref) =>
+  return refs.map((ref, index) =>
     makeEdge("sourced_by", entityId, ref.source_id, confidence, {
       source_reference: ref
-    })
+    }, `${entityId}->${ref.source_id}:${index}`)
   );
 }
 
@@ -149,7 +150,7 @@ export function buildGraphArtifact(data: LoadedData): GraphArtifact {
         role_title: assignment.role_title,
         role_type: assignment.role_type,
         status: assignment.status
-      })
+      }, assignment.id)
     );
     edges.push(...sourcedByEdges(assignment.id, assignment.confidence, assignment.sources));
   });

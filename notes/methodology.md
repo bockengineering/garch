@@ -2,7 +2,7 @@
 
 GARCH starts from short, structured seed records and separates canonical data from review notes.
 
-The uploaded DoW Directory is treated only as a private seed reference. Public pages and generated artifacts must not republish directory passages. Records seeded from that directory should remain low-confidence until verified against official or public sources.
+The freely available DoW Directory is treated conservatively as a seed reference. Public pages and generated artifacts must not republish directory passages. Records seeded from that directory remain low-confidence until verified against independent official or public sources. The internal `seed_only_no_republication` label is a project handling rule, not a claim that the directory itself is private.
 
 Validation checks record shape, enum values, duplicate IDs, cross-record references, source coverage, and orphaned office hierarchy.
 

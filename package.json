@@ -5,31 +5,41 @@
   "description": "Repo-backed public data package and demo site for mapping government offices, programs, people, funding relationships, sources, and change history.",
   "scripts": {
     "validate": "tsx scripts/validate-data.ts",
+    "audit:data": "tsx scripts/audit-public-data.ts",
     "build:graph": "tsx scripts/build-graph.ts",
     "build:search": "tsx scripts/generate-search-index.ts",
     "build:changelog": "tsx scripts/build-changelog.ts",
     "build:manifest": "tsx scripts/build-manifest.ts",
     "build:all": "tsx scripts/build-all.ts",
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings=0"
   },
   "dependencies": {
-    "@tailwindcss/postcss": "4.3.0",
-    "next": "16.2.9",
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "yaml": "2.9.0",
     "zod": "4.4.3"
   },
   "devDependencies": {
     "@types/node": "25.9.3",
-    "@types/react": "19.2.17",
-    "@types/react-dom": "19.2.3",
-    "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.9",
-    "tailwindcss": "4.3.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "autoprefixer": "10.4.21",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.3",
+    "postcss": "8.5.26",
+    "tailwindcss": "3.4.17",
+    "typescript-eslint": "8.68.0",
     "tsx": "4.22.4",
     "typescript": "6.0.3"
+  },
+  "overrides": {
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "typescript-eslint": "8.68.0",
+    "@typescript-eslint/visitor-keys": "8.68.0"
   }
 }
