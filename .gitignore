@@ -20,3 +20,4 @@ downloads/
 tmp/
 
 .DS_Store
+.vercel/

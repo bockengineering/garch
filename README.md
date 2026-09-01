@@ -4,6 +4,8 @@ Government Architecture, Relationships, Changes, and History
 
 GARCH is a public, repo-backed data package and working demo site for exploring government offices, people, assignments, sources, and change history.
 
+**Live demo:** [garch-public-data.vercel.app](https://garch-public-data.vercel.app)
+
 > [!IMPORTANT]
 > The current dataset is an exploratory seed map, not a verified directory of current appointments. Its source directory is freely available, but records derived only from it remain `low` confidence and `needs_review` or `current_claimed` until independently verified.
 
